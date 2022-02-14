@@ -1,0 +1,715 @@
+id_general;id_reg;name_fkm;type1;type2;Species;abilities1;abilities2;hiddenability;height;weight;habitat;feeding;evoby;inspiration1;inspiration2
+1;1;Myrmeflag;Grass;;Little Anteater;Overgrow;;;0,6;11;;;;Tamanduˇ Bandeira (Myrmecophaga tridactyla);
+2;2;Myrmeter;Grass;Fighting;Anteater;Overgrow;Technician;;1,1;30;;;;Tamanduˇ Bandeira (Myrmecophaga tridactyla);
+3;3;Capemyr;Grass;Fighting;Capelobo;Overgrow;Technician;;1,8;80;;;;Tamanduˇ Bandeira (Myrmecophaga tridactyla);
+4;4;Manedolf;Fire;;Puppy;Flash fire;;;0,6;20;;;;Lobo Guarˇ (Chrysocyon brachyurus);
+5;5;Magmanar;Fire;Dark;Fire wolf;Flash fire;Magma Armor;;1,1;48;;;;Lobo Guarˇ (Chrysocyon brachyurus);
+6;6;Magsocyon;Fire;Dark;Fire wolf;Flash fire;Magma Armor;;1,7;60;;;;Lobo Guarˇ (Chrysocyon brachyurus);
+7;7;Manaty;Water;;Baby Manatee;Torrent;;;0,5;11;;;;Peixe-Boi da Amaz?nia (Trichechus inunguis);
+8;8;Manaid;Water;;Manatee;Torrent;Water Absorb;;1,1;70;;;;Peixe-Boi da Amaz?nia (Trichechus inunguis);
+9;9;Monmarteid;Water;Fairy;WaterBull;Torrent;Water Absorb;;1,7;120;;;;Peixe-Boi da Amaz?nia (Trichechus inunguis);
+10;10;Electar;Bug;Electric;Caterpillar;Static;;;0,3;3;;;;Lagarta monarca (Danaus plexippus);
+11;11;Elecoon;Bug;Electric;Static Coccoon;Static;Shed Skin;;0,6;10;;;;Casulo monarca (Danaus plexippus);
+12;12;Monarctric;Bug;Electric;Electric butterfly;Static;Shield Dust;;1;32;;;;Borboleta monarca (Danaus plexippus);
+13;13;Keypillar;Bug;Steel;Caterpillar;Swarm;;;0,3;7;;;;Taturana (Lonomia obliqua);
+14;14;Steeliqua;Bug;Steel;Safe coccoon;Swarm;Sturdy;;0,65;20;;;;Casulo (Lonomia obliqua);
+15;15;Fakeliqua;Bug;Flying;Fake Moth;Swarm;Shield Dust;;1,2;27;;;;Mariposa (Lonomia obliqua);
+16;16;Prela;Bug;Poison;Caterpillar nail;Swarm;Poison Point;;0,3;2;;;;Larva (Aedes aegypti);
+17;17;Zikulp;Bug;Poison;Pulp Stylish;Swarm;Poison Point;;0,7;15;;;;Pulpa (Aedes aegypti);
+18;18;Zikaegypti;Bug;Poison;Poison mosquito;Swarm;Poison Point;;1,1;30;;;;Mosquito (Aedes aegypti);
+19;19;Aredera;Normal;Flying;Birdie;Guts;Tangled Feet;;0,3;2,8;;;;Arara-Canind? (Ara ararauna);
+20;20;Aredacaw;Normal;Flying;Macaw;Guts;Compoundeyes;;1,2;22,8;;;;Arara-Canind? (Ara ararauna);
+21;21;Rufly;Ground;Flying;Tiny Rufous;Keen Eye;Inner focus;;0,2;1,8;;;;Joío de Barro (Furnarius rufus);
+22;22;Rufoclay;Ground;Flying;Rufous;Keen Eye;Inner focus;;0,7;19;;;;Joío de Barro (Furnarius rufus);
+23;23;Toucany;Dark;Flying;Tiny Toucan;Imnsonia;;;0,3;5;;;;Tucano-toco (Ramphastos toco);
+24;24;Totocan;Dark;Flying;Toucan;Imnsonia;Over coat;;0,85;17;;;;Tucano-toco (Ramphastos toco);
+25;25;Toucdrill;Dark;Flying;Toucan;Imnsonia;Over coat;;1,25;35;;;;Tucano-toco (Ramphastos toco);
+26;26;Jabiuiu;Water;Flying;Jabiru;Keen Eye;Hydration;;1,3;26;;;;Tuiuiu (Jabiru mycteria);
+27;27;Crowby;Fire;Flying;Baby Vulture;Flame body;;;0,7;16;;;;Abutre Rei (Sarcoramphus papa);
+28;28;Crowture;Fire;Flying;Flame Vulture;Flame body;Blaze;;1,3;28;;;;Abutre Rei (Sarcoramphus papa);
+29;29;Mermatery;Water;Psychic;Mermaid;Cute Charm;Hydration;;1,7;50;;;;Sereia;
+30;30;Banonkey;Grass;;Banana Monkey;Gluttony;Overgrow;;0,55;12;;;;Mico leío Dourado (Leontopithecus rosalia);
+31;31;Bunchonkey;Grass;;Banana Bunch Monkey;Gluttony;Overgrow;;1,3;35;;;;Mico leío Dourado (Leontopithecus rosalia);
+32;32;Gulowo;Normal;;Wolverine;Guts;;;0,3;10;;;;Carcaju (Gulo gulo);
+33;33;Wolvsteel;Normal;Steel;Steel Wolverine;Guts;Regeneration;;1,2;65;;;;Carcaju (Gulo gulo);
+34;34;Tinyspore;Poison;Ghost;Fungus spores;Levitate;;;0,2;2;;;;Cogumelo v?u de noiva (Phallus indusiatus);
+35;35;Mushrilady;Poison;Ghost;Mushroom bride;Levitate;Effect Spore;;1;12;;;;Cogumelo v?u de noiva (Phallus indusiatus);
+36;36;Chinchi;Electric;;Chinchilla;Static;;;0,4;8;;;;Chinchila (Chinchilla chinchilla);
+37;37;Thundchi;Electric;;Static Chinchilla;Static;Lightningrod;;0,9;20;;;;Chinchila (Chinchilla chinchilla);
+38;38;Turkid;Ground;;Tiny Turtle;Sand Veil;Sturdy;;0,3;20;;;;Tartaruga de Galapagos (Chelonoids nigra);
+39;39;Torpike;Ground;;Giant Turtle;Sand Veil;Sturdy;;2;200;;;;Tartaruga de Galapagos (Chelonoids nigra);
+40;40;Primartle;Ground;Fighting;Primal Turtle;Sand Veil;Sturdy;;2,7;320;;;;Tartaruga de Galapagos (Chelonoids nigra);
+41;41;Storkegg;Fairy;;Stork;Natural cure;;;1,2;31;;;;Cegonha (Ciconia ssp);
+42;42;Specbat;Ghost;Dark;Bat;Levitate;Inner focus;;0,3;3;;;;Morcego Espectral (Vampyrum spectrum);
+43;43;Vampectrbat;Ghost;Dark;Spectral bat;Levitate;Inner focus;;1,8;30;;;;Morcego Espectral (Vampyrum spectrum);
+44;44;Penllanic;Water;Fairy;Baby Penguin;Cute Charm;;;0,5;21;;;;Pinguim de Magalhíes (Spheniscus magellanicus);
+45;45;Pengmagel;Ice;Fairy;Hearth Penguin;Cute Charm;Swift swim;;1,2;48;;;;Pinguim de Magalhíes (Spheniscus magellanicus);
+46;46;Annona;Grass;;Fruit;Chlorophyll;;;0,3;4;;;;Araticum (Annona montana);
+47;47;Annontre;Grass;;Fruit;Chlorophyll;Hustle;;1,8;100;;;;Araticum (Annona montana);
+48;48;Scinguele;Normal;Grass;Squirrel;Chlorophyll;Sap sipper;;0,6;20;;;;Caxinguel? (Sciurus aestuans);
+49;49;Sippeguele;Normal;Grass;Squirrel;Chlorophyll;Sap sipper;;1,2;40;;;;Caxinguel? (Sciurus aestuans);
+50;50;Raby ;Psychic;;Mini rabbit;Synchronize;;;0,3;5;;;;Coelho (Sylvilagus spp);
+51;51;Rabychic;Psychic;;Rabbit;Synchronize;Magic Guard;;0,8;15;;;;Coelho (Sylvilagus spp);
+52;52;Kitayri;Fairy;Flying;Kite;Air Lock;;;0,4;1;;;;Pipa;
+53;53;Ameriri;Steel;Poison;Mechanical Monkey;?????;?????;;1,4;30;;;;Macaco de Cheiro (Saimiri sp);
+54;54;Degrast;Grass;Ghost;Dead plant;Natural cure;;;0,6;12;;;;Planta Carnivora (Drosera sp.);
+55;55;Droeth;Grass;Ghost;Strange Plant;Natural cure;Overgrow;;1,2;25;;;;Planta Carnivora (Drosera sp.);
+56;56;Edundril;Grass;;Tendril;Chlorophyll;;;0,4;10;;;;Maracujˇ (Passiflora edulis);
+57;57;Pastendril;Grass;;Big Tendril;Chlorophyll;Overgrow;;1,4;35;;;;Maracujˇ (Passiflora edulis);
+58;58;Cristment;Rock;Fairy;Monument of Criscius;Levitate;Sturdy;;1;100;;;;Lobo Guarˇ (Chrysocyon brachyurus);
+59;59;Manedrach;Fire;Dark;Maned wolf;Flash fire;Magma Armor;;2,1;140;;;;Lobo Guarˇ (Chrysocyon brachyurus);
+60;60;Waccoon;Water;;Raccoon;Pickup;Gluttony;;0,6;10;;;;Mío Pelada (Procyon cancrivorus);
+61;61;Swimaccoon;Water;Fighting;Swimmer Raccoon;Pickup;Swift swim;;1,1;21;;;;Mío Pelada (Procyon cancrivorus);
+62;62;Proswimc;Water;Fighting;Strong Swimmer;Guts;Swift swim;;1,8;125;;;;Mío Pelada (Procyon cancrivorus);
+63;63;Tricshell;Water;Dark;Shell;Water Absorb;;;0,8;50;;;;Concha (Tricornis raninus);
+64;64;Tentshell;Water;Dark;Tentacle shell;Water Absorb;Shell armor;;1,5;100;;;;Concha (Tricornis raninus);
+65;65;Flejum;Bug;Fighting;Jumper flea;Compoundeyes;;;0,5;5;;;;Pulga (Siphonaptera spp);
+66;66;Fastroach;Bug;Dark;Cockroach;Keen Eye;Quick feet;;0,2;7;;;;Barata comum (Periplaneta americana);
+67;67;Cokroctiv;Bug;Dark;Big Cockroach;Immunity;Quick feet;;2;65;;;;Barata comum (Periplaneta americana);
+68;68;Trankiravel;Steel;;Zika Bear;Sturdy;;;0,6;50;;;;Urso de Öculos (Tremarctos ornatus);
+69;69;Metabear;Steel;;Metalhead Bear;Sturdy;Intimidate;;1,6;120;;;;Urso de Öculos (Tremarctos ornatus);
+70;70;Tupinack;Rock;;Tupinambis;Sturdy;;;0,5;50;;;;Teiú (Tupinambis merianae);
+71;71;Tupinagron;Rock;Dragon;Tupinambis;Sturdy;;;1,5;167;;;;Teiú (Tupinambis merianae);
+72;72;Peppby;Grass;Fire;Pepper;Chlorophyll;;;0,6;15;;;;Pimenta (Capsicum frutescens);
+73;73;Pepflam;Grass;Fire;Fire pepper;Chlorophyll;Flame Body;;1,2;35;;;;Pimenta (Capsicum frutescens);
+74;74;Flampepper;Grass;Fire;Pepper flamethrower;Chlorophyll;Flame Body;;1,9;112;;;;Pimenta (Capsicum frutescens);
+75;75;Helidactyl;Dark;Steel;Adaptable;Dark Aura;Cloud Nine ;;2,2;230;;;;Pterodˇctilo (Pterodactilo sp.);
+76;76;Micrab;Water;;Mini Crab;Rain Dish;;;0,3;9;;;;Siri Azul (Callinectes sapidus);
+77;77;Crabcatu;Water;;Crab rhythmical;Rain Dish;Rough Skin;;1,1;48;;;;Siri Azul (Callinectes sapidus);
+78;78;Capybble;Normal;;Tiny Capybara;Run Away;;;0,5;20;;;;Capivara (Hydrochoerus hydrochaeris);
+79;79;Bubbybara;Normal;Water;Capybara;Unaware;Simple;;1,4;62;;;;Capivara (Hydrochoerus hydrochaeris);
+80;80;Onctric;Electric;;Little Feline;Static;;;0,6;20;;;;On?a Pintada (Panthera onca);
+81;81;Onkthera;Electric;Dark;Static Feline;Static;Motor Drive;;1,4;40;;;;On?a Pintada (Panthera onca);
+82;82;Hotorsea;Water;Fire;Fire Seahorse;Water Absorb;Flash fire;;0,2;3;;;;Cavalo Marinho (Hippocampus reidi);
+83;83;Burstydro;Water;Fire;Burn Seahorse;Water Absorb;Flash fire;;1;29;;;;Cavalo Marinho (Hippocampus reidi);
+84;84;Kariright;Fighting;;Indigenous fighter;Intimitate ;Technician;;1,4;50;;;;Xucuru-Kariri (Tribo);
+85;85;Coldzero;Ice;Fighting;Ice Fighter;Ice Body;Snow warning;;1,5;55;;;;Mortal Kombat - Sub Zero;
+86;86;Burnopion;Fire;Fighting;Fire Fighter;Magma Armor;Flame Body;;1,6;45;;;;Mortal Kombat - Scorpion;
+87;87;Hydtater;Steel;Water;Hydrant;Torrent;Clear body;;0,7;100;;;;Hidrante;
+88;88;Hydelmet;Steel;Water;Fireman Hat;Torrent;Clear body;;1,5;214;;;;Hidrante;
+89;89;Guardient;Rock;Psychic;Ancient Guardian;Levitate;;;1,8;211;;;;Guardiío;
+90;90;Skullower;Grass;Ghost;Skull Flower;Natural cure;Frisk;;1;10;;;;Flor Crünio (G?nero  Antirrhinum);
+91;91;Kissywer;Grass;Fairy;Kiss Flower;Cute Charm;Effect Spore;;1;10;;;;Flor Beijo (Psychotria elata);
+92;92;Eyenten;Ghost;;Big Eye;Levitate;;;0,1;2;;;;;
+93;93;Phanten;Ghost;;Phantom of the Eyes;Sinchronize;Levitate;;1,2;?????;;;;Rascunho (Draft - ING);
+94;94;Ballphin;Fairy;;Dolphin Ball;Illusion;Cute Charm;;0,3;15;;;;Boto cor de rosa (Lenda amaz?nica);
+95;95;Dolpink;Fairy;;Pink Dolphin;Illusion;Cute Charm;;1,5;95;;;;Boto cor de rosa (Lenda amaz?nica);
+96;96;Saciklore;Ghost;Dark;Saci;White Smoke;;;1,4;29;;;;Saci Perer? (Lenda);
+97;97;Sandscuit;Water;;Sea biscuits;Shed Skin;;;0,15;1;;;;Bolacha do mar (Clypeaster subdepressus);
+98;98;Starscuit;Water;;Star biscuits;Shed Skin;Shell armor;;1,5;30;;;;Bolacha do mar (Clypeaster subdepressus);
+99;99;Thurpig;Electric;;Baby Boar;Rivalry;;;0,7;28;;;;Javali (Sus Scrofa);
+100;100;Thurscrofa;Electric;;Boar;Rivalry;Static;;1,3;50;;;;Javali (Sus Scrofa);
+101;101;Thundoar;Electric;Fighting;Super Boar;Rivalry;Static;;1,9;100;;;;Javali (Sus Scrofa);
+102;102;Moustail;Normal;Rock;Snail;Sturdy;Simple;;1;150;;;;Caracol Comum (Helix aspersa);
+103;103;Sluggy;Fire;Water;Slug;Flame body;;;0,6;18;;;;Lesma Comum (Lehmannia valentiana);
+104;104;Scisseed;Grass;Dark;Tiny Scissors;Bulletproof;Cheek Pouch;;0,1;2;;;;;
+105;105;Slugreen;Bug;Grass;Peel;Natural cure;Leaf Guard;;0,3;2,8;;;;Lesma banana (Ariolimax dolichophallus);
+106;106;Slugnana;Bug;Grass;Banana Slug;Natural cure;Leaf Guard;;0,8;17;;;;Lesma banana (Ariolimax dolichophallus);
+107;107;Snailana;Bug;Grass;Banana tree leaf;Natural cure;Leaf Guard;;1,9;160;;;;Lesma banana (Ariolimax dolichophallus);
+108;108;Tadsandole;Water;;Tadpole;Torrent;;;0,2;12;;;;Sapo Pipa-Pipa (Pipa pipa);
+109;109;Pippole;Water;;Tadpole;Torrent;;;1;40;;;;Sapo Pipa-Pipa (Pipa pipa);
+110;110;Piptoad;Water;Ground;Toad;Water Absorb;;;1;59;;;;Sapo Pipa-Pipa (Pipa pipa);
+111;111;Caldhrimnir;Steel;Fire;Cauldron;Adaptibility;Aftermath;;1;60;;;;Caldeirío;
+112;112;Subtropius;Ice;Ground;Ancient Fruit;Ice Body;Snow warning;;2;100;;;;Framboesa;
+113;113;Protupira;Fairy;Dark;Curupira;Nature Spirit;;;1,4;48;;;;Curupira;
+114;114;Protetopora;Fairy;Grass;Caipora;Forest Spirit;;;1,4;42;;;;Caipora;
+115;115;Seecinus;Grass;Poison;Poisonous seed;Chlorophyll;Poison Point;;0,2;3;;;;Mamona (Ricinus communis);
+116;116;Aliemonos;Grass;Poison;Alien Seed;Chlorophyll;Poison Point;;1,8;28;;;;Mamona (Ricinus communis);
+117;117;Taekant;Bug;Fighting;Giant ant;Technician;Speed Boost;;1,6;44;;;;Formiga Gigante (Dinoponera gigantea);
+118;118;Equse;Normal;;Horse;Quick Feet;Speed Boost;;1,8;80;;;;Cavalo Lavradeiro (Equus caballus);
+119;119;Munothead;Ghost;Fire;Headless Mule;Speed Boost;Flash fire;;2,5;50;;;;Mula sem Cabe?a (Lenda);
+120;120;Poisnothead;Ghost;Poison;Headless Mule;Speed Boost;Poison touch;;2,4;40;;;;Mula sem Cabe?a (Lenda);
+121;121;Nestider;Bug;Poison;Big Spider;Swarm;Technician;;1,6;38;;;;Aranha Vermelha dom. (Nesticodes rufipes );
+122;122;Tityon;Bug;Poison;Big Scorpion ;Speed Boost;Technician;;1,7;48;;;;Escorpiío Dourado (Tityus serrulatus);
+123;123;Dratface;Fighting;Dark;Two face;Intimitate ;Limber;;1,5;47;;;;Rascunho (Draft - ING);
+124;124;Blackspi;Bug;Dark;Black Widow;Swarm;Speed Boost;;1;18;;;;Viúva Negra (Latrodectus spp);
+125;125;Wristhost;Steel;Ghost;Wristwatch;Soundproof;;;0,1;1;;;;RelΩgio de Punho;
+126;126;Wallclosth;Steel;Ghost;Wall clock;Soundproof;Speed Boost;;0,8;8;;;;RelΩgio de Parede;
+127;127;Oldclosth;Steel;Ghost;Old clock;Soundproof;Speed Boost;;1,7;17;;;;RelΩgio Antigo;
+128;128;Broby;Water;;Baby Alligator;Torrent;Intimitate ;;0,3;10;;;;Jacar? de Papo Amarelo (Caiman latirostri);
+129;129;Minligatr;Water;;Tiny Alligator;Torrent;Intimitate ;;1,1;80;;;;Jacar? de Papo Amarelo (Caiman latirostri);
+130;130;Brollydrir;Water;Dark;Alligator;Torrent;Intimitate ;;2;170;;;;Jacar? de Papo Amarelo (Caiman latirostri);
+131;131;Plonar;Bug;;Planarian;Run Away;;;0,1;1;;;;Platelminto acoel (Convoluta roscoffensis);
+132;132;Algonar;Grass;Water;Algae;Run Away;;;0,05;0,1;;;;Algas Platymonas;
+133;133;Ploalgonar;Grass;Bug;Simbyose;Overgrow;Chrorophyll;;1;20;;;;Platelminto acoel (Convoluta roscoffensis);
+134;134;Daritch;Dark;;Itch;Aftermath;;;0,9;35;;;;Primatas Fam. Callitrichidae (Micos);
+135;135;Aspick;Ghost;;Tapir;Levitate;;;0,4;10;;;;Velho do Saco (Lenda Urbana);
+136;136;Sackaspi;Ghost;;Sackman;Levitate;Moody;;1;25;;;;Velho do Saco (Lenda Urbana);
+137;137;Sackorst;Ghost;Dark;Sackman;Levitate;Moody;;1,8;50;;;;Velho do Saco (Lenda Urbana);
+138;138;Gliptopace;Rock;Grass;Carapace;Battle Armor;Mega Launcher;;1;150;;;;Gliptodonte (Glyptodon clavipes);
+139;139;Milardillo;Rock;Grass;Militar Armadillo;Battle Armor;Mega Launcher;;4;600;;;;Gliptodonte (Glyptodon clavipes);
+140;140;Mosafin;Rock;Water;Fin Fossil;Swift Swim;;;2;150;;;;Mosasaurus hoffmannii;
+141;141;Fimosdrill;Rock;Water;Fin Fossil;Swift Swim;Intimidate;;13;14500;;;;Mosasaurus hoffmannii;
+142;142;Anhandactyl;Rock;Flying;Flying Fossil;Rock Headò;Solid Rock;;2,2;150;;;;Anhanguera (Anhanguera blittersdorffi);
+143;143;Rainake;Fairy;;Rainbown Snake;Healer;Natural Cure;;0,8;20;;;;Cobra do Milho (Panterophis gutattus);
+144;144;Angekel;Fairy;;Angel Snake;Healer;Natural Cure;;1,6;40;;;;Cobra do Milho (Panterophis gutattus);
+145;145;Morfish;Water;Dark;Moray;Torrent;Swift swim;;1;20;;;;Mor?ia Pintada (Lycodontis moringa);
+146;146;Dogby;Normal;;Puppy;Adaptibility;;;0,2;2;;;;Cachorro (Canis familiaris) - Baby;
+147;147;Dogmutt;Normal;;Dog mutt;Scrappy;;;0,8;25;;;;Cachorro (Canis familiaris) - Mutt;
+148;148;Dogbull;Fighting;;Muscle dog;Guts;Intimidate;;1,4;45;;;;Cachorro (Canis familiaris) - Bullterrier;
+149;149;Dogshund;Fire;;Hot dog;Flash fire;;;1;30;;;;Cachorro (Canis familiaris) - Dachshund;
+150;150;Dogsgron;Dragon;;Dragon dog;Mold Breaker;;;2;100;;;;Cachorro (Canis familiaris) - Mastim tibetano;
+151;151;Dogstic;Electric;;Static Dog;Volt Absorb;Lightningrod;;1,8;80;;;;Cachorro (Canis familiaris) - Fila Brasileiro;
+152;152;Dogscue;Grass;;Rescue dog;Chlorophyll;Shed Skin;;1,6;80;;;;Cachorro (Canis familiaris) - St. Bernard;
+153;153;Dogtese;Fairy;;Angel Dog;Cute Charm;;;0,6;5;;;;Cachorro (Canis familiaris) - Maltese;
+154;154;Armax;Grass;Ground;Armadillo;Sand Veil;;;0,6;12;;;;Tatu Canastra (Priodontes maximus);
+155;155;Arprodillo;Grass;Ground;Megadillo;Sand Veil;Shell Armor;;1,2;56;;;;Tatu Canastra (Priodontes maximus);
+156;156;Maxdillo;Grass;Ground;Colossal Armadillo;Sand Veil;Shell Armor;;2,2;170;;;;Tatu Canastra (Priodontes maximus);
+157;157;Skunfire;Fire;Poison;Skunk;Blaze;Stench;;0,6;15;;;;Jaritataca (Conepatus semistriatus);
+158;158;Skotaca;Fire;Poison;Sherry Dancer;Flame Body;Stench;;1,1;32;;;;Jaritataca (Conepatus semistriatus);
+159;159;Skocunk;Fire;Poison;Species: Smelly Opossum;Flame Body;Stench;;1,8;64;;;;Jaritataca (Conepatus semistriatus);
+160;160;Craymacro;Water;;Crayfish;Torrent;Mega Launcher;;0,5;10;;;;Pitu (Macrobrachium carcinus);
+161;161;Craycarcinu;Water;;Strange Crayfish;Torrent;Mold Breaker;;1,2;70;;;;Pitu (Macrobrachium carcinus);
+162;162;Craybrachium;Water;Dragon;Dragon Crayfish;Battle Armor;Mold Breaker;;2;172;;;;Pitu (Macrobrachium carcinus);
+163;163;Varginha;Psychic;Steel;Modified Alien;Filter;;;0,8;40;;;;Et de Varginha;
+164;164;Vargient;Psychic;Steel;Modified Alien;Filter;;;1,5;90;;;;Et de Varginha;
+165;165;Slothseudo;Normal;Dark;Pseudo Sloth;Anger Point;;;0,8;25;;;;Bicho pregui?a (Bradypus torquatus);
+166;166;Slotrange;Normal;Dark;Strange Sloth;Anger Point;Stench;;1,5;55;;;;Bicho pregui?a (Bradypus torquatus);
+167;167;Mapinsloth;Normal;Dark;Terrible;Stench;Thrick fat;;2,3;160;;;;Bicho pregui?a (Bradypus torquatus);
+168;168;Rattlesnake;Poison;;Snake;Intimitate ;;;1;30;;;;Cascavel de quatro ventas (Crotalus durissus);
+169;169;Rattlesus;Poison;;Snake quadruped;Intimitate ;Poison point;;2;100;;;;Cascavel de quatro ventas (Crotalus durissus);
+170;170;Rattlasgon;Dragon;Poison;Serpent dragon;Intimitate ;Poison point;;2,7;230;;;;Cascavel de quatro ventas (Crotalus durissus);
+171;171;Slutdrice;Dragon;Ice;Ice Dragon;Anger Point;Intimidate;;1,8;200;;;;Pterodactyl sp;
+172;172;Drafathery;Dragon;Fairy;Fairy Dragon;Magic Guard;Fairy Aura;;1;30;;;;Dragío Voador (Draco guentheri);
+173;173;Caesibrazil;Grass;;Paubrasilia;Grass Pelt;;;4;570;;;;Pau-Brasil (Caesalpinia echinata);
+174;174;Corticuby;Water;Ground;Happy Crustacean;Run Away ;;;0,1;2;;;;Corrupto (Callichirus major);
+175;175;Corruphater;Water;Ground;Ugly Crustacean;Intimitate ;Torrent;;1,4;25;;;;Corrupto (Callichirus major);
+176;176;Corrupthost;Ghost;Ground;Death Crustacean;Illuminate;;;1,3;20;;;;Corrupto (Callichirus major);
+177;177;Folkby;Normal;;Calf Folk;Defiant;Rock Headò;;0,7;15;;;;Festival FolclΩrico de Parintins;
+178;178;Folkox;Normal;Water;Ox Folk;Defiant;Torrent;;1,8;132,8;;;;Festival FolclΩrico de Parintins (Boi Caprichoso);
+179;179;Folkow;Normal;Fire;Cow Folk;Defiant;Flash Fire;;1,8;132,8;;;;Festival FolclΩrico de Parintins (Boi Garantido);
+180;180;Bateye;Dragon;Fire;Boitata;Compoundeyes;Intimidate;;1,8;100;;;;Boitatˇ;
+181;181;Lukyrin;Water;Steel;Squid Key Ring;Mega Launcher;Swift swim;;0,05;1;;;;Lula (Doryteuthis plei);
+182;182;Lulanchor;Water;Steel;Squid Anchor;Mega Launcher;Swift swim;;0,6;120;;;;Lula (Doryteuthis plei);
+183;183;Cololanchor;Water;Steel;Mega Squid;Mega Launcher;Swift swim;;5;1000;;;;Lula (Doryteuthis plei);
+184;184;Vitoulb;Grass;Water;Lilypad;Rain Dish;;;0,4;5;;;;VitΩria-R?gia (Victoria amazonica);
+185;185;Villilady;Grass;Water;Lady Lilypad;Rain Dish;;;1,3;19;;;;VitΩria-R?gia (Victoria amazonica);
+186;186;Psaraminae;Water;;Piranha;Strong Jaw;;;0,4;10;;;;Piranha-vermelha (Pygocentrus nattereri);
+187;187;Barecoffee;Grass;Water;Coffee;Imnsonia;;;1,7;27;;;;Caf? (G. Coffea);
+188;188;Sniglob;Ice;Fairy;Snow Globe;Snow Warning;;;1,3;92;;;;Globo de neve;
+189;189;Iguitrichic;Electric;Psychic;Iguana;Lighting Rod;Telepathy;;2;55;;;;Iguana (Iguana iguana);
+190;190;Sarkgron;Dragon;;Duck;Mold Breaker;;;0,6;25;;;;Pato de Crista (Sarkidiornis melanotos);
+191;191;Sarkidosion;Dragon;;Dragon Duck;Mold Breaker;Moody;;2;155;;;;Pato de Crista (Sarkidiornis melanotos);
+192;192;Maraposses;Psychic;Ghost;Maraca;Frisk;Sweet veil;;0,8;8;;;;Maracˇ Ind≠gena;
+193;193;Guaranum;Grass;Psychic;Guarana;;;;1;25;;;;Guaranˇ (Paullinia cupana);
+194;194;Acaidois;Grass;Ghost;A?ai;;;;1;17;;;;A?ai (Euterpe oleracea);
+195;195;Mandiotres;Grass;Ground;Mandioca;;;;1;50;;;;Mandioca (Manihot esculenta);
+196;196;Criscius;Normal;Ghost;Demigod;Filter;Huge Power;;1,8;50;;;;Jesus Cristo;
+197;197;Cloverange;Dark;;Strange creature;Dark Aura;Chaos presence;;10;750;;;;Cloverfield, The Monster (2008);
+198;198;Dramazon;Dragon;Grass;Florest Dragon;Immunity;Chlorophyll;;10;2000;;;;Floresta Amaz?nica;
+199;199;Niorotal;Steel;Poison;Niobium;Radioactive;Poison touch;;2,2;260;;;;Niobium metal;
+200;200;Tardidragon;Dragon;Bug;Immortal legend; Immortal legend;;;3,5;400;;;;Tard≠grado;
+201;1;Setram;Grass;;Martes;Overgrow;;Simple;0,6;16;Forests;Omnivorous;20;Marta (Martes martes);
+202;2;Grasters;Grass;;long Martes;Overgrow;;Simple;1,1;32;Forests;Omnivorous;41;Marta (Martes martes);
+203;3;Granstree;Grass;Dragon;Celtic Dragon;Overgrow;;Simple;2,2;50;Forests;Omnivorous;-;Marta (Martes martes);Dragío Celta
+204;4;Firopus;Fire;;Lagopode;Blaze;;Huge Power;0,5;20;Forests and Deserts;Herbivore;20;LagΩpodo escoc?s (Lagopus lagopus scotica);
+205;5;Lagember;Fire;;Fire Lagopode;Blaze;;Huge Power;1;45;Forests and Deserts;Herbivore;41;LagΩpodo escoc?s (Lagopus lagopus scotica);
+206;6;Lagopumber;Fire;Dragon;Cocatrix;Blaze;;Huge Power;2;77;Forests and Deserts;Omnivorous;-;LagΩpodo escoc?s (Lagopus lagopus scotica);Cocatrix
+207;7;Trituter;Water;;Big tadpole;Torrent;;Marvel Scale;0,6;18;Rivers and Lakes;Carnivore;20;Tritío-de-Crista (Triturus cristatus);
+208;8;Tritantus;Water;;Triton;Torrent;;Marvel Scale;1,2;38;Rivers and Lakes;Carnivore;41;Tritío-de-Crista (Triturus cristatus);
+209;9;Tristatus;Water;Dragon;Giant Triton;Torrent;;Marvel Scale;1,8;88;Rivers and Lakes;Carnivore;-;Tritío-de-Crista (Triturus cristatus);Tritío (Mitologia)
+210;10;Tuftilar;Bug;;Tuft caterpillar;Shield Dust;Shadow Tag;;0,2;8;Forest;Herbivore;9;Ethmia pyrausta (Mariposa);Topete
+211;11;Tufpyra;Bug;Dark;Ugly Coccoon;Shed Skin;Shadow Tag;;0,6;16;Forest;Herbivore;18;Ethmia pyrausta (Mariposa);
+212;12;Tufhmia;Bug;Dark;Tuft Moth;Compound Eyes;Shadow Tag;;1,5;58;Forest;Herbivore;-;Ethmia pyrausta (Mariposa);
+213;13;Acanvae;Bug;;Armor caterpillar;Shield Dust;Shell Armor;;0,2;20;Forest;Herbivore;9; Acanthocinus aedilis (besouro);Armadura
+214;14;Arcanthon;Bug;Steel;Armor Coccoon;Shed Skin;Shell Armor;;0,6;58;Forest;Herbivore;18; Acanthocinus aedilis (besouro);Armadura
+215;15;Arceattle;Bug;Steel;Armor Beattle;Compound Eyes;Shell Armor;;1,7;179;Forest;Herbivore;-; Acanthocinus aedilis (besouro);Armadura
+216;16;Imprerd;Psychic;Flying;Tetrao;Keen Eye;Magic Guard;Tinted Lens;0,7;13;Grasslands and Forests;Herbivore;16;Tetraz-Grande (Tetrao urogallus);Joío barreto sugeriu tipo Pshic/Voador
+217;17;Tetimpri;Psychic;Flying;Awesome bird;Keen Eye;Magic Guard;Tinted Lens;1,2;26;Grasslands and Forests;Herbivore;36;Tetraz-Grande (Tetrao urogallus);
+218;18;Tetrurssed;Psychic;Flying;Eyebird;Keen Eye;Magic Guard;Tinted Lens;2;54;Grasslands and Forests;Herbivore;-;Tetraz-Grande (Tetrao urogallus);
+219;19;Krosird;Poison;Flying;Tiny Crossbill;Keen Eye;Poison Touch;Tinted Lens;0,5;10;Grasslands and Forests;Herbivore;30;Cruza-Bico Escoc?s (Loxia scotica);
+220;20;Krosbirdlen;Poison;Flying;Poison Crossbill;Keen Eye;Poison Touch;Tinted Lens;1,4;54;Grasslands and Forests;Herbivore;-;Cruza-Bico Escoc?s (Loxia scotica);
+221;21;Spikengry;Electric;;Angry Cat;Lighting Rod;Static;;1,4;45;Forests;Carnivore;-;Gato-Bravo (Felis silvestris);
+222;22;Toory;Fairy;;Ugly Fairy;Magician;;Pixilate;0,1;1;Fairy Glen;Teeth, tusks and claws;Strange Stone;Fada do Dente;
+223;23;Fatooth;Fairy;Dark;Tooth Fairy;Magician;;Pixilate;1;3;Fairy Glen;Teeth, tusks and claws;-;Fada do Dente;
+224;24;Cirlower;Grass;;Spyke Flower;Rough Skin;;;0,6;7;Grasslands;Photosynthesis;31;Flor (Cirsium vulgare);
+225;25;Cirspyke;Grass;;Spyke Plant;Rough Skin;;;1,4;23;Grasslands;Photosynthesis;-;Flor (Cirsium vulgare);
+226;26;Eririce;Electric;Ice;Hedgehog;Static;Ice Body;;0,4;6;Grasslands and Forests;Herbivore;Thunder Stone;Ouri?o-Terrestre (Erinaceus europaeus);
+227;27;Erinactri;Electric;Ice;Frozen Hedgehog;Static;Ice Body;;0,8;30;Grasslands and Forests;Herbivore;-;Ouri?o-Terrestre (Erinaceus europaeus);
+228;28;Myotbat;Ice;Flying;Ice Bat;Inner Focus;Refrigerate;Infiltrate;0,7;8;Caves;Hematophagous;25;Morcego (Myotis nattereri);
+229;29;Myolacbat;Ice;Flying;Stalactite Bat;Inner Focus;Refrigerate;Infiltrate;1,2;50;Caves;Hematophagous;-;Morcego (Myotis nattereri);
+230;30;Zianount;Grass;Poison;Heracleum seed;Flame Body;;;0,5;10;Grasslands;Herbivore;33;(Heracleum mantegazzianum);
+231;31;Heraclower;Grass;Poison;Heracleum;Flame Body;;;1,5;46;Grasslands;Herbivore;-;(Heracleum mantegazzianum);
+232;32;Taraced;Grass;Flying;Flying Seed;Chlorophyll;Overgrow;Infiltrator;0,1;0;Grasslands;Photosynthesis;25 [f]-35[m];Genero Taraxacum;
+233;33;Taramon;Grass;Flying;Taraxacum Female;Chlorophyll;Overgrow;Infiltrator;0,4;2;Grasslands;Photosynthesis;-;Genero Taraxacum;
+234;34;Taradad;Grass;;Taraxacum Male;Chlorophyll;Overgrow;Infiltrator;1,2;15;Grasslands;Photosynthesis;-;Dente de Leío (Genero Taraxacum);
+235;35;Himgurus;Water;Fire;Tiny crab;Mega Launcher;;;0,6;26;Lakes;Omnivorous;40;Cancer pagurus;
+236;36;Himcer;Water;Fire;Him Cancer;Mega Launcher;;;1,2;58;Lakes;Omnivorous;-;Cancer pagurus;"""Him"" (Meninas Super Poderosas)"
+237;37;Takarocha;Fighting;;Pitcher;Sheer Force;Guts;;1;67;Grasslands and Forests;Omnivorous;50;Arremesso de pedra (esporte);
+238;38;Takatronko;Fighting;;Logger;Sheer Force;Guts;;2;150;Grasslands and Forests;Omnivorous;-;Arremesso de Tronco (esporte);
+239;39;Crikechaun;Bug;Fairy;Happy Cricket;Technician;Keen Eye;;0,3;1;Grasslands and Forests;Herbivore;-;Grilo;Grilo Feiz (PinΩquio)
+240;40;Sconake;Dark;Ice;Flag Snake;Intimidate;Strong Jaw;;2,1;70;Grasslands;Carnivorous;-;Cobra-Austriaca (Coronella austriaca);Bandeira EscΩcia
+241;41;Licangus;Ground;;Little Paws;Sand Veil;Sand Force;;0,2;5;Forests and Deserts;Carnivorous;30;Licran?o (Anguis fragilis);
+242;42;Licangilis;Ground;Steel;Anguis;Sand Veil;Sand Force;;1,2;33;Forests and Deserts;Carnivorous;-;Licran?o (Anguis fragilis);
+243;43;Wospisa;Bug;;Little Spider;Intimidate;Iron Fist;Sniper;0,3;5;Forests;Carnivorous;25;Aranha-Lobo (Pardosa lugubris);
+244;44;Pardight;Bug;Fighting;Cocoon Spider;Intimidate;Iron Fist;Sniper;1;17;Forests;Carnivorous;Radioactive Stone;Aranha-Lobo (Pardosa lugubris);
+245;45;Pardopunch;Bug;Fighting;Fighter Spider;Intimidate;Iron Fist;Sniper;1,8;111;Forests;Carnivorous;-;Aranha-Lobo (Pardosa lugubris);
+246;46;Horseye;Water;Psychic;Ladyfish;Compound Eyes;Swift Swim;;0,4;7kg;Oceans;Herbivore;-;Cavalo-Marinho (Hippocampus histrix);
+247;47;Wakaby;Electric;Normal;Wallaby;Pure Power;No Guard;Teravolt;0,1;1;Forests and Grasslands;Herbivore;30;Wallaby (Macropus rufogriseus);
+248;48;Wakanroo;Electric;Fighting;Fighter Wallaby;Pure Power;No Guard;Teravolt;1;37;Grasslands;Herbivore;Thorny Amber;Wallaby (Macropus rufogriseus);
+249;49;Wakangra;Electric;Fighting;Giant Wallaby;Pure Power;No Guard;Teravolt;1,8;132;Grasslands;Herbivore;-;Wallaby (Macropus rufogriseus);
+250;50;Grisgry;Ice;;Ice Seal;Ice Body;Hydration;Oblivious;0,5;40;Icebergs and sea;Onnivorous;40;Foca-Cinzenta (Halichoerus grypus);
+251;51;Griseal;Ice;;Moustache Seal;Ice Body;Hydration;Oblivious;1;110;Icebergs and sea;Onnivorous;65 [F];Foca-Cinzenta (Halichoerus grypus);
+252;52;Griscieary;Ice;;Selkie;Ice Body;Hydration;Oblivious;1,8;118;Icebergs and sea;Onnivorous;-;Foca-Cinzenta (Halichoerus grypus);Selkie (Sereia-Escocesa)
+253;53;Futagle;Psychic;Dark;Seer eagle;Synchronize;;Analytic;1,5;80;Mountains;Carnivorous;-;Êguia-Rabalva (Haliaeetus albicilla);Rito Escoc?s
+254;54;Whishost;Ghost;Poison;Whisky;Own Tempo;;;0,5;15;Abandoned Places;Nothing;-;U≠sque (Whisky);
+255;55;Reock;Water;Rock;Tiny Coral;Rock Head;;Natural Cure;0,05;1;Sea;Phytoplankton;;Coral;
+256;56;Recorock;Water;Rock;Coral Reef;Rock Head;;Natural Cure;1;120;Sea;Phytoplankton;;Coral;
+257;57;Modysh;Water;;Modified Fish;Compound Eyes;;;0,1;1;Lakes, Rivers and Sea;Onnivorous ;Lvl and Nature;Peixe-Kinguio TelescΩpio;
+258;58;Modolphin;Water;Psychic;Dolphin;Own Tempo;;;1,8;200;Sea;Canirvore;Modest, Mild;Golfinho-Roaz (Tursiops truncatus);
+259;59;Modorka;Water;Dark;Orca;Strong Jaw;;;7;987;Sea;Carnivore;Adamant, Brave;Orca (Orcinus orca);
+260;60;Modhale;Water;Ice;Sperm Whale;Snow Warning;;;15;5000;Sea;Onnivorous ;Sassy, Calm;Cachalote (Physeter macrocephalus);
+261;61;Hargar;Normal;;Arganaz;Thick Fat;Run Away;Gluttony;0,3;6;Grasslands and Forests;Herbivore;26;Arganaz (Muscardinus avellanarius);
+262;62;Hargarat;Normal;;Fat Arganaz;Thick Fat;Run Away;Gluttony;1,2;70;Grasslands and Forests;Herbivore;-;Arganaz (Muscardinus avellanarius);
+263;63;Fishell;Psychic;Fairy;Shell Fish;Levitate;;;0,8;38;Sea and Beach;Herbivore;-;Ammolite (gem and Fossil);Salmío (Salmo salar)
+264;64;Runole;Flying;;Tadpole Glider;Strange feet;;;0,5;7;Grasslands;Herbivore;-;Sapo-Corredor (Epidalea calamita);
+265;65;Runorag;Flying;;Toad Runner;Strange feet;;;1,7;37;Grasslands;Herbivore;40;Sapo-Corredor (Epidalea calamita);
+266;66;Kafacelo;Poison;Dark;Forked tongue;Poison paralyze touch  ;;;0,5;10;Forests;Carnivorous;50;Camaleío-Europeu (Chamaeleonidae);
+267;67;Katricelo;Poison;Dark;Forked Camaleon;Poison paralyze touch  ;;;1,2;55;Forests;Carnivorous;-;Camaleío-Europeu (Chamaeleonidae);
+268;68;Vulphes;Electric;;Electric Fox;Lighting Rod;;;0,6;27;Grasslands;Herbivore;45 [Day];Raposa (Vulpes vulpes) ;
+269;69;Vulver;Electric;Fairy;Wulver;Lighting Rod;;;1,6;111;Grasslands;Herbivore;-;Raposa (Vulpes vulpes);Wulver
+270;70;Lusox;Water;Dragon;Skeleton Fish;Swift Swim;Strong Jaw;;1,8;35;Lakes;Carnivorous;-;Lúcio (Esox lucius);
+271;71;Spybonice;Ice;Fire;Ice Bonfire;Frozen Fire Body*;;;1,2;67;Ice Places;Onnivorous ;-;Fogueira;
+272;72;Centys;Rock;Bug;Centi Fossil;Battle Armor;;Weak Armor;1;110;Safari;Carnivorous;-;Pneumodesmus newmani;
+273;73;Centrozoic;Rock;Bug;Fossil;Battle Armor;;Weak Armor;3;180;Safari;Carnivorous;45;Pneumodesmus newmani;
+274;74;Hornoceros;Rock;Normal;Horn Fossil;Rock Head;Sturdy;;0,8;110;Safari;Herbivore;-;Rinoceronte-Lanudo (Coelodonta antiquitatis);
+275;75;Hornrhyno;Rock;Normal;Rhinoceros Fossil;Rock Head;Sturdy;;2,5;310;Safari;Herbivore;45;Rinoceronte-Lanudo (Coelodonta antiquitatis);
+276;76;Meroson;Dark;Electric;UglyFish;Lighting Rod;Levitate;;0,9;10;Sea;Carnivorous;37;Peixe-Diabo Negro (Melanocetus johnsonii);
+277;77;Merark;Dark;Electric;UglyFish;Lighting Rod;Levitate;;1,7;29;Sea;Carnivorous;-;Peixe-Diabo Negro (Melanocetus johnsonii);
+278;78;Glamons;Ghost;Dark;Glamis;Pressure;;Prankster;1,6;17;Abandoned Places;Nightmares;-;Monstro de Glamis;
+279;79;Hugairy;Fairy;;Bubble Gum;Natural Cure;Regenerator;Healer;1,6;17;All Places;Nothing;-;Bola de Chiclete;
+280;80;Pookitt;Fairy;Dark;Metamorphic fairy;Transform*;;;1;42;Forests;Herbivore;-;Puca/Pooka (Fada MetamΩrfica);
+281;81;Doncorney;Normal;;Donkey;Run Away;;;1,2;97;Grasslands;Herbivore;"Strange; Radioactive Stone";;
+282;82;Unicorney;Dark;;Dark Unicorn;Unnerve;;;2,5;134;Grasslands;Herbivore;-;;
+283;83;Duocorney;Fairy;;Fairy Unicorn;Filter;;;2,4;150;Grasslands;Herbivore;-;;
+284;84;Dragorn;Dragon;;Primal Dragon;Moxie;;;1,8;138;Unknown;Onnivorous ;-;;
+285;85;Diploerth;Ground;;Diplodoco;Sand Veil;;Sand Rush;1,3;112;Grasslands;Herbivore;60;Diplodocus;
+286;86;Diplotrerth;Ground;Dragon;Dragon Diplodoco;Sand Veil;;Sand Rush;11;3210;Grasslands;Herbivore;-;Diplodocus;
+287;87;Dragby;Steel;;Tiny Griffin;Big Pecks;Sturdy;Gale Wings;0,9;111;Mountains;Carnivorous;60 wifh fly;Grifo;
+288;88;Dragfin;Steel;Flying;Griffin;Big Pecks;Sturdy;Gale Wings;2;257;Mountains;Carnivorous;-;Grifo;
+289;89;Michlue;Water;Ghost;SpiritMinch;Swift Swim;;;0,7;17;Lakes, Rivers and Sea;Omnivorous;50 [Night];OS homens azuis de Minch;
+290;90;Trimichlue;Water;Ghost;TripleMinch;Swift Swim;;;1,8;98;Lakes, Rivers and Sea;Omnivorous;-;OS homens azuis de Minch;
+291;91;Caprizzard;Normal;Ice;Ice Deer;Snow Warning;Snow Cloak;Ice Body;0,8;45;Mountains;Herbivore;40;Cor?a (Capreolus capreolus);
+292;92;Cervuzzard;Normal;Ice;Ice Cervus;Snow Warning;Snow Cloak;Ice Body;1,9;110;Mountains;Herbivore;-;Cervo-Sika (Cervus nippon);Cernunnos (celta)
+293;93;Kyuthlyng;Ghost;;Kilt;Shadow Tag;;;1;12;Abandoned Places;Shoutings;-;Kilt;
+294;94;Bapround;Ghost;Sound;Bagpipes;Soundblink;;;1,3;30;Unknown;Vital Energy and Shoutings;-;Gaita de fole;
+295;95;Lightaon;Electric;Psychic;Lighting;Levitate;;;1;57;Skye Island;Electricity;-;Relümpago;Baisd Bheulach (O Dem?nio da Ilha)
+296;96;Thundh?;Electric;Sound;Thunder;Levitate;;;1;57;Skye Island;Electricity;-;Trovío;Baisd Bheulach (O Dem?nio da Ilha)
+297;97;Lighboltrç;Electric;;Lighting Bolt;Levitate;;;1;57;Skye Island;Electricity;-;Raio;Baisd Bheulach (O Dem?nio da Ilha)
+298;98;Nessgoter;Water;Fairy;Lake ness monster;Primal Water;;;7;987;Lakes;Herbivore;;Monstro Lago Ness;
+299;99;Eaquisgter;Water;Ghost;Each-uisge;Primal Water;;;5;397;Rivers;Carnivorous;;each-uisge (espirito ˇgua);
+300;100;Cregoter;Cosmic;;Creator;Special Immunity;;;???;???;Unknown;Unknown;-;Indefinido;
+301;1;Kaseperd;Grass;;Giraffe seed;Overgrow;;Chlorophyll;0,7;7;Savannah;Herbivore;20;Girafa (Giraffa camelopardalis);
+302;2;Kasegiese;Grass;Psychic;Giraffe;Overgrow;;Chlorophyll;1,3;30;Savannah;Herbivore;40;Girafa (Giraffa camelopardalis);
+303;3;Kasering;Grass;Psychic;Giraffe Ring;Overgrow;;Chlorophyll;2,5;70;Savannah;Herbivore;-;Girafa (Giraffa camelopardalis);
+304;4;Renur;Fire;;Rhyno;Blaze;;Reckless;0,6;14;Savannah;Herbivore;21;Rinoceronte-Branco (Ceratotherium simum);
+305;5;Renovur;Fire;Steel;Metal Rhyno;Blaze;;Reckless;1;60;Savannah;Herbivore;41;Rinoceronte-Branco (Ceratotherium simum);
+306;6;Renotal;Fire;Steel;Giant Rhyno;Blaze;;Reckless;1,7;170;Savannah;Herbivore;-;Rinoceronte-Branco (Ceratotherium simum);
+307;7;Wakoei;Water;;Hippo;Torrent;;Iron Fist;0,6;18;Savannah;Herbivore;19;HipopΩtamo-Comum (Hippopotamus amphibius);
+308;8;Setoei;Water;Fighting;Bipedal Hippo;Torrent;;Iron Fist;1;80;Savannah;Herbivore;39;HipopΩtamo-Comum (Hippopotamus amphibius);
+309;9;Vetoei;Water;Fighting;Harpoon;Torrent;;Iron Fist;1,8;200;Savannah;Herbivore;-;HipopΩtamo-Comum (Hippopotamus amphibius);
+310;10;Wedscorod;Bug;Ground;Caterpillar Pig;Run Away;Sand Rush;;0,2;2;Forests;Herbivore;12;Mariposa (Coleophora africana);Porco-Dom?stico (Sus scrofa domesticus)
+311;11;Pavark;Bug;Ground;Casccoon Pig;Shed Skin;Sand Rush;;0,4;12;Forests;Herbivore;24 (Flying Move);Mariposa (Coleophora africana);Porco-Dom?stico (Sus scrofa domesticus)
+312;12;Pervark;Bug;Ground;Bug Pig;Sand Veil;Sand Rush;;1,3;57;Forests;Herbivore;-;Mariposa (Coleophora africana);Porco-Dom?stico (Sus scrofa domesticus)
+313;13;Poverk;Bug;Flying;Moth Pig;Keen Eye;Sand Rush;;1,2;27;Forests;Herbivore;-;Mariposa (Coleophora africana);
+314;14;Larwa;Bug;Water;Larva;Shield Dust;Immunity;;0,2;2;Lakes;Herbivore;10;Larva-Malˇria (Anopheles gambiae);
+315;15;Panald;Bug;Water;Helmet Casccoon;Shed Skin;Immunity;;0,6;14;Lakes;Herbivore;22 [F] 22 [M];Pulpa-Malˇria (Anopheles gambiae);
+316;16;Musvlieg;Bug;Water;Drilling fly;Swift Swim;Immunity;;1,2;20;All Places;Herbivore;-;Mosquito-Malˇria (Anopheles gambiae);
+317;17;Musklaria;Bug;Poison;Drilling Malaria;Poison touch;Corrosion;;1,4;35;All Places;Hematophagus;-;Mosquito-Malˇria (Anopheles gambiae);Protozoˇrio (Genero Plasmodium)
+318;18;Cucuaxy;Bug;;Nymph;Drizzle;;Rain Dish;0,2;1;Forests and Grasslands;Carnivore;30 or Radioactive Stone;Larva-Joaninha (Coccinella septempunctata);
+319;19;Cocomeaxy;Bug;Steel;Ladybug;Drizzle;;Rain Dish;1,7;120;Forests and Grasslands;Carnivore;-;Joaninha (Coccinella septempunctata);
+320;20;Paracoxy;Bug;Dark;Spider Ladybug;Drizzle;;Rain Dish;1,2;80;Forests and Grasslands;Carnivore;-;Aranha-Joaninha (Paraplectana duodecimmaculata);
+321;21;Kalasv;Normal;Flying;Bird Balance;Rock Head;Big Pecks;;0,4;8;Forests and Grasslands;Omnivorous;22;Abutre-do-Egito (Neophron percnopterus);
+322;22;Vogiotder;Steel;Flying;Egyptian bird;Rock Head;Big Pecks;;1;25;Forests and Grasslands;Carnivore;36;Abutre-do-Egito (Neophron percnopterus);
+323;23;Vogiot;Steel;Flying;Egyptian Vulture;Rock Head;Big Pecks;;1,5;55;Forests and Grasslands;Carnivore;-;Abutre-do-Egito (Neophron percnopterus);
+324;24;Swartaren;Dark;Flying;Bald Shadow;Anger Point;Intimidate;;0,4;6;Forests and Grasslands;Carnivore;28;Êguia-negra-africana (Aquila verreauxii);
+325;25;Skadarend;Dark;Flying;Eagle Shadow;Anger Point;Intimidate;;1,4;45;Forests and Grasslands;Carnivore;-;Êguia-negra-africana (Aquila verreauxii);
+326;26;Garomu;Normal;;Jumper Mouse;Run Away;Guts;Hustle;0,3;2;All Places;Herbivore;25;Rato-Canguru (Fam. Potoroidae);
+327;27;Muisro;Normal;;Jumper Mouse;Run Away;Guts;Hustle;0,9;15;Desert;Omnivorous;-;Rato-Canguru (Fam. Potoroidae);
+328;28;Skepar;Ground;;BigHead;Run Away;Sand Veil;;0,3;13;Desert;Omnivorous;32;Suricata (Suricata suricatta);
+329;29;Elsur;Ground;;Meerkat;Run Away;Sand Veil;;1;35;Desert;Omnivorous;-;Suricata (Suricata suricatta);
+330;30;Geslert;Electric;;Badger;Static;Intimidate;Moxie;0,4;5;Savannah;Carnivore;30;Ratel (Mellivora capensis);
+331;31;Daslert;Electric;Dark;Furious Badger;Static;Intimidate;Moxie;1,7;70;Savannah;Carnivore;-;Ratel (Mellivora capensis);
+332;32;Strumid;Normal;Ground;Sprinter;Quick Feet;Sand Rush;Speed Boost;1;40;Savannah and Grasslands;Herbivore;32;Avestruz (Struthio camelus) ;
+333;33;Strumpeed;Normal;Ground;Sprinter;Quick Feet;Sand Rush;Speed Boost;2,7;98;Savannah and Grasslands;Omnivorous;-;Avestruz (Struthio camelus) ;
+334;34;Kpingui;Dark;;Weapon;Inner Focus;;Pressure;0,4;18;Savannah;Omnivorous;35;Kpinga (arma);
+335;35;Kpingran;Dark;;Fat Weapon;Inner Focus;;Pressure;1,2;100;Savannah;Omnivorous;55 + Male;Kpinga (arma);
+336;36;Kpingrale;Dark;;Strong Weapon;Inner Focus;;Pressure;2;198;Savannah;Omnivorous;-;Kpinga (arma);
+337;37;Zewel;Ice;Fire;Baby Zebra;Heatproof;;;0,9;30;Savannah;Herbivore;37;Zebra (Equus zebra);
+338;38;Zeman;Fire;;Zebra;Heatproof;;;2;100;Savannah;Herbivore;-;Zebra (Equus zebra);
+339;39;Zevrou;Ice;;Zebra;Heatproof;;;1,8;80;Savannah;Herbivore;-;Zebra (Equus zebra);
+340;40;Dralelike;Dragon;Dark;Ugly Dragon;Intimidate;;Mold Breaker;0,8;30;Caves;Carnivore;52;Dragío;Dragío
+341;41;Drakbyt;Dragon;Dark;Bite Dragon;Intimidate;;Mold Breaker;1,9;180;Caves;Carnivore;-;Dragío;Dragío
+342;42;Frontovis;Water;;Fish Head;Reckless;;;1;35;Lakes;Carnivore;-;Tilapia-Frontosa (Cyphotilapia frontosa);
+343;43;Spurtle;Rock;;Tiny Turtle;Sturdy;;;0,5;100;Savannah;Omnivorous;45;Tartaruga-de-esporas-africana (Geochelone sulcata);
+344;44;Spurpad;Rock;;Rock Turtle;Sturdy;;;1,1;210;Savannah;Omnivorous;-;Tartaruga-de-esporas-africana (Geochelone sulcata);
+345;45;Hummorse;Water;Flying;Fish Bird;Swift Swim;Run Away;;0,3;2;Sea and Grasslands;Nectarivore;-;Beija-Flor-de-Garganta-Verde (Nectarinia rubescens);
+346;46;Felitosh;Ghost;Dark;Tokoloshe;Cursed Body;;;0,6;15;Caves and Cemetery;Omnivorous;-;Tokoloshe (Lenda);
+347;47;Kimmole;Ground;;Mole;Keen Eye;Sand Rush;Moxie;0,1;10;Desert;Insetivore;30;Toupeira-Dourada;
+348;48;Mamole;Ground;Rock;Endure Mole;Keen Eye;Sand Rush;Moxie;1,1;37;Desert;Insetivore;70;Toupeira-Dourada;
+349;49;Strongole;Ground;Rock;Strong Mole;Keen Eye;Sand Rush;Moxie;2,1;317;Desert;Insetivore;-;Toupeira-Dourada;
+350;50;Wolkfy;Fairy;Water;a Cloud;Drizzle;;Rain Dish;-;-;All Places;Nothing;-;Nuvem;
+351;51;Hyemidate;Dark;;Baby Hyena;Laught Intimidate;;;0,3;12;Savannah;Carnivore;35;Hiena-Malhada (Crocuta crocuta);
+352;52;Hyeughte;Dark;;Hyena;Laught Intimidate;;;1,3;56;Savannah;Carnivore;-;Hiena-Malhada (Crocuta crocuta);
+353;53;Bokref;Water;;Tiny Lobster;Iron Fist;;;0,6;13;Sea;Carnivore;40;Lagosta-Boxeadora (Odontodactylus scyllarus);
+354;54;Vegkre;Water;Fighting;Lobster boxer;Iron Fist;;;1,3;40;Sea;Carnivore;-;Lagosta-Boxeadora (Odontodactylus scyllarus);
+355;55;Stamra;Tribal;Dark;Surma Baby;Tribal Dancing*;;;0,5;66;Savannah;Omnivorous;37;Tribo Surma;
+356;56;Stancaraima;Tribal;Dark;Surma;Tribal Dancing*;;;1,6;96;Savannah;Omnivorous;-;Tribo Surma;
+357;57;Olikid;Normal;;Baby Elephant;Thick Fat;;Gluttony;0,7;50;Savannah;Herbivore;Item;Elefante-Anío (Elephas falconeri);
+358;58;Olient;Ice;Psychic;Ancient Elephant;Thick Fat;;Ice Body;4;612;Mountains;Herbivore;Strange Stone;Mamute;
+359;59;Olisolid;Steel;Rock;Solid Elephant;Thick Fat;;Reckless;4;957;Savannah and Grasslands;Herbivore;Fossil Ivory;Dinoterio;
+360;60;Oliscorpion;Normal;Bug;Bug Elephant;Thick Fat;;Poison Heal;4;560;Savannah and Forests;Omnivorous;Strange Ivory;Gomphotherium;Escorpiío-Imperial (Pandinus Imperator)
+361;61;Olisterio;Dragon;;Dragon Elephant;Thick Fat;;Strong Jaw;4;780;Savannah and Mountains;Omnivorous;Thorny Amber;Amebelodon;
+362;62;Olifur;Fire;Flying;Flying Elephant;Thick Fat;;Flash Fire;1;80;Savannah;Herbivore;Fire Ivory;Elefante-Africano (Loxodonta africana);Dumbo (Personagem Disney)
+363;63;Agtarms;Bug;Steel;Octopus;Hustle;Swarm;Tough Claws;0,7;78;Grasslands;Carnivore;-;??;Dr Octopus (Marvel Comics)
+364;64;Ambeld;Steel;;Anvil;Sturdy;Heatproof;Heavy Metal;0,8;328;Caves;Herbivore;40;Bigorna;
+365;65;Ambeswar;Steel;;Heavy Weight;Sturdy;Heatproof;Heavy Metal;1,7;2000;Caves;Herbivore;-;Bigorna;
+366;66;Banslak;Sound;Ground;Tire;Soundproof;;Speed Boost;0,4;15;All Places;Omnivorous;25;Pneu;
+367;67;Slakand;Sound;Ground;Speed Nail;Soundproof;;Speed Boost;0,8;65;All Places;Omnivorous;-;Pneu;Caramujo-Gigante-Africano (Achatina fulica)
+368;68;Aapys;Fighting;Normal;Tiny Primate;Run Away;Inner Focus;No Guard;0,5;15;All Places;Omnivorous;30/Habitat;Primata;
+369;69;Goriap;Fighting;Ice;Gorilla;Rock Head;Inner Focus;No Guard;1,6;120;Mountains;Omnivorous;-;Gorila (Gorilla gorilla);
+370;70;Bobbegolo;Fighting;;Mandrill;Technician;SteadFast;No Guard;1,4;45;Savannah;Omnivorous;-;Mandril (Mandrillus sphinx);N'golo (dan?a da zebra/Angola)
+371;71;Sjimpamb;Fighting;;Chimpanzee;Klutz;SteadFast;No Guard;1,5;50;Forests;Omnivorous;-;Chimpanz?-Comum (Pan troglodytes);Laamb (Luta de senegal)
+372;72;Treasonkey;Fighting;Ghost;Cursed Map;Frisk;Scrappy;Illusion;1,2;18;Abandoned Places;Omnivorous;-;Macaco de Vervet (Chlorocebus pygerythrus);Mapa do Tesouro
+373;73;Sneubal;Ice;;Snowball;Snow Warning;Snow Cloak;Refrigerate;0,4;10;Mountains and Grasslands;Herbivore;20;Bola de neve;
+374;74;Sneuman;Ice;;Snow doll;Snow Warning;Snow Cloak;Refrigerate;1;35;Mountains;Herbivore;50;Boneco de Neve;
+375;75;Kilimeu;Ice;Rock;Snowmonster;Snow Warning;Snow Cloak;Refrigerate;4;425;Mountains;Omnivorous;-;Monstro da Neve;Monte Kilimanjaro
+376;76;Skyf;Water;Sound;Disc;Soundproof;Insomnia;;0,6;15;Sea;Herbivore;-;O peixe-anjo-imperador (Pomacanthus imperator);Disco Vinil
+377;77;Drimonous;Grass;Poison;Poison Seed;Poison Touch;Poison Point;;3;4;Grasslands;Photosynthesis;18;Drimia (Drimia ssp);
+378;78;Drigeed;Grass;Poison;Bud;Poison Touch;Poison Point;;1;15;Grasslands;Photosynthesis;36;Drimia (Drimia ssp);
+379;79;Dridrinon;Grass;Poison;Braid;Poison Touch;Poison Point;;1,6;37;Grasslands;Photosynthesis;-;Drimia (Drimia ssp);
+380;80;Bongran;Grass;;Seed;Chlorophyll;;Harvest;0,3;1;All Places;Photosynthesis;7;Feijío (Phaseolus vulgaris);
+381;81;Vignun;Grass;;Grain of Bean;Chlorophyll;;Harvest;1;13;All Places;Photosynthesis;Green Orb;Feijío (Phaseolus vulgaris);
+382;82;Phalusus;Grass;Fighting;Bean;Chlorophyll;;Harvest;1,7;30;All Places;Photosynthesis;-;Feijío (Phaseolus vulgaris);Esgrima (esporte)
+383;83;Hypsat;Sound;Flying;Monster Bat;Soundproof;Infiltrator;;0,3;13;Caves and Grasslands;Omnivorous;Radioactive Stone;Morcego (Hypsignathus monstrosus) ;
+384;84;Hypsignat;Sound;Flying;Opobawa;Soundproof;Infiltrator;;1,3;68;Caves;Omnivorous;-;Morcego (Hypsignathus monstrosus) ;Opobawa
+385;85;Welpdambe;Fighting;;Baby Fighter;Iron Fist;Intimidate;;0,05;1;Grasslands;Omnivorous;10;Feto;
+386;86;Geesdambe;Fighting;Ghost;Ghost Fighter;Iron Fist;Intimidate;;1;10;Grasslands;Nothing;30 with ghost move;(Sugestío Nei Alves);
+387;87;Jongdambe;Fighting;;Kid Fighter;Iron Fist;Intimidate;;1;35;Grasslands;Omnivorous;30 [M] - 30 [F];Dambe (Luta);
+388;88;Manlidambe;Fighting;;Male Fighter;Iron Fist;Intimidate;;1,8;97;Grasslands;Omnivorous;-;Dambe (Luta);Homens Nigerianos
+389;89;Vroulidambe;Fighting;;Female fighter;Iron Fist;Intimidate;;1,7;77;Grasslands;Omnivorous;-;Dambe (Luta);Mulheres Nigerianas
+390;90;Vooling;Ghost;Dark;Voodoo doll;Pressure;;Rattled;0,5;10;Abandoned Places;Feeling;40;Boneco de Voodoo;
+391;91;Voolonk;Ghost;Dark;Voodoo;Pressure;;Rattled;1,2;15;Abandoned Places;Feeling;65;Boneco de Voodoo;
+392;92;Vooruse;Ghost;Dark;Giant Voodoo;Pressure;;Rattled;2,3;111;Abandoned Places;Feeling;-;Boneco de Voodoo;
+393;93;Cornby;Grass;Fire;Cornn Berry;Flash Fire;Heatproof;Thick Fat;0,1;1;Grasslands;Herbivore;20;Cornn Berry (Item Pok?mon);
+394;94;Cornire;Grass;Fire;Big Cornn;Flash Fire;Heatproof;Thick Fat;1;18;Grasslands;Herbivore;Red Orb;Cornn Berry (Item Pok?mon);Maconha (Cannabis sativa)
+395;95;Cornhuana;Grass;Fire;Marijuana;Flash Fire;Heatproof;Thick Fat;1,9;57;Grasslands;Herbivore;-;Cornn Berry (Item Pok?mon);Maconha (Cannabis sativa)
+396;96;Papivis;Water;;Parrotfish;Guts;Swift Swim;;0,6;20;Sea and Grasslands;Herbivore;27;Peixe-Papagaio;
+397;97;Papegavis;Water;Flying;Parrotfish;Guts;Swift Swim;;1,2;40;Sea and Grasslands;Herbivore;-;Peixe-Papagaio;
+398;98;Fwowl;Fairy;Sound;Fwooper;Soundproof;;;0,8;47;Unknown;Omnivorous;-;Fwooper;
+399;99;Maberog;Normal;Dragon;Mabeco;Intimidate;Mold Breaker;Scrappy;0,7;19;Savannah and Desert;Omnivorous;65;Mabeco (Lycaon pictus);
+400;100;Mabreworg;Normal;Dragon;Dragon Mabeco;Intimidate;Mold Breaker;Scrappy;2;132;Savannah and Desert;Omnivorous;-;Mabeco (Lycaon pictus);
+401;101;Spinarde;Bug;Fire;Tiny Spider;Compound Eyes;;Speed Boost;0,2;8,5;Desert;Carnivore;35;Aranha-Camelo;
+402;102;Spinvur;Bug;Fire;Camel Spider;Compound Eyes;;Speed Boost;1,2;34,5;Desert;Carnivore;-;Aranha-Camelo;
+403;103;Busake;Electric;Grass;Bush;Static;;Effect Spore;1;17;All Places;Carnivore;-;Capim (Eragrostis plana nees);
+404;104;Entetacle;Poison;;Tentacle;Regenerator;;Mold Breaker;0,1;2;Sea;Carnivore;36;Polvo-Gigante-Africano (Enteroctopus magnificus);
+405;105;Entecoon;Poison;;Cocoon Tentacle;Regenerator;;Mold Breaker;1;17;Sea;Carnivore;63 or Thorny Amber;Polvo-Gigante-Africano (Enteroctopus magnificus);
+406;106;Encackba;Poison;;Giant Octopus;Regenerator;;Mold Breaker;1,3;32;Sea;Carnivore;-;Polvo-Gigante-Africano (Enteroctopus magnificus);
+407;107;Enctopus;Poison;Dragon;Giant Octopus;Regenerator;;Mold Breaker;3;217;Sea;Carnivore;-;Polvo-Gigante-Africano (Enteroctopus magnificus);
+408;108;Triozanita;Rock;;Rock Chameleon;Study;;;0,6;66;Forests and Mountains;Carnivore;;Camaleío (Trioceros deremensis);Tanzanita
+409;109;Bathendes;Dark;Fire;Demon;Shadow Tag;Flame Body;;1,7;70;Abandoned Places and Desert;Carnivore;-;Bode de Mendes;
+410;110;Skakhekid;Bug;;Larva Beetle;Levitate;;;0,2;7;Desert;Herbivore;55;Escaravelho (Scarabaeus sacer);
+411;111;Skakhepridae;Bug;Psychic;God Beetle;Levitate;;;1,55;118;Desert;Herbivore;-;Khepri (Deus Eg≠pcio);Escaravelho (Scarabaeus sacer)
+412;112;Sewerpion;Bug;Dark;Scorpion;Battle Armor;;Sniper;1;42;Desert and Sewer;Omnivorous;Radioactive Stone;Escorpiío-Imperador (Pandinus Imperator);
+413;113;Sewmonsrion;Bug;Dark;Giant Scorpion;Battle Amor;;Sniper;2;112;Desert and Sewer;Omnivorous;-;Escorpiío-Imperador (Pandinus Imperator);
+414;114;Fanghung;Bug;Ghost;Fang;Swarm;;;0,1;1;All Places;Necrophagous;10;Restos de Carca?as;
+415;115;Hungtang;Bug;Ghost;Strange Bones;Levitate;;;0,5;3;Abandoned Places;Necrophagous;-;Restos de Carca?as;
+416;116;Duifarkid;Fighting;Flying;Pigeon;Scrappy;;Aerilate;0,5;15;Apartheid Island;Herbivore;30;Pomba gravatinha africana (G. Columba);Apartheid
+417;117;Duifartheid;Fighting;Flying;Apartheid;Scrappy;;Aerilate;1,5;50;Apartheid Island;Herbivore;55;Pomba gravatinha africana (G. Columba);Apartheid
+418;118;Anfartheid;Fighting;Flying;Angel Apartheid;Scrappy;;Aerilate;2,2;112;Apartheid Island;Herbivore;-;Pomba gravatinha africana (G. Columba);Apartheid
+419;119;Swepoen;Grass;Ghost;Ballon;Levitate;;;0,8;10;Grasslands;Herbivore;40;Melancia (Citrullus lanatus);Bexiga
+420;120;Spookoen;Grass;Ghost;Balloon Rides;Levitate;;;1,4;20;Grasslands;Herbivore;80;Melancia (Citrullus lanatus);Balío
+421;121;Spoodike;Grass;Ghost;Airship;Levitate;;;4;75;Grasslands;;-;Melancia (Citrullus lanatus);Dirig≠vel
+422;122;Soosuwi;Fairy;;Candy;Run Away;Thick Fat;Aftermath;0,08;2;Grasslands;Frugivore;Status (Any Lvl);Doces;
+423;123;Candison;Fairy;Poison;Poisoned Candy;Poison Touch;Poison Point;Aftermath;1,4;39;All Places;Frugivore;-;Doces;
+424;124;Artrosth;Ghost;Psychic;Directional;Infiltrator;Contrary;Telepathy;1;12;Unknown;Herbivore;-;Dire?ío;
+425;125;Stamnid;Fire;Electric;Xang?;Magma Armor;Lighting Rod;Mating Dance;0,5;18;Grasslands;Herbivore;40;Xang?;
+426;126;Stam;Fire;Electric;Xang?;Magma Armor;Lighting Rod;Mating Dance;1,8;77;Grasslands;Omnivorous;-;Xang?;
+427;127;Klipdaris;Rock;Ground;Dromedary;Solid Rock;;;2,3;600;Desert;Herbivore;-;Dromedˇrio (Camelus dromedarius);
+428;128;Strimba;Tribal;Ground;Baby Himba;Tribal Dancing*;;;0,4;17;Desert;Herbivore;30;Tribo Himba;
+429;129;Jongimba;Tribal;Ground;Himba;Tribal Dancing*;;;1,2;34;Desert;Herbivore;45;Tribo Himba;
+430;130;Virstimba;Tribal;Ground;Long Hair Himba;Tribal Dancing*;;;1,7;77;Desert;Omnivorous;-;Tribo Himba;
+431;131;Katid;Normal;;Cat;Technician;Unnerve;Bright look;0,5;12;All Places;Omnivorous;;Sphynx;
+432;132;Katumie;Ghost;;Mummy Cat;Technician;Levitate;;1,2;12;Cemetery;Omnivorous;;Gato-Dom?stico (Felis silvestris catus);Múmia
+433;133;Linket;Dark;;Lion;Technician;Anger Point;Bright look;1,8;122;Savannah;Carnivore;;Leío (Panthera leo);Sekhmet (Deus Eg≠pcio)
+434;134;Pardet;Fairy;;Cheetah;Technician;Immunity;Bright look;1,5;42;Savannah;Carnivore;;Guepardo (Acinonyx jubatus);Mafdet (Deus Eg≠pcio)
+435;135;Maustet;Psychic;;Female Cat;Technician;Natural Cure;Bright look;1,2;47;Desert;Omnivorous;;Gato-Dom?stico (Felis silvestris catus);Bastet (Deus Eg≠pcio)
+436;136;Sphyfega;Psychic;;Male Cat;Technician;Synchronize;Bright look;1,2;54;Desert;Omnivorous;;Gato-Dom?stico (Felis silvestris catus);Esfinge (Monumento)
+437;137;Eggrange;Normal;;Strange Egg;Bick Pecks;Flame Body;Gale Wings;0,05;1;All Places;Omnivorous;18 or any lvl + Burn;Ovo (Gallus gallus domesticus);
+438;138;Chickenge;Normal;Fire;Egg;Bick Pecks;Flame Body;Gale Wings;0,5;17;All Places;Omnivorous;40 (M or F);Frango (Gallus gallus domesticus);
+439;139;Femenge;Normal;Fire;Chicken;Bick Pecks;Flame Body;Gale Wings;1,2;38;All Places;Omnivorous;-;Galinha (Gallus gallus domesticus);
+440;140;Malenge;Normal;Fire;Cock;Bick Pecks;Flame Body;Gale Wings;1,3;39;All Places;Omnivorous;-;Galo (Gallus gallus domesticus);
+441;141;Frieggange;Ghost;Fire;Fried Egg;Infiltrator;Flame Body;Gale Wings;0,07;1;All Places;Omnivorous;55;Ovo Frito;
+442;142;Chieghosge;Ghost;Fire;Resuscitation;Infiltrator;Flame Body;Gale Wings;1,8;33;Unknown;Omnivorous;-;Galo (Gallus gallus domesticus);F?nix Egipcia
+443;143;Hydnirvore;Grass;Ground;Precious carnivore;Strong Jaw;;;1,2;28;Desert;Carnivore;-;Planta Carn≠vora (Hydnora africana);
+444;144;Harpastatic;Bug;Electric;Static Spider;Static;;;1,4;44;Grasslands;Carnivore;-;(Harpactira pulchripes);
+445;145;Kentriseel;Rock;Steel;Plate;Battle Armor;;;1;100;Forests;Herbivore;47;Kentrossauro (Kentrosaurus aethiopicus).;
+446;146;Kentrioger;Rock;Steel;Kentrosaurus;Battle Armor;;;5;500;Forests;Herbivore;-;Kentrossauro (Kentrosaurus aethiopicus).;
+447;147;Spinokind;Rock;Electric;Vertebra;Dry Skin;;;1,2;107;Lakes;Carnivore;47;Espinossauro (Spinosaurus aegyptiacus).;
+448;148;Spinoviser;Rock;Electric;Spinosaurus;Dry Skin;;;6;582;Lakes;Carnivore;-;Espinossauro (Spinosaurus aegyptiacus).;
+449;149;Lophitric;Electric;;Static Rat;Static;;;0,8;29;Forests;Omnivorous;-;Lophiomys imhausi;
+450;150;Sdarkfish;Dark;;Spike Starfish;Iron Barbs;;Unaware;1;38;Sea;Carnivore;-;Estrela-do-Mar-Africana (Protoreaster linckii).;
+451;151;Bagoldier;Flying;;Tote Bag;Keen Eye;;;0,7;13;All Places;Plastic;-;Brinquedo com Sacola;
+452;152;Weakipper ;Water;;Weak fish;Rattled;;;0,2;5;Lakes;Herbivore;35 (Rain of Dragons);Mudskipper;
+453;153;Inkanygon;Water;Dragon;Sea Dragon;Rattled;;;2;117;Lakes;Omnivorous;-;Inkanyamba;
+454;154;Thoyesten;Ghost;Psychic;A Thousand Eyes;Sinchronize;Levitate;;1,5;22;Lakes;Carnivore;-;Sapo de Boca-Estreita (Melanobatrachus indicus).;
+455;155;Nembragon;Dragon;Water;Sea Slug;Mold Breaker;Battle Armor;;1,2;43;Sea;Herbivore;-;Lesma-do-Mar (Nembrotha kubaryana);
+456;156;Wedcake;Fairy;Ghost;Wedding Cake;Aftermath;Clear Body;Bad Dreams;1;37;Abandoned Places;Nothing;-;Bolo de Casamento;
+457;157;Klipiant;Rock;;Collector;Sturdy;Pickup;;0,4;120;Caves;Herbivore;36;Diamante;
+458;158;Klitibal;Rock;;Ball Collector;Sturdy;Pickup;;1,9;389;Caves;Herbivore;-;Diamante;
+459;159;Sparkhoto;Bug;Poison;Little grasshopper;Aftermath;;;0,7;19;Grasslands;Herbivore;27;Gafanhoto-Espumante (Dictyophorus spumans );
+460;160;Affaganhoto;Bug;Poison;Sparkling grasshopper;Aftermath;;;1,8;118;Grasslands;Omnivorous;-;Gafanhoto-Espumante (Dictyophorus spumans );(doado pelo Adriano Nascimento)
+461;161;Staok;Tribal;Cosmic;Dogon Mask;Tribal Dancing*;;;0,5;1;Abandoned Places;Omnivorous;35;Tribo Dogon;
+462;162;Stamas;Tribal;Cosmic;Dogon;Tribal Dancing*;;;1,3;2;Abandoned Places;Omnivorous;55;Tribo Dogon;
+463;163;Statwe;Tribal;Cosmic;Dogon;Tribal Dancing*;;;1,9;20;Abandoned Places;Omnivorous;-;Tribo Dogon;
+464;164;Cymosit;Bug;Electric;Parasite;Swarm;;Static;0,1;2;Sea;Hematophagus;15;Crustˇceo-Parasita (Cymothoa exigua);
+465;165;Cymonsite ;Bug;Electric;Giant Parasite;Swarm;;Static;1,2;24;Sea;Hematophagus;-;Crustˇceo-Parasita (Cymothoa exigua);
+466;166;Sadtea;Grass;;Bud;Iron Barbs;Grass Pelt;;0,3;2;Desert and Grasslands;Photosynthesis;20;Lithops Karasmontana;
+467;167;Gastea;Grass;;Flower Lizard;Iron Barbs;Grass Pelt;;0,9;15;Desert and Grasslands;Herbivore;-;Lithops Karasmontana;
+468;168;Figterbale;Water;Ice;Balearica;;;;1,2;27;Lakes;Omnivorous;-;Grou-Coroado (Balearica pavonina) ;
+469;169;Storal;Rock;Water;Sea Sponge;Hustle;Natural Cure;Regenerator;0,5;17;Sea;Herbivore;-;Esponja do mar.;
+470;170;Pading;Tribal;;Baby Padaung;Tribal Dancing*;;;0,4;7;Forests;Omnivorous;40;Tribo Padaungò;
+471;171;Padung;Tribal;;Padaung;Tribal Dancing*;;;1,1;30;Forests;Omnivorous;60;Tribo Padaungò;
+472;172;Padong;Tribal;;Giant Padaung;Tribal Dancing*;;;1,6;55;Forests;Omnivorous;-;Tribo Padaungò;
+473;173;Vierlig;Normal;;Tiny Bovidae;Run Away;Normalize;;0,7;35;Savannah;Herbivore;Colors Orb;Bovidae;
+474;174;Palanlig;Electric;;Palanca;Run Away;Lighting Rod;;1,6;75;Savannah;Herbivore;-;Palanca-Negra (Hippotragus niger);
+475;175;Antilig;Grass;;Antilope;Run Away;Overgrow;;1;55;Savannah;Herbivore;-;Cabra-de-leque (Antidorcas marsupialis);Fungo Cordyceps.
+476;176;Gnulig;Water;;Gnu;Run Away;Torrent;;1,8;100;Savannah;Herbivore;-;Gnu-de-cauda-preta (Connochaetes taurinus).;
+477;177;Orylig;Fire;;Oryx;Run Away;Flame Body;;1,7;90;Savannah;Herbivore;-;Örix-do-leste-da-ˇfrica (Oryx beisa) ;
+478;178;Krokdylus;Water;;Crocodile;Torrent;Water Absorb;Hydration;0,9;38;Rivers;Carnivore;Strange Stone;Crocodilo-do-nilo (Crocodylus niloticus);
+479;179;Sobdylus;Water;Psychic;Giant Crocodile;Torrent;Water Absorb;Hydration;2,4;135;Rivers;Carnivore;-;Crocodilo-do-nilo (Crocodylus niloticus);Sobek (Deus Eg≠pcio)
+480;180;Sarkragon;Dragon;Rock;Massive Dragon;Mold Breaker;Solid Rock;;1,8;257;Mountains;Carnivore;-;Pato de Crista (Sarkidiornis melanotos);Dragío-Africano
+481;181;Wabot;Water;Steel;Toy Whale;Water Absorb;Rain Dish;Heavy Metal;2;700;Sea;Carnivore;78;Baleia-Jubarte (Megaptera novaeangliae);Brinquedo
+482;182;Waduiktal;Water;Steel;Submarine Whale;Water Absorb;Rain Dish;Heavy Metal;16;40000;Sea;Carnivore;-;Baleia-Jubarte (Megaptera novaeangliae);Submarino
+483;183;Cucvel;Grass;Water;Sea Cucumber;Keen Eye;Dry Skin;Storm Drain;0,4;5;Sea;Herbivore;Thorny Amber;Pepino do Mar;
+484;184;Cucuermin;Grass;Fairy;Mermaid Cucumber;Keen Eye;Dry Skin;Storm Drain;1,5;27;Sea;Omnivorous;-;Mami Wata (Lenda);Pepino do Mar
+485;185;Peklont;Poison;;Ball Tadpole;Poison Heal;Poison Point;Poison Touch;0,6;13;Madagascar Island;Insetivore;28;Rí-Dourada-de-Madagascar (Mantella aurantiaca);
+486;186;Peruitroep;Poison;;Poisonous Frog;Poison Heal;Poison Point;Poison Touch;1,5;70;Madagascar Island;Insetivore;-;Rí-Dourada-de-Madagascar (Mantella aurantiaca);
+487;187;Pangychic;Psychic;Dark;Pangolim;Rough Skin;;;1,3;57;Madagascar Island;Insetivore;-;Pangolim-Arbor≠cola (Manis tricuspis);
+488;188;Drakoba;Grass;Dragon;Baobab;Water Absorb;Thick Fat;;11;830;Madagascar Island;Herbivore;-;Êrvore-Baoba (Spp Adansonia);
+489;189;Drakbom;Grass;Dragon;Dragon Tree;Mold Breaker;Competitive;;10;800;Madagascar Island;Herbivore;-;Êrvore-Dragío (Dracaena draco);
+490;190;Drakoot;Grass;Dark;Root;;;;1,2;201;Madagascar Island;Omnivorous;75;Ya te veo;
+491;191;Drakeveo;Grass;Dark;Yateveo;;;;9;770;Madagascar Island;Omnivorous;-;Ya te veo;
+492;192;Lietoon;Psychic;;Satellite;Synchronize;;Magic Guard;0,6;5;Space;Unknown;-;Lua (Sat?lite Natural);
+493;193;Petrosleum;Steel;Poison;Petroleum;Petroleum;;;0,4;87;Unknown;Unknown;-;PetrΩleo;
+494;194;Steek;Psychic;Fairy;Artifact;Particle of God;;;0,5;8;Unknown;Unknown;-;Syjmbol of Cross;
+495;195;Alnitak;Fire;Cosmic;Bat Star;Cosmic Star;;;0,4;4;Space;Nothing;-;Estrela Alnitak (Tr?s Marias);
+496;196;Alnilam;Grass;Cosmic;Cactus Star;Cosmic Star;;;0,5;5;Space;Nothing;-;Estrela Alnilam (Tr?s Marias);
+497;197;Mintaka;Water;Cosmic;Seahorse Star;Cosmic Star;;;0,4;7;Space;Nothing;-;Estrela Mintaka (Tr?s Marias);
+498;198;Axodrito;Electric;Psychic;Neuron;Particle of God;;;0,1;1;Unknown;Unknown;-;Neur?nio;
+499;199;Goeen;Dark;Psychic;God ;Particle of God;;;2,7;289;Unknown;Unknown;-;Deus Anúbis;
+500;200;Gotwee;Ghost;Psychic;God ;Particle of God;;;2,7;80;Unknown;Unknown;-;Deus Seth;
+501;201;Godrie;Fire;Psychic;God ;Particle of God;;;3;214;Unknown;Unknown;-;Deus HΩrus/Rˇ;
+502;1;;Cosmic;Fire;Aries;;;;1,8;300;Unknown;;-;;
+503;2;;Cosmic;Electric;Taurus;;;;2;560;Unknown;;-;Boi de Watusi;
+504;3;;Cosmic;Psychic;Gemini;;;;1,7;115;Unknown;;-;;kosmiese wesens
+505;4;;Cosmic;Ground;Cancer;;;;1,5;100;Unknown;;-;;kosmiese wesens
+506;5;;Cosmic;Grass;Leo;;;;1,6;90;Unknown;;-;;kosmiese wesens
+507;6;;Cosmic;Fairy;Virgo;;;;1,7;158;Unknown;;-;;kosmiese wesens
+508;7;;Cosmic;Rock;Libra;;;;1,8;700;Unknown;;-;;kosmiese wesens
+509;8;;Cosmic;Bug;Scorpio;;;;1,5;200;Unknown;;-;;kosmiese wesens
+510;9;;Cosmic;Fighting;Sagittarius;;;;2,2;400;Unknown;;-;;kosmiese wesens
+511;10;;Cosmic;Steel;Capricorn;;;;2;147;Unknown;;-;;kosmiese wesens
+512;11;;Cosmic;Water;Aquarius;;;;1,7;100;Unknown;;-;;kosmiese wesens
+513;12;;Cosmic;Ice;Pisces;;;;1,7;200;Unknown;;-;;kosmiese wesens
+514;1;Mercuryt;Steel;Rock;Mercury;Special Levitate;;;-;-;Space;Unknown;-;Mercúrio (Planeta);
+515;2;Venuy;Fairy;Rock;Venus;Special Levitate;;;-;-;Space;Unknown;-;V?nus (Planeta);
+516;3;Earthy;Ground;Water;Earth;Special Levitate;;;-;-;Space;Unknown;-;Terra (Planeta);
+517;4;Marsy;Fire;Rock;Mars;Special Levitate;;;-;-;Space;Unknown;-;Marte (Planeta);
+518;5;Jupitey;Psychic;Dark;Jupiter;Special Levitate;;;-;-;Space;Unknown;-;Júpiter (Planeta);
+519;6;Saturny;Fighting;Ghost;Saturn;Special Levitate;;;-;-;Space;Unknown;-;Saturno (Planeta);
+520;7;Uranuy;Flying;Ice;Uranus;Special Levitate;;;-;-;Space;Unknown;-;Urano (Planeta);
+521;8;Neptuny;Electric;Water;Neptune;Special Levitate;;;-;-;Space;Unknown;-;Netuno (Planeta);
+522;9;Pluty;Ice;Water;Pluto;Special Levitate;;;-;-;Space;Unknown;-;Plutío (Planeta Anío);
+523;1;Turcactus;Grass;;Cactus Carapace;Overgrow;Grass Pelt;Shell Armor;1,6;33;Forests;Herbivore;-;Cacto;
+524;2;Turvolcan;Fire;;Volcan Carapace;Magma Armor;Flame Body;Shell Armor;1,8;69;Volcano;Carnivore;-;Vulcío;
+525;3;Turpple;Water;;Purpple Carapace;Swift Swim;Water Veil;Shell Armor;2;100;Sea;Omnivorous;-;Tartaruga Gigante-de-Couro (Dermochelys coriacea);
+526;4;Turttery;Electric;;Battery Carapace;Static;Lightning Rod;Shell Armor;1;21;City's;Omnivorous;-;Bateria;
+527;5;Turlabug;Bug;;Bug Carapace;Swarm;Early Bird;Shell Armor;1;47;Forests;Carnivore;-;Joaninha (Fam≠lia Coccinellidae);
+528;6;Turbird;Flying;;Bird Carapace;Keen Eye;Sniper;Shell Armor;1,6;19;Forests and Grasslands;Omnivorous;-;Aves;
+529;7;Turgopal;Rock;;Precious Carapace;Sturdy;Solid Rock;Shell Armor;1,4;170;Caves;Omnivorous;-;Pedras Preciosas;
+530;8;Turhorglas;Ground;;Hourglass Carapace;Sand Veil;Sand Rush;Shell Armor;1,8;111;Deserts;Herbivore;-;Ampulheta;
+531;9;Turgloo;Ice;;Ice Carapace;Ice Body;Snow Cloak;Shell Armor;1,5;118;Ice Places;Omnivorous;-;Iglu;
+532;10;Turligattor;Dark;;Spyke  Carapace;Strong Jaw;Rough Skin;Shell Armor;1,6;89;Lakes;Carnivore;-;Tartaruga-Alligator (Macrochelys temminckii);
+533;11;Turkeleton;Ghost;;Skeleton Carapace;Cursed Body;Levitate;Shell Armor;1,2;20;Abandoned Places;Carnivore;-;Esqueleto;
+534;12;Turstar;Fairy;;Star Carapace;Levitate;Magic Guard;Shell Armor;1,8;98;All Places;Unknown;-;Tartaruga-Estrela (Chelonoidis elegans);Estrela
+535;13;Turbrain;Psychic;;Brain Carapace;Insomnia;Analytic;Shell Armor;1,5;88;Grasslands;Omnivorous;-;Albert Einstein;C?rebro
+536;14;Turtommon;Normal;;Helmet Carapace;Battle Armor;Run Away;Shell Armor;0,6;70;Grasslands;Omnivorous;-;Moicano;
+537;15;Turtarrior;Steel;;Warrior Carapace;Battle Armor;Technician;Shell Armor;1,8;220;Deserts And Grasslands;Omnivorous;-;Guerreiro;
+538;16;Turtoison;Poison;;Sticky Carapace;Poison touch;Weak Armor;Shell Armor;1,5;120;Forests;Carnivore;-;Tartaruga Pesco?o-de-Cobra (Hydromedusa tectifera);
+539;17;Turtighting;Fighting;;Fighting Carapace;No Guard;Iron Fist;Shell Armor;1,7;95;Mountains;Omnivorous;-;Oogway (Kung fu Panda);
+540;18;Turgemni;Dragon;;Gemini Carapace;Mold Breaker;Sheer Force;Shell Armor;3;201;Mountains;Carnivore;-;Genbu;
+541;1;Racketric;Electric;;Duckbill;Volt Absorb;;;0,8;25;Lakes;Herbivore;-;Ornitorrinco (Ornithorhynchus anatinus);
+542;2;Bealattle;Bug;Steel;Silver Beatle;Intimidate;Magnetic Aurea*;;1,8;177;Forests;Herbivore;-;Subfam≠lia Dynastinae.;
+543;3;Steelgreyur;Dragon;Steel;Dragon Dinossaur;Rivalry;Mold Breaker;;2,8;337;Unknown;Carnivore;-;Metalgreymon (Digimon);
+544;4;Ganegenius;Psychic;Ghost;Lamp Genius;Levitate;;;1,7;85;Deserts;Herbivore;-;Ganesha (Deusa Hindu);Eug?nio (Personagem BrawlStar)
+545;5;Waraffa;Water;;Water Giraffe;Water Absorb;;;2,5;200;Sea;Herbivore;-;Girafa (G. reticulata;Hippocampus (Mitologia)
+546;6;Tenctus;Grass;;Tennis Player.;Water Absorb;Rough Skin;;1,3;28;Deserts;Photosynthesis;-;Cacto (Opuntia spp);T?nis (Esporte)
+547;7;Shurkoke;Dragon;Poison;Naja;Intimidate;;Mold Breaker;3,3;57;Deserts;Carnivore;-;Naja (Naja spp);
+548;8;Bowngel;Flying;Fairy;Angel Bow;Run Away;;;1,5;19;Sky;Herbivore;-;Arco (Arma);Anjos
+549;9;Arcsmash;Rock;Dark;Arc de Triomphe;Heavy Metal;Sturdy;;4,5;788;City's;Herbivore;-;Arco do Triunfo (Monumento);Thwomps (Super Mario)
+550;10;Carpethost;Ghost;Fairy;Flying Carpet;Levitate;;;1;12;City's;Unknown;-;Tapete Voador (Aladin);
+551;11;Cerberno;Fire;Dark;Cerberus;Flame Body;Flash Fire;;2,4;89;Unknown;Carnivore;-;C?rbero (Mitologia);
+552;12;Bassoun;Ghost;Electric;Bass;Soundproof;Motor Drive;;1,3;16;City's;Cry of Fear;-;Baixo (Instrumento Musical);
+553;13;Tapice;Ice;Psychic;Tapir;Ice Body;Telepathy;;0,6;10;Forests;Herbivore;20;Anta (Tapirus terrestris);
+554;14;Tapgiachic;Ice;Psychic;Giant Tapir;Ice Body;Telepathy;;1,5;55;Forests;Herbivore;-;Anta (Tapirus terrestris);
+555;15;Ceratopyke;Ground;Dark;Horned Frog;Rough Skin;Sand Veil;;1,3;30;Forests;Carnivore;-;Sapo de Chifre (Ceratophrys cornuta);
+556;16;Pokelizard;Ground;;Tiny Lizard;Run Away;;;0,3;3;Grasslands;Omnivorous;-;R?pteis Primitivos;
+557;17;Pokeraptor;Dragon;Dark;Raptor;Technician;;;1,6;77;Grasslands;Carnivore;-;G?nero Velociraptor;
+558;1;Catarass;Grass;;Chacoan;Overgrow;;Chlorophyll;0,6;11;Grasslands and Forests;Herbivore;16;Taguˇ (Catagonus wagneri);
+559;2;Gonusith;Grass;Fighting;Catagonus;Overgrow;;Chlorophyll;1,1;22;Grasslands;Herbivore;36;Taguˇ (Catagonus wagneri);
+560;3;Catawitt;Grass;Fighting;Pig Hero;Overgrow;;Chlorophyll;2;131;Grasslands;Herbivore;-;Taguˇ (Catagonus wagneri);
+561;4;Alouire;Fire;;Tiny Monkey;Blaze;;Magma Armor;0,7;21;Forests;Omnivorous;18;Bugio (Alouatta caraya);
+562;5;Howlagma;Fire;Dark;Howler Monkey;Blaze;;Magma Armor;1;34;Forests;Omnivorous;38;Bugio (Alouatta caraya);
+563;6;Buholoire;Fire;Dark;Drunk Monkey;Blaze;;Magma Armor;1,8;89;Forests;Omnivorous;-;Bugio (Alouatta caraya);
+564;7;Lontrater;Water;;Baby Lontra;Torrent;;Rain Dish;0,7;19;Lakes;Carnivore;20;Lontra do Sul (Lontra provocax);
+565;8;Ottrater;Water;Ice;Otter;Torrent;;Rain Dish;1,2;36;Lakes;Carnivore;40;Lontra do Sul (Lontra provocax);
+566;9;Lonttrost;Water;Ice;Monster Otter;Torrent;;Rain Dish;1,9;75;Lakes;Carnivore;-;Lontra do Sul (Lontra provocax);
+567;10;Calipillar;Bug;;Strange Caterpillar;Shield Dust;Run Away;Friend Guard;0,1;2;Grasslands and Forests;Herbivore;12;Borboleta-coruja-da-bananeira (Caligo illioneus);
+568;11;Calicon;Bug;;Fake Cocoon;Shield Dust;Run Away;Friend Guard;0,5;6;Grasslands and Forests;Herbivore;21;Borboleta-coruja-da-bananeira (Caligo illioneus);
+569;12;Calieye;Bug;Sound;DJ Bug;Soundproof;Insomnia;Friend Guard;1,2;37;Grasslands and Forests;Herbivore;-;Borboleta-coruja-da-bananeira (Caligo illioneus);
+570;13;Autopiker;Bug;Dark;Spyke Caterpillar;Shield Dust;Chlorophyll;Rough Skin.;0,1;3;Grasslands and Forests;Herbivore;14;Borboleta-Coruja-Argentina (Automeris coresus);
+571;14;Cosolid;Bug;Dark;Black Cocoon;Shield Dust;Chlorophyll;Rough Skin.;0,6;7;Grasslands and Forests;Herbivore;23;Borboleta-Coruja-Argentina (Automeris coresus);
+572;15;Blueterfly;Bug;Dark;Blue Butterfly;Intimidate;Chlorophyll;Rough Skin.;1;29;Grasslands and Forests;Herbivore;-;Borboleta-Coruja-Argentina (Automeris coresus);
+573;16;Wodpeck;Electric;Flying;Woodpecker;Big Pecks;Static;Lighting Rod;0,2;1;Grasslands;Herbivore;18;Pica-pau-de-cabe?a-amarela (Celeus flavescens);
+574;17;Celespek;Electric;Flying;Static Woodpecker;Big Pecks;Static;Lighting Rod;0,8;18;Grasslands;Herbivore;35;Pica-pau-de-cabe?a-amarela (Celeus flavescens);
+575;18;Dawolespek;Electric;Dark;Furious Woodpecker;Big Pecks;Static;Lighting Rod;1,8;72;Grasslands;Herbivore;-;Pica-pau-de-cabe?a-amarela (Celeus flavescens);
+576;19;Selineid;Psychic;Flying;Long Beak;Insomnia;Keen Eye;Telepathy;0,4;6;Forests;Herbivore;24;Ara?ari-poca (Selenidera maculirostris);
+577;20;Selychic;Psychic;Flying;Color Beak;Insomnia;Keen Eye;Telepathy;1,4;51;Forests;Herbivore;-;Ara?ari-poca (Selenidera maculirostris);
+578;21;Lemara;Normal;;Tiny Mara;Run Away;Guts;Hustle;0,5;37;All Places;Herbivore;26;Lebre-Mara (Dolichotis patagonum) ;
+579;22;Ledolira;Normal;;Mara;Run Away;Guts;Hustle;1,2;50;All Places;Herbivore;-;Lebre-Mara (Dolichotis patagonum) ;
+580;23;Rheaster;Steel;;Rhea;Run Away;Sand Veil;;0,4;31;Grasslands;Herbivore;25;Nandu-de-Darwin (Rhea pennata);
+581;24;Rheaspeed;Steel;;Nandu;Run Away;Sand Veil;;1,2;82;Grasslands;Herbivore;-;Nandu-de-Darwin (Rhea pennata);
+582;25;Vistric;Electric;;Tiny Viscacha;Static;;;0,5;13;Grasslands and Forests;Herbivore;27;Viscacha (Lagostomus maximus);
+583;26;Visbutler;Electric;Psychic;Viscacha;Static;;;1,1;27;Grasslands and Forests;Herbivore;-;Viscacha (Lagostomus maximus);Mordomo (Profissío)
+584;27;Constragon;Dragon;Dark;Dragon Snake;Strong Jaw;;Sheer Force;5;119;Forests;Carnivore;-;JibΩia (Boa constrictor);
+585;28;Snaklown;Fairy;Dark;Clown Snake;Intimidate;;Unnerve;2;67;Grasslands;Carnivore;-;Falsa-Coral (Erythrolamprus aesculapii);
+586;29;Berbefath;Grass;Fairy;Little Berry;Chlorophyll;;Healer;0,2;1;Grasslands;Herbivore;20;Calafate-da-patag?nia (Berberis ruscifolia);
+587;30;Beryfath;Grass;Fairy;Peace  Berry;Chlorophyll;;Healer;0,7;7;Grasslands;Herbivore;-;Calafate-da-patag?nia (Berberis ruscifolia);
+588;31;Beryteel;Grass;Steel;Steel Flower;Chlorophyll;;Healer;0,8;37;Grasslands;Herbivore;-;Floralis Generica (Monumento);
+589;32;Quanasu;Normal;;Quati;Run Away;Gluttony;;0,6;13;Grasslands;Herbivore;Colors Orb;Quati (Nasua nasua);
+590;33;Quagrass;Grass;;Flower Quati;Grass Pelt;Flower Veil;;1,2;26;Grasslands and Forests;Herbivore;-;Quati (Nasua nasua);
+591;34;Quafire;Fire;;Candle Quati;Flame Body;Flash Fire;;1,2;31;Grasslands and Strange Island;Herbivore;-;Quati (Nasua nasua);
+592;35;Quater;Water;;Sea Quati;Water Absorb;Water Veil;;1,1;35;Grasslands and Sea;Herbivore;-;Quati (Nasua nasua);
+593;36;Quactric;Electric;;Lamp Quati;Lightning Rod;Static;;1,3;43;Grasslands and Citys;Herbivore;-;Quati (Nasua nasua);
+594;37;Yaguacat;Fairy;;Yellow Cat;No Guard;Intimidate;Steadfast;0,3;6;Grasslands;Carnivore;17;Gato-dos-Pampas (Leopardus pajeros);
+595;38;Yaguapard;Fairy;;Feline;No Guard;Intimidate;Steadfast;1;56;Grasslands and Forests;Carnivore;39;Gato-dos-Pampas (Leopardus pajeros);
+596;39;Yaraguadont;Fairy;Fighting;Yaguarete;No Guard;Intimidate;Steadfast;2,1;118;Forests;Carnivore;-;Yaguaret?-abˇ (Lenda);
+597;40;Pichink;Steel;Ground;Tiny Armadillo;Cute Charm;;Unaware;0,3;36;Grasslands and Deserts;Omnivorous;38;Pichiciego-Menor (Chlamyphorus truncatus);
+598;41;Picrong;Steel;Ground;Spyke Armadillo;Cute Charm;;Unaware;1,6;99;Grasslands and Deserts;Omnivorous;-;Pichiciego-Menor (Chlamyphorus truncatus);
+599;42;Culamanos;Ghost;Psychic;Hands;Levitate;;Unnerve;1;5;Caves;Carnivore;Thorny Amber;Cueva de la manos (Caverna);
+600;43;Handoster;Ghost;Psychic;Cave;Levitate;;Unnerve;3;50;Caves;Carnivore;-;Cueva de la manos (Caverna);
+601;44;Spisheye;Bug;;Ootheca;Swarm;Compound Eyes;Defiant;0,05;0,1;Grasslands and Forests;Carnivore;30/Habitat;Ooteca Aranha;
+602;45;Spiling;Bug;Fighting;Fighting Spider;Swarm;Compound Eyes;Defiant;1,7;67;Grasslands;Carnivore;57;Actinosoma pentacanthum;
+603;46;Spirange;Bug;Dark;Mask Spider;Swarm;Compound Eyes;Defiant;1,8;100;Forests;Carnivore;-;Actinosoma pentacanthum;
+604;47;Dyzboy;Ice;;Little;Refrigerate;Ice Body;Dry Skin;0,5;17;Ice Places;Omnivorous;20;Dyhzy;
+605;48;Dyzdyjo;Ice;;Confused;Refrigerate;Ice Body;Dry Skin;1;35;Ice Places;Omnivorous;40;Dyhzy;
+606;49;Dyzdyqueen;Ice;;Glamorous;Refrigerate;Ice Body;Dry Skin;1,6;71;Ice Places;Omnivorous;-;Dyhzy;
+607;50;Teinicko;Psychic;Fire;Witch Lizard;Magic Bounce;Magic Guard;Magician;1;29;Caves and Forests;Carnivore;50 and Female;Teiniaguˇ (Lenda);Hemidactylus mabouia
+608;51;Teinitchgua;Psychic;Fire;Teinagua;Magic Bounce;Magic Guard;Magician;2;98;Caves;Omnivorous;-;Teiniaguˇ (Lenda);Hemidactylus mabouia
+609;52;Dinossil;Rock;Ghost;Living Fossil;Sturdy;;;0,4;24;Caves;Nothing;Fossil;Piatnitzkyssauro (Piatnitzkysaurus floresi);
+610;53;Dinosth;Rock;Ghost;Ghost Dinossaur;Levitate;;;0,8;36;Caves;Carnivore;40;Piatnitzkyssauro (Piatnitzkysaurus floresi);
+611;54;Dinotniztzky;Rock;Ghost;Undead Dinossaur;Levitate;;;1,5;200;Caves;Carnivore;-;Piatnitzkyssauro (Piatnitzkysaurus floresi);
+612;55;Fossinax;Rock;Dark;Little Reptile;Sturdy;Strong Jaw;;0,6;101;Grasslands;Carnivore;33;Fasolasuchus tenax;
+613;56;Fasonax;Rock;Dark;Giant Reptile.;Sturdy;Strong Jaw;;2,5;397;Grasslands;Carnivore;-;Fasolasuchus tenax;
+614;57;Eggtite;Ice;Flying;Baby Buzzard;Brave Bird;;;0,3;12;Mountain;Carnivore;18 or Dark Move;Êguia-chilena (Geranoaetus melanoleucus);Falcío-Peregrino (Falco peregrinus)
+615;58;Buzzctite;Ice;Dark;Dark Buzzard;Brave Bird;;;1,2;21;Mountain;Carnivore;-;Falcío-Peregrino (Falco peregrinus);
+616;59;Eaglectite;Ice;Flying;Ice Buzzard;Brave Bird;;;2;67;Mountain;Carnivore;-;Êguia-chilena (Geranoaetus melanoleucus);
+617;60;Ohaoha;Normal;Dragon;Aho Aho;Fur Coat;;;0,6;12;Forests and Grasslands;Carnivore;21;AhΩ-AhΩ;
+618;61;Ohariot;Normal;Dragon;Furball;Fur Coat;;;1,2;67;Forests;Carnivore;39;AhΩ-AhΩ;
+619;62;Ohojoster;Normal;Dragon;Giant Aho Aho;Fur Coat;;;2;80;Forests;Carnivore;-;AhΩ-AhΩ;
+620;63;Corazmon;Psychic;Steel;Arrancacorazones;Pressure;Intimidate;;1,7;67;Reserarch Lab;Heart;-;Attaque 77 - Antihumano (Êlbum);
+621;64;Sabypoda;Normal;;Baby Sauropod;Adaptability;;Gluttony;1,5;100;Strange ice Island;Herbivore;50 or Steel Item or Thorny Amber;SaurΩpodes;
+622;65;Sagrounpoda;Ground;;Ground Sauropod;Adaptability;;Sand Force;11;1100;Strange ice Island;Herbivore;-;Argentinossauro (Argentinosaurus huinculensis);
+623;66;Sagonpoda;Dragon;;Dragon Sauropod;Adaptability;;Mold Breaker;4,5;450;Strange ice Island;Herbivore;-;Amargossauro (Amargasaurus cazuei);
+624;67;Saeelpoda;Steel;;Steel Sauropod;Adaptability;;Filter;6;600;Strange ice Island;Herbivore;-;Lavocatissauro (Lavocatisaurus agrioensis);
+625;68;Sajabapoda;Rock;;Rock Sauropod;Adaptability;;Rock Head;5,5;550;Strange ice Island;Herbivore;-;Bajadassauro (Bajadasaurus pronuspinax);
+626;69;Mantherium;Normal;Bug;Ancient Hybrid;Technician;;Steadfast;0,4;10;Strange ice Island;Omnivorous;53;Megatherium;Argentine white-crested mantis (Stagmatoptera hyaloptera)
+627;70;Megantis;Normal;Bug;Ancient Hybrid;Technician;;Steadfast;3;497;Strange ice Island;Omnivorous;-;Megatherium;Argentine white-crested mantis (Stagmatoptera hyaloptera)
+628;71;Braknush;Water;Steel;Brass knuckles;Swift Swim;;Anger Point;0,3;17;Sea;Omnivorous;-;Soco-Ingl?s;
+629;72;Paant;Bug;Normal;Fake Panda;Run Away;Gluttony;Scrappy;0,6;5;Forests;Herbivore;-;Formiga-Panda  (Euspinolia militaris);
+630;73;Alkenkoi;Dark;Flying;Flying Reptile;Strong Jaw;;Pressure;1,2;63;Strange ice Island;Carnivore;42;Allkauren koi;
+631;74;Koiaken;Dark;Flying;Giant Flying;Strong Jaw;;Pressure;7;398;Strange ice Island;Carnivore;-;Allkauren koi;
+632;75;Skaculata;Water;;Little Mantray;Color Change;;;0,7;28;Sea;Carnivore;31;Patim-Branco-Pontilhado (Bathyraja albomaculata);
+633;76;Skamanray;Water;;Batoidea;Color Change;;;1,4;47;Sea;Carnivore;-;Patim-Branco-Pontilhado (Bathyraja albomaculata);
+634;77;Patagorse;Dark;Water;Little Seahorse;Swift Swim;;;0,6;14;Sea;Carnivore;30;Cavalo-Marinho-da-Patag?nia (Hippocampus patagonicus);
+635;78;Patasegorse;Dark;Water;Serpent Seahorse;Swift Swim;;;2;119;Sea;Carnivore;-;Cavalo-Marinho-da-Patag?nia (Hippocampus patagonicus);
+636;79;Tandiz;Grass;;Tango;Dancer;;;0,6;18;Grasslands;Omnivorous;30 + Genero;Aprendiz de Dan?a;-
+637;80;Tanjer;Grass;;Tango;Dancer;;;1,6;58;Grasslands;Omnivorous;-;Dan?arina de Tango;Êrvore-Lenga (Nothofagus Pumilio)
+638;81;Tambre;Grass;;Tango;Dancer;;;1,7;67;Grasslands;Omnivorous;-;Dan?arino de Tango;Alfarrobeira (Ceratonia siliqua)
+639;82;Alfoison;Poison;Fairy;Alfajor;Immunity;Thick Fat;Gluttony;1;60;Grasslands;Herbivore;-;Alfajor (Comida);
+640;83;Stragorgon;Dark;Poison;Stranger;Strong Jaw;;;1;55;Strange ice Island;Carnivore;-;Demogorgon (Stranger Things);
+641;84;Arvictien;Psychic;Electric;Artificial Life;Special Levitate;;;1,2;222;Laboratory and Usines;Omnivorous;-;-;
+642;85;Braice;Ice;Psychic;Frozen Brain;Ice Body;Synchronize;;0,6;18;Strange ice Island;Herbivore;55;C?rebro Congelado;
+643;86;Frobrain;Ice;Psychic;Frozen Froag;Ice Body;Synchronize;;1,3;42;Strange ice Island;Herbivore;-;Rí-de-Vidro (Vitreorana uranoscopa);
+644;87;Eleptiny;Dragon;Ghost;Old Tiny Reptile;Aftermath;;;0,6;55;Forests and Grasslands;Carnivore;48;Elessauro (Elessaurus gondwanoccidens);
+645;88;Eleptile;Dragon;Ghost;Old Reptile;Aftermath;;;1,5;117;Forests and Grasslands;Carnivore;-;Elessauro (Elessaurus gondwanoccidens);
+646;89;Taesite;Psychic;Poison;Taenia;Parasite*;;;3;0,1;All Places;Omnivorous;-;T?nia (Taenia solium);
+647;90;Cosworm;Cosmic;Electric;Wormhole;Special Immunity;;;7,3;17;Space and Strange ice Island;Cosmic Rays;-;Buraco de Minhoca;
+648;91;Cucuenymia;Electric;Water;Electric Cucumber;Lightning Rod;;;1,2;15;Sea;Omnivorous;-;Pepino-do-Mar ();
+649;92;Garcoprion;Dragon;Water;Ancient Shark;Swift Swim;Strong Jaw;;1,7;197;Strange ice Island;Carnivore;-;Helicoprion;
+650;93;Ninphant;Bug;;Ninph;Harden;Weak Armor;;0,2;5;Strange ice Island;Omnivorous;;Formiga (Pheidole subaberrans);
+651;94;Attactant;Bug;Dragon;Attack Ant;Mold Breaker;Weak Armor;;1,3;115;Strange ice Island;Omnivorous;-;Formiga (Pheidole subaberrans);
+652;95;Protectant;Bug;Dragon;Protector Ant;Mold Breaker;Weak Armor;;1,5;135;Strange ice Island;Omnivorous;-;Formiga (Pheidole subaberrans);
+653;96;Liquno;Water;;Liquid;Liquid Ooze;;;1,7;50;Unknown;Unknown;-;L≠quido;
+654;97;Solidos;Water;Ice;Solid;Snow Warning;;;1,7;70;Unknown;Unknown;-;SΩlido;
+655;98;Gaseotres;Water;Flying;Gaseous;Rain Dish;;;1,6;30;Unknown;Unknown;-;Gasoso;
+656;99;Giantmal;Normal;Ghost;Normal;Giant Smash*;;;20;20000;Unknown;Unknown;-;-;
+657;100;Giantrange;Fighting;Psychic;Strange;Solid Wings*;;;10;15000;Unknown;Unknown;-;-;
+658;101;Whorld;Dark;Dragon;Duality;Black Hole*;;;15;17000;Unknown;Unknown;-;-;
+659;20;Fucspider;Bug;Steel;Spider Car;Swarm;Run Away;;0,8;67;Grasslands;Carnivore;-;Imagem Fusca Aranha;
+660;21;Olichow;Normal;Ice;ChowChow;Fur Coat;;;1,8;77;Mountains;Omnivorous;-;Chow-Chow (Canis familiaris);
+661;22;Imperbrute;Bug;Dark;Bug Imperator;Imperor Bug;;;2,5;147;Unknown;Carnivore;-;Escorpiío-Imperador (Pandinus imperator);
+662;23;Suiciptile;Ghost;Normal;Suicide;Aftermath;;;0,5;7;Unknown;Unknown;-;-;
+663;24;Lizarglug;Steel;Electric;Power Plug;Static;Lightning Rod;;0,1;1;City's;Carnivore;20;Tomada BR;
+664;25;Powerplard;Steel;Electric;Plug Lizard;Static;Lightning Rod;;0,6;25;City's;Carnivore;40;TomadaBR;Lagarixa-Dom?stica
+665;26;Pluzard;Steel;Electric;Dragon Plug;Static;Lightning Rod;;1,9;325;Mountains;Carnivore;-;TomadaBR;Lagarixa-Dom?stica
+666;27;Porifegron;Rock;Dragon;Sponje;Natural Cure;Weak Armor;Regenerator;1,7;134;Grasslands;Omnivorous;-;Esponjas Marinhas;
+667;28;Alittle;Psychic;;Little Alien;Synchronize;;;0,2;10;Mountains;Omnivorous;30;Alienigenas;
+668;29;Alicoon;Psychic;;Cocoon;Synchronize;;;0,6;20;Mountains;Omnivorous;55;Alienigenas;
+669;30;Fastalien;Psychic;;Alien;Synchronize;;;1,7;65;Mountains;Omnivorous;-;Alienigenas;
+670;31;Monkeyjin;Fighting;Psychic;Fighting Monkey;Technician;;;1,4;38;Mountains;Omnivorous;40;Sayajin (Dragon Ball);
+671;32;Oozujin;Fighting;Normal;Powerfull Monkey;Technician;;;3,3;697;Mountains;Omnivorous;-;Sayajin (Dragon Ball);
+672;33;Jarchost;Psychic;Ghost;Canopic Jar;Levitate;;;1;17;Deserts;Carnivore;-;Jarro CanΩpico;
+673;34;Ghosrcass;Ghost;Fighting;Little Ghost;Arena Trap;Cursed Body;;0,2;1;Cemetery's;Carnivore;70;Fantasmas;
+674;35;Trojarcass;Ghost;Fighting;Carcass;Arena Trap;Cursed Body;;4;300;Cemetery's;Carnivore;-;Cavalo de TrΩia;
+675;36;Whigron;Dragon;Electric;White Dragon;Static;;Regenerator;2;124;Forests;Carnivore;-;DragÑes;
+676;37;Cuipig;Sound;;Singer Rodent;Soundproof;;;0,6;19;Forests;Herbivore;-;Porquinho-da-India (Cavia porcellus);
+677;38;Ballhoster;Ghost;Dark;Ballet Dancer;Cursed Body;Clear Body;;1,5;51;Roads;Carnivore;-;Bailarina;
+678;39;Drifigon;Dragon;Poison;Porcupinefish;Poison Touch;Poison Point;;0,5;3;Sea;Carnivore;-;Baiacu-Espinho;
+679;40;Viruyster;Poison;Ghost;Antivirus;Poison Touch;Shed Skin;;0,01;1;All Places;Nothing;-;V≠rus em geral;
+680;41;Liontterfly;Normal;Bug;Insect Feline;Swarm;Rivalry;Tinted Lens;2;218;Savannah;Carnivore;-;Leío;Leptopteras
+681;42;Furioscano;Fire;Fighting;Fighting Volcano;Magma Armor;Iron Fist;;4;999;All Places;Omnivorous;-;Vulcío;
+682;43;Slunail;Dragon;Rock;Rock Snail;Sturdy ;Solid Rock;;0,25;40;Mountains;Herbivore;40;Shussebora;
+683;44;Shumacco;Dragon;Water;Water Dragon;Sturdy ;Solid Rock;;2,3;130;Caves;Carnivore;-;Shussebora;
+684;45;Shumacca;Dragon;Dark;Dark Dragon;Sturdy ;Solid Rock;;2;170;Sea;Carnivore;-;Shussebora;
+685;46;Horcleaner;Water;Fairy;Seahorse Cleaner;Regenerator;;;1,1;53;Sea;Herbivore;-;Cavalo-Marinho;
+686;47;Hacowpyt;Fairy;Fire;Fertile Cow;Flame Body;Magma Armor;;1,7;211;Savannah;Herbivore;-;Hathor (Deus Egito);
+687;48;Stathroom;Fairy;Electric;Static Mushroom;Static;;;2,3;55;Forests;Herbivore;-;;
+688;49;Echidhunter;Fairy;Electric;Static Echidna;Lighting Rod;Fur Coat;;0,6;12;Forests;Carnivore;-;equidna-de-bico-longo (Zaglossus bruijnii);
+689;1;Cactache;Grass;;Cactus;Rough Skin;;;1;17;Deserts;Herbivore;-;Saguaro (Carnegiea gigantea);
+690;2;Bireophaire;Fire;;Bird cuckold;Magma Armor;;;0,9;16;Forests;Herbivore;-;Mutum-Cornudo (Oreophasis derbianus);
+691;3;Waxolotl;Water;;Axolotl;Water Absorb;;;0,7;5;Lakes;Carnivore;-;Axolote (Ambystoma mexicanum);
+692;4;Electrunner;Electric;;Roadrunner;Motor Drive;;;1;16;Deserts;Herbivore;-;Papa-l?guas-pequeno (Geococcyx velox);
+693;5;;Bug;;;;;;;;;;-;Tarantula (Brachypelma smith);
+694;6;;Flying;;;;;;;;;;-;;
+695;7;;Rock;;;;;;;;;;-;;
+696;8;;Ground;;;;;;;;;;-;;
+697;9;Aleguin;Ice;;Fighter Penguin;Ice Body;;;1,8;87;Icelands;Carnivore;-;Pinguim-Gentoo (Pygoscelis papua);
+698;10;;Dark;;;;;;;;;;-;;
+699;11;Lahomuerte;Ghost;;Lady of the Holy Death;Cursed Body;Intimidate;;1,5;33;Cemitery;Nothing;-;Santa Muerte;
+700;12;;Fairy;;;;;;;;;;-;Pinata;
+701;13;;Psychic;;;;;;;;;;-;;
+702;14;Xoloitzaw;Normal;;Xoloitzcuintle;Protean;;;1;39;Grasslands;Omnivorous;-;Cachorro-Xoloitzcuintle (Canis familiaris);
+703;15;;Steel;;;;;;;;;;-;;
+704;16;;Poison;;;;;;;;;;-;;
+705;17;Zebaurus;Fighting;;Giang Ox;Scrappy;;;2,1;410;Grasslands;Herbivore;-;Boi-Sardo-Negro (Bos taurus);Luta Livre
+706;18;Dragobrije;Dragon;;Alebrije;Special Immunity;;;-;-;;;-;Alebrije;
+707;50;Lexat;Fairy;Water;Beauty Cat;Fur Coat;;;0,4;6;All Places;Carnivore;-;Lexa, Gato-dom?stico (Felis catus);
+708;51;Beerpig;Ice;;Beer Pig;Ice Body;;;2;237;Icelands;Omnivorous;-;Porco;
+709;52;Dragovolent;Dragon;Dark;Malevolent;Illusion;;Multiscale;1,7;70;Unknown;Omnivorous;-;Mal?vola (Malevolent);
+710;53;Faerygon;Fairy;Bug;Fairy Monster;Multiscale;;Marvel Scale;2,7;430;Icelands;Carnivore;-;Faerie Dragon (Monstro do D&D);
+711;54;Flygther;Fighting;Psychic;Little Warrior;Defiant;;Huge Power;1;49;Grasslands;Omnivorous;-;Fly, O Pequeno guerreiro;
+712;55;Destruigon;Dragon;Poison;Destruction Dragon;Poison Touch;;Moxie;3,5;490;Grasslands;Carnivore;-;DragÑes em geral;
+713;56;Mirround;Ice;Ground;Lust Creature;Run Away;;;0,6;25;Icelands;Omnivorous;-;M˙sica Lama (Lux˙ria);
+714;57;Giarround;Ice;Ground;;;;;;;Icelands;Omnivorous;30;;
