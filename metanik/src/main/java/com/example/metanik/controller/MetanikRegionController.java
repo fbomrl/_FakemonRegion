@@ -30,7 +30,7 @@ public class MetanikRegionController {
 
 		@PostMapping(value = "gravar")
 		@ResponseBody
-		public ResponseEntity<Fakemon> gravar (@RequestBody Fakemon fakemon){
+		public ResponseEntity<Fakemon> gravar (@RequestBody @Valid Fakemon fakemon){
 			Fakemon fkm = metanikDao.save(fakemon);
 			return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
 

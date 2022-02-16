@@ -24,11 +24,12 @@ public class Fakemon {
 
 	@Column(name = "name_fkm", nullable = false, length = 20)
 	@NotBlank(message = "name_fkm is mandatory")
-//	@Pattern(regexp = "^(A-Z)+(.)*")
+	@Pattern(regexp = "^[A-Z]+(.)*")
 	private String name_fkm;
 
 	@Column(name = "type1", nullable = false)
 	@NotBlank(message = "type1 is mandatory")
+	@Pattern(regexp = "^[A-Z]+(.)*")
 	private String type1;
 
 	@Column(name = "type2")
