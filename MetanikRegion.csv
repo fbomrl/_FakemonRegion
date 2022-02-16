@@ -500,18 +500,18 @@ id_general;id_reg;name_fkm;type1;type2;Species;abilities1;abilities2;hiddenabili
 499;199;Goeen;Dark;Psychic;God ;Particle of God;;;2,7;289;Unknown;Unknown;-;Deus Anœbis;
 500;200;Gotwee;Ghost;Psychic;God ;Particle of God;;;2,7;80;Unknown;Unknown;-;Deus Seth;
 501;201;Godrie;Fire;Psychic;God ;Particle of God;;;3;214;Unknown;Unknown;-;Deus H½rus/Rÿ;
-502;1;;Cosmic;Fire;Aries;;;;1,8;300;Unknown;;-;;
-503;2;;Cosmic;Electric;Taurus;;;;2;560;Unknown;;-;Boi de Watusi;
-504;3;;Cosmic;Psychic;Gemini;;;;1,7;115;Unknown;;-;;kosmiese wesens
-505;4;;Cosmic;Ground;Cancer;;;;1,5;100;Unknown;;-;;kosmiese wesens
-506;5;;Cosmic;Grass;Leo;;;;1,6;90;Unknown;;-;;kosmiese wesens
-507;6;;Cosmic;Fairy;Virgo;;;;1,7;158;Unknown;;-;;kosmiese wesens
-508;7;;Cosmic;Rock;Libra;;;;1,8;700;Unknown;;-;;kosmiese wesens
-509;8;;Cosmic;Bug;Scorpio;;;;1,5;200;Unknown;;-;;kosmiese wesens
-510;9;;Cosmic;Fighting;Sagittarius;;;;2,2;400;Unknown;;-;;kosmiese wesens
-511;10;;Cosmic;Steel;Capricorn;;;;2;147;Unknown;;-;;kosmiese wesens
-512;11;;Cosmic;Water;Aquarius;;;;1,7;100;Unknown;;-;;kosmiese wesens
-513;12;;Cosmic;Ice;Pisces;;;;1,7;200;Unknown;;-;;kosmiese wesens
+502;1;Zodaries;Cosmic;Fire;Aries;;;;1,8;300;Unknown;;-;;
+503;2;Zodtaurus;Cosmic;Electric;Taurus;;;;2;560;Unknown;;-;Boi de Watusi;
+504;3;Zodemini;Cosmic;Psychic;Gemini;;;;1,7;115;Unknown;;-;;kosmiese wesens
+505;4;Zodincer;Cosmic;Ground;Cancer;;;;1,5;100;Unknown;;-;;kosmiese wesens
+506;5;Zodleo;Cosmic;Grass;Leo;;;;1,6;90;Unknown;;-;;kosmiese wesens
+507;6;Zodirgo;Cosmic;Fairy;Virgo;;;;1,7;158;Unknown;;-;;kosmiese wesens
+508;7;Zodlibra;Cosmic;Rock;Libra;;;;1,8;700;Unknown;;-;;kosmiese wesens
+509;8;Zodicorpio;Cosmic;Bug;Scorpio;;;;1,5;200;Unknown;;-;;kosmiese wesens
+510;9;Zodtarius;Cosmic;Fighting;Sagittarius;;;;2,2;400;Unknown;;-;;kosmiese wesens
+511;10;Zodricorn;Cosmic;Steel;Capricorn;;;;2;147;Unknown;;-;;kosmiese wesens
+512;11;Zodquarius;Cosmic;Water;Aquarius;;;;1,7;100;Unknown;;-;;kosmiese wesens
+513;12;Zodpisces;Cosmic;Ice;Pisces;;;;1,7;200;Unknown;;-;;kosmiese wesens
 514;1;Mercuryt;Steel;Rock;Mercury;Special Levitate;;;-;-;Space;Unknown;-;Mercœrio (Planeta);
 515;2;Venuy;Fairy;Rock;Venus;Special Levitate;;;-;-;Space;Unknown;-;V?nus (Planeta);
 516;3;Earthy;Ground;Water;Earth;Special Levitate;;;-;-;Space;Unknown;-;Terra (Planeta);
@@ -691,18 +691,18 @@ id_general;id_reg;name_fkm;type1;type2;Species;abilities1;abilities2;hiddenabili
 690;2;Bireophaire;Fire;;Bird cuckold;Magma Armor;;;0,9;16;Forests;Herbivore;-;Mutum-Cornudo (Oreophasis derbianus);
 691;3;Waxolotl;Water;;Axolotl;Water Absorb;;;0,7;5;Lakes;Carnivore;-;Axolote (Ambystoma mexicanum);
 692;4;Electrunner;Electric;;Roadrunner;Motor Drive;;;1;16;Deserts;Herbivore;-;Papa-l?guas-pequeno (Geococcyx velox);
-693;5;;Bug;;;;;;;;;;-;Tarantula (Brachypelma smith);
-694;6;;Flying;;;;;;;;;;-;;
-695;7;;Rock;;;;;;;;;;-;;
-696;8;;Ground;;;;;;;;;;-;;
+693;5;Theraphosmith;Bug;;;;;;;;;;-;Tarantula (Brachypelma smith);
+694;6;Flying;Flying;;;;;;;;;;-;;
+695;7;Rock;Rock;;;;;;;;;;-;;
+696;8;Ground;Ground;;;;;;;;;;-;;
 697;9;Aleguin;Ice;;Fighter Penguin;Ice Body;;;1,8;87;Icelands;Carnivore;-;Pinguim-Gentoo (Pygoscelis papua);
-698;10;;Dark;;;;;;;;;;-;;
+698;10;Dark;Dark;;;;;;;;;;-;;
 699;11;Lahomuerte;Ghost;;Lady of the Holy Death;Cursed Body;Intimidate;;1,5;33;Cemitery;Nothing;-;Santa Muerte;
-700;12;;Fairy;;;;;;;;;;-;Pinata;
-701;13;;Psychic;;;;;;;;;;-;;
+700;12;Dark;Fairy;;;;;;;;;;-;Pinata;
+701;13;Psychic;Psychic;;;;;;;;;;-;;
 702;14;Xoloitzaw;Normal;;Xoloitzcuintle;Protean;;;1;39;Grasslands;Omnivorous;-;Cachorro-Xoloitzcuintle (Canis familiaris);
-703;15;;Steel;;;;;;;;;;-;;
-704;16;;Poison;;;;;;;;;;-;;
+703;15;Steel;Steel;;;;;;;;;;-;;
+704;16;Poison;Poison;;;;;;;;;;-;;
 705;17;Zebaurus;Fighting;;Giang Ox;Scrappy;;;2,1;410;Grasslands;Herbivore;-;Boi-Sardo-Negro (Bos taurus);Luta Livre
 706;18;Dragobrije;Dragon;;Alebrije;Special Immunity;;;-;-;;;-;Alebrije;
 707;50;Lexat;Fairy;Water;Beauty Cat;Fur Coat;;;0,4;6;All Places;Carnivore;-;Lexa, Gato-dom?stico (Felis catus);
@@ -712,4 +712,4 @@ id_general;id_reg;name_fkm;type1;type2;Species;abilities1;abilities2;hiddenabili
 711;54;Flygther;Fighting;Psychic;Little Warrior;Defiant;;Huge Power;1;49;Grasslands;Omnivorous;-;Fly, O Pequeno guerreiro;
 712;55;Destruigon;Dragon;Poison;Destruction Dragon;Poison Touch;;Moxie;3,5;490;Grasslands;Carnivore;-;Drag„es em geral;
 713;56;Mirround;Ice;Ground;Lust Creature;Run Away;;;0,6;25;Icelands;Omnivorous;-;Música Lama (Luxúria);
-714;57;Giarround;Ice;Ground;;;;;;;Icelands;Omnivorous;30;;
+714;57;Giarround;Ice;Ground;Lust Creature;Run Away;;;;;Icelands;Omnivorous;30;;
