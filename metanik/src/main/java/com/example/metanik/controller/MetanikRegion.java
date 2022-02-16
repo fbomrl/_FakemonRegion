@@ -49,8 +49,8 @@ public class MetanikRegion {
 //		}else {
 //			return new ResponseEntity<>("Esse Fakemon não existe no sistema;",HttpStatus.NOT_FOUND);
 //		}
-
-	}
+//
+//	}
 
 
 
