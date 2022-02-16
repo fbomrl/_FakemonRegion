@@ -1,30 +1,17 @@
 package com.example.metanik.controller;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 
 import com.example.metanik.dao.MetanikDao;
 import com.example.metanik.model.Fakemon;
-import com.opencsv.CSVReader;
-import com.opencsv.CSVReaderBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class MetanikRegion {
+public class MetanikRegionController {
 	@Autowired
 	private MetanikDao metanikDao;
 
@@ -39,6 +26,9 @@ public class MetanikRegion {
 		return this.metanikDao.findById(id_general).orElse(null);
 	}
 
+
+
+
 //	@GetMapping({"/fakemon/{id_general}"})
 //	public ResponseEntity<Object> teste(@PathVariable int id_general) {
 //		Optional<Fakemon> fakemon = this.metanikDao.findById(id_general);
@@ -51,8 +41,6 @@ public class MetanikRegion {
 //		}
 //
 //	}
-
-
 
 
 

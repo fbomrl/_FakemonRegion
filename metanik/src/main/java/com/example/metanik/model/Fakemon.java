@@ -9,16 +9,16 @@ public class Fakemon {
 
 	@Id
 	@GeneratedValue
-	@Column(name = "id_general")
+	@Column(name = "id_general", nullable = false)
 	private int id_general;
 
-	@Column(name = "id_reg")
+	@Column(name = "id_reg", nullable = false)
 	private int id_reg;
 
-	@Column(name = "name_fkm")
+	@Column(name = "name_fkm", nullable = false)
 	private String name_fkm;
 
-	@Column(name = "type1")
+	@Column(name = "type1", nullable = false)
 	private String type1;
 
 	@Column(name = "type2")
