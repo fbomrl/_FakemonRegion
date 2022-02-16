@@ -9,6 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+
 
 @RestController
 public class MetanikRegionController {
@@ -30,8 +32,9 @@ public class MetanikRegionController {
 		@ResponseBody
 		public ResponseEntity<Fakemon> gravar (@RequestBody Fakemon fakemon){
 			Fakemon fkm = metanikDao.save(fakemon);
-
 			return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
+
+
 
 
 		}

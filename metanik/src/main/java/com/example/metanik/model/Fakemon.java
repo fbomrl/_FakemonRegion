@@ -1,10 +1,11 @@
 package com.example.metanik.model;
 
-import com.sun.istack.NotNull;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 
 @Entity
@@ -14,15 +15,16 @@ public class Fakemon {
 
 	@Id
 	@Column(name = "id_general", nullable = false)
-	@NotBlank(message = "id_general is mandatory")
+	@NotNull(message = "id_general is mandatory")
 	private Integer id_general;
 
 	@Column(name = "id_reg", nullable = false)
-	@NotBlank(message = "id_reg is mandatory")
+	@NotNull(message = "id_reg is mandatory")
 	private Integer id_reg;
 
 	@Column(name = "name_fkm", nullable = false, length = 20)
 	@NotBlank(message = "name_fkm is mandatory")
+//	@Pattern(regexp = "^(A-Z)+(.)*")
 	private String name_fkm;
 
 	@Column(name = "type1", nullable = false)
