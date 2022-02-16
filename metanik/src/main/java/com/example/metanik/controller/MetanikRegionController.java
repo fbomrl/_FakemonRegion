@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import com.example.metanik.dao.MetanikDao;
 import com.example.metanik.model.Fakemon;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
@@ -25,6 +25,17 @@ public class MetanikRegionController {
 	public Fakemon FiltroFakemon(@PathVariable int id_general) {
 		return this.metanikDao.findById(id_general).orElse(null);
 	}
+
+		@PostMapping(value = "gravar")
+		@ResponseBody
+		public ResponseEntity<Fakemon> gravar (@RequestBody Fakemon fakemon){
+			Fakemon fkm = metanikDao.save(fakemon);
+
+			return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
+
+
+		}
+
 
 
 
