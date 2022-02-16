@@ -1,6 +1,11 @@
 package com.example.metanik.model;
 
+import com.sun.istack.NotNull;
+import org.springframework.lang.NonNull;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+
 
 @Entity
 @Table(name = "metanikregion")
@@ -9,15 +14,19 @@ public class Fakemon {
 
 	@Id
 	@Column(name = "id_general", nullable = false)
-	private int id_general;
+	@NotBlank(message = "id_general is mandatory")
+	private Integer id_general;
 
 	@Column(name = "id_reg", nullable = false)
-	private int id_reg;
+	@NotBlank(message = "id_reg is mandatory")
+	private Integer id_reg;
 
 	@Column(name = "name_fkm", nullable = false, length = 20)
+	@NotBlank(message = "name_fkm is mandatory")
 	private String name_fkm;
 
 	@Column(name = "type1", nullable = false)
+	@NotBlank(message = "type1 is mandatory")
 	private String type1;
 
 	@Column(name = "type2")
@@ -56,19 +65,19 @@ public class Fakemon {
 	@Column(name = "inspiration2")
 	private String inspiration2;
 
-	public int getId_general() {
+	public Integer getId_general() {
 		return this.id_general;
 	}
 
-	public void setId_general(int id_general) {
+	public void setId_general(Integer id_general) {
 		this.id_general = id_general;
 	}
 
-	public int getId_reg() {
+	public Integer getId_reg() {
 		return id_reg;
 	}
 
-	public void setId_reg(int id_reg) {
+	public void setId_reg(Integer id_reg) {
 		this.id_reg = id_reg;
 	}
 
