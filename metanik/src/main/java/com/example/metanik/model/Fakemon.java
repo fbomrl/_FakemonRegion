@@ -58,7 +58,7 @@ public class Fakemon {
 	private String inspiration2;
 
 	public int getId_general() {
-		return id_general;
+		return this.id_general;
 	}
 
 	public void setId_general(int id_general) {
