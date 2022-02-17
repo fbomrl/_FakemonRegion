@@ -1,32 +1,59 @@
 package com.example.metanik.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import com.example.metanik.dao.MetanikDao;
 import com.example.metanik.model.Fakemon;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 
 @RestController
 public class MetanikRegionController {
-	@Autowired
-	private MetanikDao metanikDao;
+    @Autowired
+    private MetanikDao metanikDao;
 
-	@GetMapping("/fakemon")
-	public ArrayList<Fakemon> listaFakemon() {
-		Iterable<Fakemon> lista = this.metanikDao.findAll();
-		return (ArrayList<Fakemon>) lista;
-	}
+    @GetMapping("/fakemon")
+    public ArrayList<Fakemon> listaFakemon() {
+        Iterable<Fakemon> lista = this.metanikDao.findAll();
+        return (ArrayList<Fakemon>) lista;
+    }
 
-	@GetMapping({"/fakemon/{id_general}"})
-	public Fakemon FiltroFakemon(@PathVariable int id_general) {
-		return this.metanikDao.findById(id_general).orElse(null);
-	}
+    @GetMapping({"/fakemon/{id_general}"})
+    public Fakemon FiltroFakemon(@PathVariable int id_general) {
+        return this.metanikDao.findById(id_general).orElse(null);
+    }
+
+    @PostMapping(value = "gravar")
+    @ResponseBody
+    public ResponseEntity<Fakemon> gravar(@RequestBody @Valid Fakemon fakemon) {
+        Fakemon fkm = metanikDao.save(fakemon);
+        return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
+    }
 
 
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public Map<String, String> handleValidationException(MethodArgumentNotValidException ex) {
+        Map<String, String> errors = new HashMap<>();
+
+        ex.getBindingResult().getAllErrors().forEach((error) -> {
+
+            String fieldName = ((FieldError) error).getField();
+            String errorMessage = error.getDefaultMessage();
+            errors.put(fieldName, errorMessage);
+        });
+
+        return errors;
+    }
 
 
 //	@GetMapping({"/fakemon/{id_general}"})
@@ -41,7 +68,6 @@ public class MetanikRegionController {
 //		}
 //
 //	}
-
 
 
 //	String arquivoCSV = "C:\\Users\\fabio\\Documents\\_FakemonRegion\\MetanikRegion.csv";
@@ -81,7 +107,7 @@ public class MetanikRegionController {
 //	    	    }
 
 
-			}
+}
 
 
 
