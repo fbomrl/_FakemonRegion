@@ -43,6 +43,15 @@ public class MetanikRegionController {
 
         return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
     }
+    @PutMapping("/fakemon/")
+    @ResponseBody
+    public ResponseEntity<?> atualizar(@RequestBody @Valid Fakemon fakemon){
+    if(fakemon.getId_general() == null) return new ResponseEntity<String>("ID_General precisa ser informado", HttpStatus.OK);
+
+        Fakemon fkm = metanikDao.save(fakemon);
+
+        return new ResponseEntity<Fakemon>(fkm, HttpStatus.OK);
+    }
 
     @DeleteMapping("/fakemon/{id_general}")
     @ResponseBody
