@@ -14,7 +14,7 @@ import javax.validation.constraints.Pattern;
 public class Fakemon {
 
     @Id
-    @Column(name = "id_general", nullable = false)
+    @Column(name = "id_general", nullable = false, unique = true)
     @NotNull(message = "Campo Obrigatório!")
     private Integer id_general;
 

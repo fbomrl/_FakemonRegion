@@ -3,6 +3,7 @@ package com.example.metanik.controller;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 import com.example.metanik.dao.MetanikDao;
 import com.example.metanik.model.Fakemon;
@@ -32,13 +33,24 @@ public class MetanikRegionController {
         return this.metanikDao.findById(id_general).orElse(null);
     }
 
-    @PostMapping(value = "gravar")
+    @PostMapping("/fakemon")
     @ResponseBody
     public ResponseEntity<Fakemon> gravar(@RequestBody @Valid Fakemon fakemon) {
+        Optional<Fakemon> fakemonRetornado = metanikDao.findById(fakemon.getId_general());
+        if(fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
+
         Fakemon fkm = metanikDao.save(fakemon);
+
         return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
     }
 
+    @DeleteMapping("/fakemon/{id_general}")
+    @ResponseBody
+    public ResponseEntity<String> delete(@PathVariable Integer id_general) {
+        metanikDao.deleteById(id_general);
+        return new ResponseEntity<String>("Fakemon excluido com sucesso!", HttpStatus.OK);
+
+    }
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
