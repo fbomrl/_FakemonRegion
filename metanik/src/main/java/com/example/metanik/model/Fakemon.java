@@ -15,20 +15,20 @@ public class Fakemon {
 
     @Id
     @Column(name = "id_general", nullable = false, unique = true)
-    @NotNull(message = "Campo Obrigatório!")
+    @NotNull(message = "Campo Id_General é Obrigatório!")
     private Integer id_general;
 
     @Column(name = "id_reg", nullable = false)
-    @NotNull(message = "Campo Obrigatório!")
+    @NotNull(message = "Campo id_reg é Obrigatório!")
     private Integer id_reg;
 
     @Column(name = "name_fkm", nullable = false, length = 20)
-    @NotBlank(message = "Campo Obrigatório!")
+    @NotBlank(message = "Campo nome é Obrigatório!")
     @Pattern(regexp = "^[A-Z]+(.)*", message = "Campo Nome deve iniciar com letra maiúscula!")
     private String name_fkm;
 
     @Column(name = "type1", nullable = false)
-    @NotBlank(message = "Campo Obrigatório!")
+    @NotBlank(message = "Campo tipo1 é Obrigatório!")
     @Pattern(regexp = "^[A-Z]+(.)*", message = "Campo Tipo deve iniciar com letra maiúscula!")
     private String type1;
 
