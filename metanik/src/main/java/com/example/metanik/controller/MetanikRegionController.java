@@ -1,5 +1,9 @@
 package com.example.metanik.controller;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -77,6 +81,7 @@ public class MetanikRegionController {
     }
 
 
+
 //	@GetMapping({"/fakemon/{id_general}"})
 //	public ResponseEntity<Object> teste(@PathVariable int id_general) {
 //		Optional<Fakemon> fakemon = this.metanikDao.findById(id_general);
@@ -91,44 +96,8 @@ public class MetanikRegionController {
 //	}
 
 
-//	String arquivoCSV = "C:\\Users\\fabio\\Documents\\_FakemonRegion\\MetanikRegion.csv";
-//	    	    BufferedReader br = null;
-//	    	    String linha = "";
-//	    	    Fakemon fakemon = new Fakemon();
-//	    	    try {
-//
-//	    	        br = new BufferedReader(new FileReader(arquivoCSV));
-//	    	        while ((linha = br.readLine()) != null) {
-//
-//	    	           String[] criatura = linha.split(",");
-//	    	           String[] celulas = linha.split(";");
-//
-//	    	          fakemon.setName_fkm(celulas[2]);
-//	    	          fakemon.setType1(celulas[3]);
-//	    	          fakemon.setType2(celulas[4]);
-//
-//	    	          System.out.println("Nome : " + fakemon.getName_fkm());
-//	    	          System.out.println("Tipo 1 : " + fakemon.getType1());
-//	    	          System.out.println("Tipo 2 : " + fakemon.getType2());
-//
-//	    	        }
-//
-//	    	    } catch (FileNotFoundException e) {
-//	    	        e.printStackTrace();
-//	    	    } catch (IOException e) {
-//	    	        e.printStackTrace();
-//	    	    } finally {
-//	    	        if (br != null) {
-//	    	            try {
-//	    	                br.close();
-//	    	            } catch (IOException e) {
-//	    	                e.printStackTrace();
-//	    	            }
-//	    	        }
-//	    	    }
-
-
 }
+
 
 
 
