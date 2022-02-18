@@ -1,8 +1,13 @@
 package com.example.metanik.controller;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 import com.example.metanik.dao.MetanikDao;
 import com.example.metanik.model.Fakemon;
@@ -32,13 +37,33 @@ public class MetanikRegionController {
         return this.metanikDao.findById(id_general).orElse(null);
     }
 
-    @PostMapping(value = "gravar")
+    @PostMapping("/fakemon")
     @ResponseBody
     public ResponseEntity<Fakemon> gravar(@RequestBody @Valid Fakemon fakemon) {
+        Optional<Fakemon> fakemonRetornado = metanikDao.findById(fakemon.getId_general());
+        if(fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
+
         Fakemon fkm = metanikDao.save(fakemon);
+
         return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
     }
+    @PutMapping("/fakemon/")
+    @ResponseBody
+    public ResponseEntity<?> atualizar(@RequestBody @Valid Fakemon fakemon){
+    if(fakemon.getId_general() == null) return new ResponseEntity<String>("ID_General precisa ser informado", HttpStatus.OK);
 
+        Fakemon fkm = metanikDao.save(fakemon);
+
+        return new ResponseEntity<Fakemon>(fkm, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/fakemon/{id_general}")
+    @ResponseBody
+    public ResponseEntity<String> delete(@PathVariable Integer id_general) {
+        metanikDao.deleteById(id_general);
+        return new ResponseEntity<String>("Fakemon excluido com sucesso!", HttpStatus.OK);
+
+    }
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
@@ -56,6 +81,7 @@ public class MetanikRegionController {
     }
 
 
+
 //	@GetMapping({"/fakemon/{id_general}"})
 //	public ResponseEntity<Object> teste(@PathVariable int id_general) {
 //		Optional<Fakemon> fakemon = this.metanikDao.findById(id_general);
@@ -70,44 +96,8 @@ public class MetanikRegionController {
 //	}
 
 
-//	String arquivoCSV = "C:\\Users\\fabio\\Documents\\_FakemonRegion\\MetanikRegion.csv";
-//	    	    BufferedReader br = null;
-//	    	    String linha = "";
-//	    	    Fakemon fakemon = new Fakemon();
-//	    	    try {
-//
-//	    	        br = new BufferedReader(new FileReader(arquivoCSV));
-//	    	        while ((linha = br.readLine()) != null) {
-//
-//	    	           String[] criatura = linha.split(",");
-//	    	           String[] celulas = linha.split(";");
-//
-//	    	          fakemon.setName_fkm(celulas[2]);
-//	    	          fakemon.setType1(celulas[3]);
-//	    	          fakemon.setType2(celulas[4]);
-//
-//	    	          System.out.println("Nome : " + fakemon.getName_fkm());
-//	    	          System.out.println("Tipo 1 : " + fakemon.getType1());
-//	    	          System.out.println("Tipo 2 : " + fakemon.getType2());
-//
-//	    	        }
-//
-//	    	    } catch (FileNotFoundException e) {
-//	    	        e.printStackTrace();
-//	    	    } catch (IOException e) {
-//	    	        e.printStackTrace();
-//	    	    } finally {
-//	    	        if (br != null) {
-//	    	            try {
-//	    	                br.close();
-//	    	            } catch (IOException e) {
-//	    	                e.printStackTrace();
-//	    	            }
-//	    	        }
-//	    	    }
-
-
 }
+
 
 
 
