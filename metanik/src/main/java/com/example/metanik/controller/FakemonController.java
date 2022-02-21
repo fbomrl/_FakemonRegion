@@ -5,6 +5,7 @@ import java.util.*;
 
 import com.example.metanik.dao.FakemonDao;
 import com.example.metanik.model.Fakemon;
+import com.example.metanik.service.FakemonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +21,8 @@ import javax.validation.Valid;
 public class FakemonController {
     @Autowired
     private FakemonDao fakemonDao;
+    @Autowired
+    private FakemonService fakemonService;
 
 
     @GetMapping("/fakemon")
@@ -37,16 +40,18 @@ public class FakemonController {
     @ResponseBody
     public ResponseEntity<Fakemon> gravar(@RequestBody @Valid Fakemon fakemon) {
         Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
-        if(fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
+        if (fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
 
         Fakemon fkm = fakemonDao.save(fakemon);
 
         return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
     }
+
     @PutMapping("/fakemon/")
     @ResponseBody
-    public ResponseEntity<?> atualizar(@RequestBody @Valid Fakemon fakemon){
-    if(fakemon.getId_general() == null) return new ResponseEntity<String>("ID_General precisa ser informado", HttpStatus.OK);
+    public ResponseEntity<?> atualizar(@RequestBody @Valid Fakemon fakemon) {
+        if (fakemon.getId_general() == null)
+            return new ResponseEntity<String>("ID_General precisa ser informado", HttpStatus.OK);
 
         Fakemon fkm = fakemonDao.save(fakemon);
 
@@ -76,56 +81,11 @@ public class FakemonController {
         return errors;
     }
 
-    @RequestMapping(value = "/fakemon/import", method=RequestMethod.POST)
-    public ResponseEntity<String> ProcessarCSV(@RequestParam("file") MultipartFile file){
-        BufferedReader br = null;
-        String linha = "";
-        Fakemon fakemon = new Fakemon();
-
-        try {
-            InputStream is =  file.getInputStream();
-            br = new BufferedReader(new InputStreamReader(is));
-            br.readLine();
-            while ((linha = br.readLine()) != null) {
-
-                String[] celulas = linha.split(";");
-
-                fakemon.setId_general(Integer.valueOf(celulas[0]));
-                fakemon.setId_reg(Integer.valueOf(celulas[1]));
-                fakemon.setName_fkm(celulas[2]);
-                fakemon.setType1(celulas[3]);
-                fakemon.setType2(celulas[4]);
-
-                Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
-                //! = negação; Se o fakemonretornado não está presente ...
-                if(!fakemonRetornado.isPresent()){
-                    //Gravar fakemonretornado;
-                    fakemonDao.save(fakemon);
-                }
-            }
-        } catch (
-                FileNotFoundException e) {
-            e.printStackTrace();
-            return new ResponseEntity<String>("Ocorreu um erro, tente novamente mais tarde", HttpStatus.INTERNAL_SERVER_ERROR);
-        } catch (
-                IOException e) {
-            e.printStackTrace();
-            return new ResponseEntity<String>("Ocorreu um erro, tente novamente mais tarde", HttpStatus.INTERNAL_SERVER_ERROR);
-        } finally {
-            if (br != null) {
-                try {
-                    br.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    return new ResponseEntity<String>("Ocorreu um erro, tente novamente mais tarde", HttpStatus.INTERNAL_SERVER_ERROR);
-                }
-            }
-        }
-
-        return new ResponseEntity<String>("Fakemon cadastrados com sucesso!", HttpStatus.OK);
+    @RequestMapping(value = "/fakemon/import", method = RequestMethod.POST)
+    public ResponseEntity<String> ProcessarCSV(@RequestParam("file") MultipartFile file) {
+        String retorno = fakemonService.readerCSV(file);
+        return new ResponseEntity<String>(retorno, HttpStatus.OK);
     }
-
-
 
 
 }
