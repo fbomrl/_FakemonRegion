@@ -60,15 +60,11 @@ public class FakemonService {
             }
         }catch (FileNotFoundException e) {
             e.printStackTrace();
-            String retorno = null;
-
-            return retorno;
+            return "Ocorreu um erro, tente novamente mais tarde";
         }
         catch (IOException e) {
             e.printStackTrace();
-            String retorno = null;
-
-            return retorno;
+            return "Ocorreu um erro, tente novamente mais tarde";
         }catch(Exception e) {
             e.printStackTrace();
             String retorno = null;
