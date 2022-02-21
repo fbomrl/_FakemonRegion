@@ -32,19 +32,19 @@ public class Fakemon {
     @Pattern(regexp = "^[A-Z]+(.)*", message = "Campo Tipo deve iniciar com letra maiúscula!")
     private String type1;
 
-    @Column(name = "type2", length = 20)
+    @Column(name = "type2", length = 30)
     private String type2;
 
-    @Column(name = "species", length = 20)
+    @Column(name = "species", length = 30)
     private String species;
 
-    @Column(name = "abilities1", length = 20)
+    @Column(name = "abilities1", length = 30)
     private String abilities1;
 
-    @Column(name = "abilities2", length = 20)
+    @Column(name = "abilities2", length = 30)
     private String abilities2;
 
-    @Column(name = "hiddenability", length = 20)
+    @Column(name = "hiddenability", length = 30)
     private String hiddenability;
 
     @Column(name = "height")
@@ -53,19 +53,19 @@ public class Fakemon {
     @Column(name = "weight")
     private String weight;
 
-    @Column(name = "habitat", length = 30)
+    @Column(name = "habitat", length = 40)
     private String habitat;
 
-    @Column(name = "feeding", length = 20)
+    @Column(name = "feeding", length = 30)
     private String feeding;
 
     @Column(name = "evoby")
     private String evoby;
 
-    @Column(name = "inspiration1", length = 150)
+    @Column(name = "inspiration1", length = 250)
     private String inspiration1;
 
-    @Column(name = "inspiration2", length = 150)
+    @Column(name = "inspiration2", length = 250)
     private String inspiration2;
 
 
