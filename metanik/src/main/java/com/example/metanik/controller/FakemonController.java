@@ -3,7 +3,7 @@ package com.example.metanik.controller;
 import java.io.*;
 import java.util.*;
 
-import com.example.metanik.dao.MetanikDao;
+import com.example.metanik.dao.FakemonDao;
 import com.example.metanik.model.Fakemon;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,29 +17,29 @@ import javax.validation.Valid;
 
 
 @RestController
-public class MetanikRegionController {
+public class FakemonController {
     @Autowired
-    private MetanikDao metanikDao;
+    private FakemonDao fakemonDao;
 
 
     @GetMapping("/fakemon")
     public ArrayList<Fakemon> listaFakemon() {
-        Iterable<Fakemon> lista = this.metanikDao.findAll();
+        Iterable<Fakemon> lista = this.fakemonDao.findAll();
         return (ArrayList<Fakemon>) lista;
     }
 
     @GetMapping({"/fakemon/{id_general}"})
     public Fakemon FiltroFakemon(@PathVariable int id_general) {
-        return this.metanikDao.findById(id_general).orElse(null);
+        return this.fakemonDao.findById(id_general).orElse(null);
     }
 
     @PostMapping("/fakemon")
     @ResponseBody
     public ResponseEntity<Fakemon> gravar(@RequestBody @Valid Fakemon fakemon) {
-        Optional<Fakemon> fakemonRetornado = metanikDao.findById(fakemon.getId_general());
+        Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
         if(fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
 
-        Fakemon fkm = metanikDao.save(fakemon);
+        Fakemon fkm = fakemonDao.save(fakemon);
 
         return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
     }
@@ -48,7 +48,7 @@ public class MetanikRegionController {
     public ResponseEntity<?> atualizar(@RequestBody @Valid Fakemon fakemon){
     if(fakemon.getId_general() == null) return new ResponseEntity<String>("ID_General precisa ser informado", HttpStatus.OK);
 
-        Fakemon fkm = metanikDao.save(fakemon);
+        Fakemon fkm = fakemonDao.save(fakemon);
 
         return new ResponseEntity<Fakemon>(fkm, HttpStatus.OK);
     }
@@ -56,7 +56,7 @@ public class MetanikRegionController {
     @DeleteMapping("/fakemon/{id_general}")
     @ResponseBody
     public ResponseEntity<String> delete(@PathVariable Integer id_general) {
-        metanikDao.deleteById(id_general);
+        fakemonDao.deleteById(id_general);
         return new ResponseEntity<String>("Fakemon excluido com sucesso!", HttpStatus.OK);
 
     }
@@ -96,11 +96,11 @@ public class MetanikRegionController {
                 fakemon.setType1(celulas[3]);
                 fakemon.setType2(celulas[4]);
 
-                Optional<Fakemon> fakemonRetornado = metanikDao.findById(fakemon.getId_general());
+                Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
                 //! = negação; Se o fakemonretornado não está presente ...
                 if(!fakemonRetornado.isPresent()){
                     //Gravar fakemonretornado;
-                    metanikDao.save(fakemon);
+                    fakemonDao.save(fakemon);
                 }
             }
         } catch (

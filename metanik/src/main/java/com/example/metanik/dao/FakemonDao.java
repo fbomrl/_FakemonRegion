@@ -4,6 +4,6 @@ import com.example.metanik.model.Fakemon;
 import org.springframework.data.repository.CrudRepository;
 
 
-public interface MetanikDao extends CrudRepository<Fakemon,Integer> {
+public interface FakemonDao extends CrudRepository<Fakemon,Integer> {
 }
 
