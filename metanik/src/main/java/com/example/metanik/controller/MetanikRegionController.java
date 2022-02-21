@@ -26,6 +26,7 @@ public class MetanikRegionController {
     @Autowired
     private MetanikDao metanikDao;
 
+
     @GetMapping("/fakemon")
     public ArrayList<Fakemon> listaFakemon() {
         Iterable<Fakemon> lista = this.metanikDao.findAll();
@@ -65,6 +66,12 @@ public class MetanikRegionController {
 
     }
 
+//    @PostMapping("/listafakemon")
+//    public ArrayList<ReaderController> listaaFakemon() {
+//        Iterable<ReaderController> lista = this.metanikDao.findAll();
+//        return (ArrayList<ReaderController>) lista;
+//    }
+
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public Map<String, String> handleValidationException(MethodArgumentNotValidException ex) {
@@ -78,6 +85,58 @@ public class MetanikRegionController {
         });
 
         return errors;
+    }
+
+    @GetMapping("/fakemon/import")
+    public ResponseEntity<String> ProcessarCSV(){
+        String arquivoCSV = "C:\\Users\\fabio\\Documents\\_Projetos\\_FakemonRegion\\MetanikRegion.csv";
+
+        BufferedReader br = null;
+        String linha = "";
+        Fakemon fakemon = new Fakemon();
+
+        try {
+            br = new BufferedReader(new FileReader(arquivoCSV));
+            br.readLine();
+            while ((linha = br.readLine()) != null) {
+
+                String[] celulas = linha.split(";");
+
+                fakemon.setId_general(Integer.valueOf(celulas[0]));
+                fakemon.setId_reg(Integer.valueOf(celulas[1]));
+                fakemon.setName_fkm(celulas[2]);
+                fakemon.setType1(celulas[3]);
+                fakemon.setType2(celulas[4]);
+
+                Optional<Fakemon> fakemonRetornado = metanikDao.findById(fakemon.getId_general());
+                //! = negação; Se o fakemonretornado não está presente ...
+                if(!fakemonRetornado.isPresent()){
+                    //Gravar fakemonretornado;
+                    metanikDao.save(fakemon);
+                }
+
+
+            }
+        } catch (
+                FileNotFoundException e) {
+            e.printStackTrace();
+            return new ResponseEntity<String>("Ocorreu um erro, tente novamente mais tarde", HttpStatus.INTERNAL_SERVER_ERROR);
+        } catch (
+                IOException e) {
+            e.printStackTrace();
+            return new ResponseEntity<String>("Ocorreu um erro, tente novamente mais tarde", HttpStatus.INTERNAL_SERVER_ERROR);
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    return new ResponseEntity<String>("Ocorreu um erro, tente novamente mais tarde", HttpStatus.INTERNAL_SERVER_ERROR);
+                }
+            }
+        }
+
+        return new ResponseEntity<String>("Fakemon cadastrados com sucesso!", HttpStatus.OK);
     }
 
 

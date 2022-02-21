@@ -68,6 +68,8 @@ public class Fakemon {
     @Column(name = "inspiration2", length = 150)
     private String inspiration2;
 
+
+
     public Integer getId_general() {
         return this.id_general;
     }
