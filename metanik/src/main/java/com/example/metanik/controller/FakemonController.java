@@ -82,9 +82,15 @@ public class FakemonController {
     }
 
     @RequestMapping(value = "/fakemon/import", method = RequestMethod.POST)
-    public ResponseEntity<String> ProcessarCSV(@RequestParam("file") MultipartFile file) {
+    public ResponseEntity<String> ProcessarCSV(@RequestParam("file") @Valid MultipartFile file) {
         String retorno = fakemonService.readerCSV(file);
-        return new ResponseEntity<String>(retorno, HttpStatus.OK);
+
+        if(retorno == null){
+            return new ResponseEntity<String>("Ocorreu um erro, tente novamente mais tarde", HttpStatus.CONFLICT);
+        }
+        else {
+            return new ResponseEntity<String>(retorno, HttpStatus.OK);
+        }
     }
 
 

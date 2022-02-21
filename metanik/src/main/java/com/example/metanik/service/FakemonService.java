@@ -15,10 +15,11 @@ public class FakemonService {
     @Autowired
     private FakemonDao fakemonDao;
 
-    public String readerCSV(MultipartFile file){
+    public String readerCSV(MultipartFile file) {
         BufferedReader br = null;
         String linha = "";
         Fakemon fakemon = new Fakemon();
+        int contador=0;
 
         try {
             InputStream is =  file.getInputStream();
@@ -33,22 +34,48 @@ public class FakemonService {
                 fakemon.setName_fkm(celulas[2]);
                 fakemon.setType1(celulas[3]);
                 fakemon.setType2(celulas[4]);
+                fakemon.setSpecies(celulas[5]);
+                fakemon.setAbilities1(celulas[6]);
+                fakemon.setAbilities2(celulas[7]);
+                fakemon.setHiddenability(celulas[8]);
+                fakemon.setHeight(celulas[9]);
+//                fakemon.setWeight(celulas[10]);
+//                fakemon.setHabitat(celulas[11]);
+//                fakemon.setFeeding(celulas[12]);
+//                fakemon.setEvoby(celulas[13]);
+//                fakemon.setInspiration1(celulas[14]);
+//                fakemon.setInspiration2(celulas[15]);
+
+
 
                 Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
                 //! = negação; Se o fakemonretornado não está presente ...
                 if(!fakemonRetornado.isPresent()){
                     //Gravar fakemonretornado;
                     fakemonDao.save(fakemon);
+                    contador +=1;
+
                 }
+
             }
-        } catch (FileNotFoundException e) {
+        }catch (FileNotFoundException e) {
             e.printStackTrace();
-            return "Ocorreu um erro, tente novamente mais tarde";
+            String retorno = null;
+
+            return retorno;
         }
         catch (IOException e) {
             e.printStackTrace();
-            return "Ocorreu um erro, tente novamente mais tarde";
-        } finally {
+            String retorno = null;
+
+            return retorno;
+        }catch(Exception e) {
+            e.printStackTrace();
+            String retorno = null;
+
+            return retorno;
+        }
+        finally {
             if (br != null) {
                 try {
                     br.close();
@@ -58,8 +85,10 @@ public class FakemonService {
                 }
             }
         }
-
-        return "Fakemon cadastrados com sucesso!";
+            if(contador==0){
+                return "Nenhum Fakemon novo cadastrado";
+            }
+            return contador+" Fakemon Cadastrados com Sucesso!";
     }
 
 
