@@ -1,13 +1,7 @@
 package com.example.metanik.controller;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
+import java.io.*;
+import java.util.*;
 
 import com.example.metanik.dao.MetanikDao;
 import com.example.metanik.model.Fakemon;
@@ -17,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
 
@@ -66,12 +61,6 @@ public class MetanikRegionController {
 
     }
 
-//    @PostMapping("/listafakemon")
-//    public ArrayList<ReaderController> listaaFakemon() {
-//        Iterable<ReaderController> lista = this.metanikDao.findAll();
-//        return (ArrayList<ReaderController>) lista;
-//    }
-
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public Map<String, String> handleValidationException(MethodArgumentNotValidException ex) {
@@ -87,16 +76,15 @@ public class MetanikRegionController {
         return errors;
     }
 
-    @GetMapping("/fakemon/import")
-    public ResponseEntity<String> ProcessarCSV(){
-        String arquivoCSV = "C:\\Users\\fabio\\Documents\\_Projetos\\_FakemonRegion\\MetanikRegion.csv";
-
+    @RequestMapping(value = "/fakemon/import", method=RequestMethod.POST)
+    public ResponseEntity<String> ProcessarCSV(@RequestParam("file") MultipartFile file){
         BufferedReader br = null;
         String linha = "";
         Fakemon fakemon = new Fakemon();
 
         try {
-            br = new BufferedReader(new FileReader(arquivoCSV));
+            InputStream is =  file.getInputStream();
+            br = new BufferedReader(new InputStreamReader(is));
             br.readLine();
             while ((linha = br.readLine()) != null) {
 
@@ -114,8 +102,6 @@ public class MetanikRegionController {
                     //Gravar fakemonretornado;
                     metanikDao.save(fakemon);
                 }
-
-
             }
         } catch (
                 FileNotFoundException e) {
@@ -140,19 +126,6 @@ public class MetanikRegionController {
     }
 
 
-
-//	@GetMapping({"/fakemon/{id_general}"})
-//	public ResponseEntity<Object> teste(@PathVariable int id_general) {
-//		Optional<Fakemon> fakemon = this.metanikDao.findById(id_general);
-//
-//		if (fakemon.isPresent()){
-//			Fakemon fakemon1 = fakemon.get();
-//			return ResponseEntity.ok(fakemon1);
-//		}else {
-//			return new ResponseEntity<>("Esse Fakemon não existe no sistema;",HttpStatus.NOT_FOUND);
-//		}
-//
-//	}
 
 
 }
