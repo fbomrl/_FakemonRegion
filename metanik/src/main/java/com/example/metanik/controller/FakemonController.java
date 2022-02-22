@@ -61,8 +61,12 @@ public class FakemonController {
     @DeleteMapping("/fakemon/{id_general}")
     @ResponseBody
     public ResponseEntity<String> delete(@PathVariable Integer id_general) {
-        fakemonDao.deleteById(id_general);
+        Optional<Fakemon> returned = fakemonDao.findById(id_general);
 
+        if (!returned.isPresent())
+            return new ResponseEntity<String>("Fakemon a ser excluido não existe!", HttpStatus.NOT_FOUND);
+
+        fakemonDao.deleteById(id_general);
         return new ResponseEntity<String>("Fakemon excluido com sucesso!", HttpStatus.OK);
 
 
