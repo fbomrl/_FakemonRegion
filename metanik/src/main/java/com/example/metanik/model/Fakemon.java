@@ -1,11 +1,14 @@
 package com.example.metanik.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.lang.NonNull;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
+import javax.xml.crypto.Data;
+import java.util.Date;
 
 
 @Entity
@@ -68,6 +71,13 @@ public class Fakemon {
     @Column(name = "inspiration2", length = 250)
     private String inspiration2;
 
+    @Column(name = "dataprocessamento")
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
+    private Date dataprocessamento = new Date();
+
+    @Column(name = "dataatualizacao")
+    @DateTimeFormat(pattern = "dd/MM/yyyy")
+    private Date dataatualizacao = new Date();
 
 
 
@@ -198,5 +208,21 @@ public class Fakemon {
 
     public void setInspiration2(String inspiration2) {
         this.inspiration2 = inspiration2;
+    }
+
+    public Date getDataprocessamento() {
+        return dataprocessamento;
+    }
+
+    public void setDataprocessamento(Date dataprocessamento) {
+        this.dataprocessamento = dataprocessamento;
+    }
+
+    public Date getDataatualizacao() {
+        return dataatualizacao;
+    }
+
+    public void setDataatualizacao(Date dataatualizacao) {
+        this.dataatualizacao = dataatualizacao;
     }
 }
