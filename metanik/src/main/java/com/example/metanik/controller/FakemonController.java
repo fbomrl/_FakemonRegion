@@ -1,6 +1,11 @@
 package com.example.metanik.controller;
 
 import java.io.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 import com.example.metanik.dao.FakemonDao;
@@ -39,8 +44,17 @@ public class FakemonController {
     @PostMapping("/fakemon")
     @ResponseBody
     public ResponseEntity<Fakemon> gravar(@RequestBody @Valid Fakemon fakemon) {
+
         Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
         if (fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
+
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
+        LocalDateTime now = LocalDateTime.parse(LocalDateTime.now().atZone(ZoneId.of("GMT-3")).
+                toLocalDateTime().format(formatter));
+
+        fakemon.setCreatedDate(now);
+        fakemon.setUpdatedDate(now);
 
         Fakemon fkm = fakemonDao.save(fakemon);
 
@@ -53,9 +67,21 @@ public class FakemonController {
         if (fakemon.getId_general() == null)
             return new ResponseEntity<String>("ID_General precisa ser informado", HttpStatus.OK);
 
+        Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
+        if (!fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
+
+        fakemon.setCreatedDate(fakemonRetornado.get().getCreatedDate());
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
+        LocalDateTime now = LocalDateTime.parse(LocalDateTime.now().atZone(ZoneId.of("GMT-3")).
+                toLocalDateTime().format(formatter));
+
+        fakemon.setCreatedDate(fakemonRetornado.get().getCreatedDate());
+        fakemon.setUpdatedDate(now);
+
         Fakemon fkm = fakemonDao.save(fakemon);
 
-        return new ResponseEntity<Fakemon>(fkm, HttpStatus.OK);
+        return new ResponseEntity<>(fkm, HttpStatus.OK);
     }
 
     @DeleteMapping("/fakemon/{id_general}")

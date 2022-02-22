@@ -1,14 +1,13 @@
 package com.example.metanik.model;
 
-import org.springframework.data.annotation.CreatedDate;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 
@@ -25,6 +24,14 @@ public class Fakemon {
     @Column(name = "id_reg", nullable = false)
     @NotNull(message = "Campo id_reg é Obrigatório!")
     private Integer id_reg;
+
+    @Column(name = "createdDate")
+    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
+    private LocalDateTime createdDate;
+
+    @Column(name = "updatedDate")
+    @DateTimeFormat(pattern = "yyyy-MM-dd hh:mm:ss")
+    private LocalDateTime updatedDate;
 
     @Column(name = "name_fkm", nullable = false, length = 20)
     @NotBlank(message = "Campo nome é Obrigatório!")
@@ -71,15 +78,6 @@ public class Fakemon {
 
     @Column(name = "inspiration2", length = 250)
     private String inspiration2;
-
-    @Column(name = "registryentry")
-//    @CreatedDate(new SimpleDateFormat("dd/MM/yyyy").format())
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
-    private Date registryentry = new Date();
-
-    @Column(name = "updatedata")
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
-    private Date updatedata = new Date();
 
 
     public Integer getId_general() {
@@ -210,5 +208,19 @@ public class Fakemon {
         this.inspiration2 = inspiration2;
     }
 
+    public LocalDateTime getCreatedDate() {
+        return createdDate;
+    }
 
+    public void setCreatedDate(LocalDateTime createdDate) {
+        this.createdDate = createdDate;
+    }
+
+    public LocalDateTime getUpdatedDate() {
+        return updatedDate;
+    }
+
+    public void setUpdatedDate(LocalDateTime updatedDate) {
+        this.updatedDate = updatedDate;
+    }
 }
