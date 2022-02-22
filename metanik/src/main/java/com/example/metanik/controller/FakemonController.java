@@ -2,6 +2,10 @@ package com.example.metanik.controller;
 
 import java.io.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 import com.example.metanik.dao.FakemonDao;
@@ -44,7 +48,14 @@ public class FakemonController {
         Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
         if (fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
 
-        fakemon.setCreatedDate(LocalDate.now());
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
+        LocalDateTime now = LocalDateTime.parse(LocalDateTime.now().atZone(ZoneId.of("GMT-3")).
+                toLocalDateTime().format(formatter));
+
+        fakemon.setCreatedDate(now);
+        fakemon.setUpdatedDate(now);
+
         Fakemon fkm = fakemonDao.save(fakemon);
 
         return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
@@ -60,7 +71,14 @@ public class FakemonController {
         if (!fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
 
         fakemon.setCreatedDate(fakemonRetornado.get().getCreatedDate());
-        fakemon.setUpdatedDate(LocalDate.now());
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
+        LocalDateTime now = LocalDateTime.parse(LocalDateTime.now().atZone(ZoneId.of("GMT-3")).
+                toLocalDateTime().format(formatter));
+
+        fakemon.setCreatedDate(fakemonRetornado.get().getCreatedDate());
+        fakemon.setUpdatedDate(now);
+
         Fakemon fkm = fakemonDao.save(fakemon);
 
         return new ResponseEntity<>(fkm, HttpStatus.OK);

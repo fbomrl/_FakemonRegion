@@ -7,8 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
-import java.sql.Date;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Service
@@ -48,14 +47,12 @@ public class FakemonService {
                 fakemon.setInspiration1(celulas[14]);
                 fakemon.setInspiration2(celulas[15]);
 
-
-
-
                 Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
                 //! = negação; Se o fakemonretornado não está presente ...
                 if (!fakemonRetornado.isPresent()) {
                     //Gravar fakemonretornado;
-                    fakemon.setCreatedDate(LocalDate.now());
+                    fakemon.setCreatedDate(LocalDateTime.now());
+                    fakemon.setUpdatedDate(LocalDateTime.now());
                     fakemonDao.save(fakemon);
                     contador += 1;
 
