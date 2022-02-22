@@ -8,6 +8,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.Optional;
 
 @Service
@@ -54,6 +55,7 @@ public class FakemonService {
                 //! = negação; Se o fakemonretornado não está presente ...
                 if (!fakemonRetornado.isPresent()) {
                     //Gravar fakemonretornado;
+                    fakemon.setCreatedDate(LocalDate.now());
                     fakemonDao.save(fakemon);
                     contador += 1;
 

@@ -1,6 +1,7 @@
 package com.example.metanik.controller;
 
 import java.io.*;
+import java.time.LocalDate;
 import java.util.*;
 
 import com.example.metanik.dao.FakemonDao;
@@ -39,9 +40,11 @@ public class FakemonController {
     @PostMapping("/fakemon")
     @ResponseBody
     public ResponseEntity<Fakemon> gravar(@RequestBody @Valid Fakemon fakemon) {
+
         Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
         if (fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
 
+        fakemon.setCreatedDate(LocalDate.now());
         Fakemon fkm = fakemonDao.save(fakemon);
 
         return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
@@ -53,9 +56,14 @@ public class FakemonController {
         if (fakemon.getId_general() == null)
             return new ResponseEntity<String>("ID_General precisa ser informado", HttpStatus.OK);
 
+        Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
+        if (!fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
+
+        fakemon.setCreatedDate(fakemonRetornado.get().getCreatedDate());
+        fakemon.setUpdatedDate(LocalDate.now());
         Fakemon fkm = fakemonDao.save(fakemon);
 
-        return new ResponseEntity<Fakemon>(fkm, HttpStatus.OK);
+        return new ResponseEntity<>(fkm, HttpStatus.OK);
     }
 
     @DeleteMapping("/fakemon/{id_general}")
