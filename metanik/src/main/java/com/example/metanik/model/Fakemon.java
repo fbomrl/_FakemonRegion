@@ -70,6 +70,8 @@ public class Fakemon {
 
 
 
+
+
     public Integer getId_general() {
         return this.id_general;
     }
