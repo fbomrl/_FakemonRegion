@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
+import java.sql.Date;
 import java.util.Optional;
 
 @Service
@@ -45,6 +46,8 @@ public class FakemonService {
                 fakemon.setEvoby(celulas[13]);
                 fakemon.setInspiration1(celulas[14]);
                 fakemon.setInspiration2(celulas[15]);
+
+
 
 
                 Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());

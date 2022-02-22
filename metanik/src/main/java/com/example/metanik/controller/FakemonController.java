@@ -62,7 +62,9 @@ public class FakemonController {
     @ResponseBody
     public ResponseEntity<String> delete(@PathVariable Integer id_general) {
         fakemonDao.deleteById(id_general);
+
         return new ResponseEntity<String>("Fakemon excluido com sucesso!", HttpStatus.OK);
+
 
     }
 
@@ -85,10 +87,9 @@ public class FakemonController {
     public ResponseEntity<String> ProcessarCSV(@RequestParam("file") @Valid MultipartFile file) {
         String retorno = fakemonService.readerCSV(file);
 
-        if(retorno == null){
+        if (retorno == null) {
             return new ResponseEntity<String>("Ocorreu um erro, tente novamente mais tarde", HttpStatus.CONFLICT);
-        }
-        else {
+        } else {
             return new ResponseEntity<String>(retorno, HttpStatus.OK);
         }
     }
