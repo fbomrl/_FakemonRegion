@@ -8,6 +8,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.Optional;
 
 @Service
@@ -90,5 +92,14 @@ public class FakemonService {
         return contador + " Fakemon Cadastrados com Sucesso!";
     }
 
+    public LocalDateTime DateTimeFormatter (){
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
+        LocalDateTime now = LocalDateTime.parse(LocalDateTime.now().atZone(ZoneId.of("GMT-3")).
+                toLocalDateTime().format(formatter));
+
+        return now;
+
+    }
 
 }

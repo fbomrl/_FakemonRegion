@@ -34,24 +34,22 @@ public class FakemonController {
     public ArrayList<Fakemon> listaFakemon() {
         Iterable<Fakemon> lista = this.fakemonDao.findAll();
         return (ArrayList<Fakemon>) lista;
+
     }
 
     @GetMapping({"/fakemon/{id_general}"})
     public Fakemon FiltroFakemon(@PathVariable int id_general) {
         return this.fakemonDao.findById(id_general).orElse(null);
+
     }
 
     @PostMapping("/fakemon")
     @ResponseBody
     public ResponseEntity<Fakemon> gravar(@RequestBody @Valid Fakemon fakemon) {
-
         Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
         if (fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
 
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
-        LocalDateTime now = LocalDateTime.parse(LocalDateTime.now().atZone(ZoneId.of("GMT-3")).
-                toLocalDateTime().format(formatter));
+        LocalDateTime now = fakemonService.DateTimeFormatter();
 
         fakemon.setCreatedDate(now);
         fakemon.setUpdatedDate(now);
@@ -59,6 +57,7 @@ public class FakemonController {
         Fakemon fkm = fakemonDao.save(fakemon);
 
         return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
+
     }
 
     @PutMapping("/fakemon/")
@@ -69,12 +68,9 @@ public class FakemonController {
 
         Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
         if (!fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
-
         fakemon.setCreatedDate(fakemonRetornado.get().getCreatedDate());
 
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
-        LocalDateTime now = LocalDateTime.parse(LocalDateTime.now().atZone(ZoneId.of("GMT-3")).
-                toLocalDateTime().format(formatter));
+        LocalDateTime now = fakemonService.DateTimeFormatter();
 
         fakemon.setCreatedDate(fakemonRetornado.get().getCreatedDate());
         fakemon.setUpdatedDate(now);
@@ -82,6 +78,7 @@ public class FakemonController {
         Fakemon fkm = fakemonDao.save(fakemon);
 
         return new ResponseEntity<>(fkm, HttpStatus.OK);
+
     }
 
     @DeleteMapping("/fakemon/{id_general}")
@@ -94,7 +91,6 @@ public class FakemonController {
 
         fakemonDao.deleteById(id_general);
         return new ResponseEntity<String>("Fakemon excluido com sucesso!", HttpStatus.OK);
-
 
     }
 
@@ -123,8 +119,6 @@ public class FakemonController {
             return new ResponseEntity<String>(retorno, HttpStatus.OK);
         }
     }
-
-
 }
 
 
