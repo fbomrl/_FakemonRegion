@@ -1,15 +1,10 @@
 package com.example.metanik.controller;
 
-import java.io.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 import com.example.metanik.dao.FakemonDao;
-import com.example.metanik.model.Fakemon;
+import com.example.metanik.model.FakemonModel;
 import com.example.metanik.service.FakemonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -31,51 +26,50 @@ public class FakemonController {
 
 
     @GetMapping("/fakemon")
-    public ArrayList<Fakemon> listaFakemon() {
-        Iterable<Fakemon> lista = this.fakemonDao.findAll();
-        return (ArrayList<Fakemon>) lista;
+    public ArrayList<FakemonModel> listaFakemon() {
+        Iterable<FakemonModel> lista = this.fakemonDao.findAll();
+        return (ArrayList<FakemonModel>) lista;
 
     }
 
     @GetMapping({"/fakemon/{id_general}"})
-    public Fakemon FiltroFakemon(@PathVariable int id_general) {
+    public FakemonModel FiltroFakemon(@PathVariable int id_general) {
         return this.fakemonDao.findById(id_general).orElse(null);
 
     }
 
     @PostMapping("/fakemon")
     @ResponseBody
-    public ResponseEntity<Fakemon> gravar(@RequestBody @Valid Fakemon fakemon) {
-        Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
-        if (fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
-
+    public ResponseEntity<FakemonModel> gravar(@RequestBody @Valid FakemonModel fakemonModel) {
+        Optional<FakemonModel> fakemonRetornado = fakemonDao.findById(fakemonModel.getId_general());
+        if (fakemonRetornado.isPresent()) return new ResponseEntity<FakemonModel>(HttpStatus.CONFLICT);
         LocalDateTime now = fakemonService.DateTimeFormatter();
 
-        fakemon.setCreatedDate(now);
-        fakemon.setUpdatedDate(now);
+        fakemonModel.setCreatedDate(now);
+        fakemonModel.setUpdatedDate(now);
 
-        Fakemon fkm = fakemonDao.save(fakemon);
+        FakemonModel fkm = fakemonDao.save(fakemonModel);
 
-        return new ResponseEntity<Fakemon>(fkm, HttpStatus.CREATED);
+        return new ResponseEntity<FakemonModel>(fkm, HttpStatus.CREATED);
 
     }
 
     @PutMapping("/fakemon/")
     @ResponseBody
-    public ResponseEntity<?> atualizar(@RequestBody @Valid Fakemon fakemon) {
-        if (fakemon.getId_general() == null)
+    public ResponseEntity<?> atualizar(@RequestBody @Valid FakemonModel fakemonModel) {
+        if (fakemonModel.getId_general() == null)
             return new ResponseEntity<String>("ID_General precisa ser informado", HttpStatus.OK);
 
-        Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
-        if (!fakemonRetornado.isPresent()) return new ResponseEntity<Fakemon>(HttpStatus.CONFLICT);
-        fakemon.setCreatedDate(fakemonRetornado.get().getCreatedDate());
+        Optional<FakemonModel> fakemonRetornado = fakemonDao.findById(fakemonModel.getId_general());
+        if (!fakemonRetornado.isPresent()) return new ResponseEntity<FakemonModel>(HttpStatus.CONFLICT);
+        fakemonModel.setCreatedDate(fakemonRetornado.get().getCreatedDate());
 
         LocalDateTime now = fakemonService.DateTimeFormatter();
 
-        fakemon.setCreatedDate(fakemonRetornado.get().getCreatedDate());
-        fakemon.setUpdatedDate(now);
+        fakemonModel.setCreatedDate(fakemonRetornado.get().getCreatedDate());
+        fakemonModel.setUpdatedDate(now);
 
-        Fakemon fkm = fakemonDao.save(fakemon);
+        FakemonModel fkm = fakemonDao.save(fakemonModel);
 
         return new ResponseEntity<>(fkm, HttpStatus.OK);
 
@@ -84,7 +78,7 @@ public class FakemonController {
     @DeleteMapping("/fakemon/{id_general}")
     @ResponseBody
     public ResponseEntity<String> delete(@PathVariable Integer id_general) {
-        Optional<Fakemon> returned = fakemonDao.findById(id_general);
+        Optional<FakemonModel> returned = fakemonDao.findById(id_general);
 
         if (!returned.isPresent())
             return new ResponseEntity<String>("Fakemon a ser excluido não existe!", HttpStatus.NOT_FOUND);

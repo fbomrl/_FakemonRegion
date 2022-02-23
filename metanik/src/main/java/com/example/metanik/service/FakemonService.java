@@ -1,7 +1,7 @@
 package com.example.metanik.service;
 
 import com.example.metanik.dao.FakemonDao;
-import com.example.metanik.model.Fakemon;
+import com.example.metanik.model.FakemonModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -21,7 +21,7 @@ public class FakemonService {
     public String readerCSV(MultipartFile file) {
         BufferedReader br = null;
         String linha = "";
-        Fakemon fakemon = new Fakemon();
+        FakemonModel fakemonModel = new FakemonModel();
         int contador = 0;
 
         try {
@@ -32,45 +32,45 @@ public class FakemonService {
 
                 String[] celulas = linha.split(";",-1);
 
-                fakemon.setId_general(Integer.valueOf(celulas[0]));
-                fakemon.setId_reg(Integer.valueOf(celulas[1]));
-                fakemon.setName_fkm(celulas[2]);
-                fakemon.setType1(celulas[3]);
-                fakemon.setType2(celulas[4]);
-                fakemon.setSpecies(celulas[5]);
-                fakemon.setAbilities1(celulas[6]);
-                fakemon.setAbilities2(celulas[7]);
-                fakemon.setHiddenability(celulas[8]);
-                fakemon.setHeight(celulas[9]);
-                fakemon.setWeight(celulas[10]);
-                fakemon.setHabitat(celulas[11]);
-                fakemon.setFeeding(celulas[12]);
-                fakemon.setEvoby(celulas[13]);
-                fakemon.setInspiration1(celulas[14]);
-                fakemon.setInspiration2(celulas[15]);
+                fakemonModel.setId_general(Integer.valueOf(celulas[0]));
+                fakemonModel.setId_reg(Integer.valueOf(celulas[1]));
+                fakemonModel.setName_fkm(celulas[2]);
+                fakemonModel.setType1(celulas[3]);
+                fakemonModel.setType2(celulas[4]);
+                fakemonModel.setSpecies(celulas[5]);
+                fakemonModel.setAbilities1(celulas[6]);
+                fakemonModel.setAbilities2(celulas[7]);
+                fakemonModel.setHiddenability(celulas[8]);
+                fakemonModel.setHeight(celulas[9]);
+                fakemonModel.setWeight(celulas[10]);
+                fakemonModel.setHabitat(celulas[11]);
+                fakemonModel.setFeeding(celulas[12]);
+                fakemonModel.setEvoby(celulas[13]);
+                fakemonModel.setInspiration1(celulas[14]);
+                fakemonModel.setInspiration2(celulas[15]);
 
-                Optional<Fakemon> fakemonRetornado = fakemonDao.findById(fakemon.getId_general());
+                Optional<FakemonModel> fakemonRetornado = fakemonDao.findById(fakemonModel.getId_general());
                 //! = negação; Se o fakemonretornado não está presente ...
                 if (!fakemonRetornado.isPresent()) {
                     //Gravar fakemonretornado;
-                    fakemon.setCreatedDate(LocalDateTime.now());
-                    fakemon.setUpdatedDate(LocalDateTime.now());
-                    fakemonDao.save(fakemon);
+                    fakemonModel.setCreatedDate(LocalDateTime.now());
+                    fakemonModel.setUpdatedDate(LocalDateTime.now());
+                    fakemonDao.save(fakemonModel);
                     contador += 1;
 
                 }
 
             }
         } catch (FileNotFoundException e) {
-            System.out.println("Erro ao processar o Fakemon de ID: " + fakemon.getId_general());
+            System.out.println("Erro ao processar o Fakemon de ID: " + fakemonModel.getId_general());
             e.printStackTrace();
             return "Ocorreu um erro, tente novamente mais tarde";
         } catch (IOException e) {
-            System.out.println("Erro ao processar o Fakemon de ID: " + fakemon.getId_general());
+            System.out.println("Erro ao processar o Fakemon de ID: " + fakemonModel.getId_general());
             e.printStackTrace();
             return "Ocorreu um erro, tente novamente mais tarde";
         } catch (Exception e) {
-            System.out.println("Erro ao processar o Fakemon de ID: " + fakemon.getId_general());
+            System.out.println("Erro ao processar o Fakemon de ID: " + fakemonModel.getId_general());
 
             e.printStackTrace();
             String retorno = null;
@@ -80,7 +80,7 @@ public class FakemonService {
                 try {
                     br.close();
                 } catch (IOException e) {
-                    System.out.println("Erro ao processar o Fakemon de ID: " + fakemon.getId_general());
+                    System.out.println("Erro ao processar o Fakemon de ID: " + fakemonModel.getId_general());
                     e.printStackTrace();
                     return "Ocorreu um erro, tente novamente mais tarde";
                 }
