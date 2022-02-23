@@ -18,6 +18,11 @@ public class FakemonService {
     @Autowired
     private FakemonDao fakemonDao;
 
+    public Iterable listarFakemon(){
+
+        return this.fakemonDao.findAll();
+    }
+
     public String readerCSV(MultipartFile file) {
         BufferedReader br = null;
         String linha = "";
@@ -101,5 +106,7 @@ public class FakemonService {
         return now;
 
     }
+
+
 
 }

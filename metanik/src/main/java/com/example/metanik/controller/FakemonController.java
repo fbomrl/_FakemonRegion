@@ -27,7 +27,8 @@ public class FakemonController {
 
     @GetMapping("/fakemon")
     public ArrayList<FakemonModel> listaFakemon() {
-        Iterable<FakemonModel> lista = this.fakemonDao.findAll();
+        Iterable lista = this.fakemonService.listarFakemon();
+
         return (ArrayList<FakemonModel>) lista;
 
     }
