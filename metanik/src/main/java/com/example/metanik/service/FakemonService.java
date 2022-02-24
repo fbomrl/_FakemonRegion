@@ -20,16 +20,17 @@ public class FakemonService {
     @Autowired
     private FakemonDao fakemonDao;
 
-    public Iterable listarFakemon(){
+    public Iterable listarFakemon() {
 
         return this.fakemonDao.findAll();
     }
-    public FakemonModel filtrarFakemon(int id_general){
+
+    public FakemonModel filtrarFakemon(int id_general) {
         FakemonModel fkm = fakemonDao.findById(id_general).orElse(null);
         return fkm;
     }
 
-    public FakemonModel gravarFakemon(FakemonModel fakemonModel){
+    public FakemonModel gravarFakemon(FakemonModel fakemonModel) {
         Optional<FakemonModel> fakemonRetornado = fakemonDao.findById(fakemonModel.getId_general());
 
         if (fakemonRetornado.isPresent()) return null;
@@ -40,6 +41,33 @@ public class FakemonService {
 
         FakemonModel fkm = fakemonDao.save(fakemonModel);
 
+        return fkm;
+    }
+
+    public FakemonModel atualizarFakemon(FakemonModel fakemonModel) {
+        Optional<FakemonModel> fakemonRetornado = fakemonDao.findById(fakemonModel.getId_general());
+
+        if (!fakemonRetornado.isPresent() == true) return null;
+
+        fakemonModel.setCreatedDate(fakemonRetornado.get().getCreatedDate());
+
+        LocalDateTime now = DateTimeFormatter();
+
+        fakemonModel.setCreatedDate(fakemonRetornado.get().getCreatedDate());
+        fakemonModel.setUpdatedDate(now);
+
+        FakemonModel fkm = fakemonDao.save(fakemonModel);
+
+        return fkm;
+
+    }
+    public FakemonModel deletarFakemon(Integer id_general){
+        Optional<FakemonModel> returned = fakemonDao.findById(id_general);
+
+        if (!returned.isPresent() == true) return null;
+
+        fakemonDao.deleteById(id_general);
+        FakemonModel fkm = new FakemonModel();
         return fkm;
     }
 
@@ -55,7 +83,7 @@ public class FakemonService {
             br.readLine();
             while ((linha = br.readLine()) != null) {
 
-                String[] celulas = linha.split(";",-1);
+                String[] celulas = linha.split(";", -1);
 
                 fakemonModel.setId_general(Integer.valueOf(celulas[0]));
                 fakemonModel.setId_reg(Integer.valueOf(celulas[1]));
@@ -117,7 +145,7 @@ public class FakemonService {
         return contador + " Fakemon Cadastrados com Sucesso!";
     }
 
-    public LocalDateTime DateTimeFormatter (){
+    public LocalDateTime DateTimeFormatter() {
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
         LocalDateTime now = LocalDateTime.parse(LocalDateTime.now().atZone(ZoneId.of("GMT-3")).
@@ -126,7 +154,6 @@ public class FakemonService {
         return now;
 
     }
-
 
 
 }
