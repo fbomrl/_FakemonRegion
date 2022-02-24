@@ -6,15 +6,13 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 
 @Entity
 @Table(name = "metanikregion")
 
-public class Fakemon {
+public class FakemonModel {
 
     @Id
     @Column(name = "id_general", nullable = false, unique = true)
