@@ -34,9 +34,11 @@ public class FakemonController {
     }
 
     @GetMapping({"/fakemon/{id_general}"})
-    public FakemonModel FiltroFakemon(@PathVariable int id_general) {
-        return this.fakemonDao.findById(id_general).orElse(null);
+    public ResponseEntity<FakemonModel> filtroFakemon(@PathVariable int id_general) {
 
+        FakemonModel fkm = fakemonService.filtrarFakemon(id_general);
+
+        return new ResponseEntity<FakemonModel>(fkm, HttpStatus.OK);
     }
 
     @PostMapping("/fakemon")

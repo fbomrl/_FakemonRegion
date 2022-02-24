@@ -22,6 +22,10 @@ public class FakemonService {
 
         return this.fakemonDao.findAll();
     }
+    public FakemonModel filtrarFakemon(int id_general){
+        FakemonModel fkm = fakemonDao.findById(id_general).orElse(null);
+        return fkm;
+    }
 
     public String readerCSV(MultipartFile file) {
         BufferedReader br = null;
