@@ -77,6 +77,12 @@ public class FakemonModel {
     @Column(name = "inspiration2", length = 250)
     private String inspiration2;
 
+    @Column(name = "url")
+    private String url;
+
+    @Column(name = "cod_region")
+    private Integer cod_region;
+
 
     public Integer getId_general() {
         return this.id_general;
@@ -220,5 +226,13 @@ public class FakemonModel {
 
     public void setUpdatedDate(LocalDateTime updatedDate) {
         this.updatedDate = updatedDate;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
