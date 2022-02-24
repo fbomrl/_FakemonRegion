@@ -47,7 +47,8 @@ public class FakemonController {
 
         FakemonModel fkm = fakemonService.gravarFakemon(fakemonModel);
 
-        if(fkm == null) return new ResponseEntity<>("Fakemon já existente!", HttpStatus.CONFLICT);
+        if (fkm == null) return new ResponseEntity<>("Fakemon já existente!", HttpStatus.CONFLICT);
+
 
         return new ResponseEntity<>(fkm, HttpStatus.CREATED);
 
@@ -61,20 +62,17 @@ public class FakemonController {
 
         if (fkm == null) return new ResponseEntity<String>("Fakemon solicitado não existe", HttpStatus.CONFLICT);
 
-
         return new ResponseEntity<>(fkm, HttpStatus.OK);
 
     }
 
     @DeleteMapping("/fakemon/{id_general}")
     @ResponseBody
-    public ResponseEntity<String> delete(@PathVariable Integer id_general) {
-        Optional<FakemonModel> returned = fakemonDao.findById(id_general);
+    public ResponseEntity<?> delete(@PathVariable Integer id_general) {
+        FakemonModel fkm = fakemonService.deletarFakemon(id_general);
 
-        if (!returned.isPresent())
-            return new ResponseEntity<String>("Fakemon a ser excluido não existe!", HttpStatus.NOT_FOUND);
+        if (fkm == null) return new ResponseEntity<String>("Fakemon a ser excluido não existe!", HttpStatus.NOT_FOUND);
 
-        fakemonDao.deleteById(id_general);
         return new ResponseEntity<String>("Fakemon excluido com sucesso!", HttpStatus.OK);
 
     }
