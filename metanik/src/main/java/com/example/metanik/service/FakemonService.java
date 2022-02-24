@@ -3,6 +3,8 @@ package com.example.metanik.service;
 import com.example.metanik.dao.FakemonDao;
 import com.example.metanik.model.FakemonModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -24,6 +26,20 @@ public class FakemonService {
     }
     public FakemonModel filtrarFakemon(int id_general){
         FakemonModel fkm = fakemonDao.findById(id_general).orElse(null);
+        return fkm;
+    }
+
+    public FakemonModel gravarFakemon(FakemonModel fakemonModel){
+        Optional<FakemonModel> fakemonRetornado = fakemonDao.findById(fakemonModel.getId_general());
+
+        if (fakemonRetornado.isPresent()) return null;
+        LocalDateTime now = DateTimeFormatter();
+
+        fakemonModel.setCreatedDate(now);
+        fakemonModel.setUpdatedDate(now);
+
+        FakemonModel fkm = fakemonDao.save(fakemonModel);
+
         return fkm;
     }
 

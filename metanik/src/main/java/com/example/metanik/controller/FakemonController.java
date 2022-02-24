@@ -43,17 +43,15 @@ public class FakemonController {
 
     @PostMapping("/fakemon")
     @ResponseBody
-    public ResponseEntity<FakemonModel> gravar(@RequestBody @Valid FakemonModel fakemonModel) {
-        Optional<FakemonModel> fakemonRetornado = fakemonDao.findById(fakemonModel.getId_general());
-        if (fakemonRetornado.isPresent()) return new ResponseEntity<FakemonModel>(HttpStatus.CONFLICT);
-        LocalDateTime now = fakemonService.DateTimeFormatter();
+    public ResponseEntity<?> gravar(@RequestBody @Valid FakemonModel fakemonModel) {
 
-        fakemonModel.setCreatedDate(now);
-        fakemonModel.setUpdatedDate(now);
+        FakemonModel fkm = fakemonService.gravarFakemon(fakemonModel);
 
-        FakemonModel fkm = fakemonDao.save(fakemonModel);
+        if(fkm == null){
+            return new ResponseEntity<>("Fakemon já existente!", HttpStatus.CONFLICT);
+        }
 
-        return new ResponseEntity<FakemonModel>(fkm, HttpStatus.CREATED);
+        return new ResponseEntity<>(fkm, HttpStatus.CREATED);
 
     }
 
