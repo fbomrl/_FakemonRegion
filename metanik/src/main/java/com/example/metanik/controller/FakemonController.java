@@ -76,6 +76,14 @@ public class FakemonController {
         return new ResponseEntity<String>("Fakemon excluido com sucesso!", HttpStatus.OK);
 
     }
+    @RequestMapping(value = "/fakemon/import", method = RequestMethod.POST)
+    public ResponseEntity<String> ProcessarCSV(@RequestParam("file") @Valid MultipartFile file) {
+        String retorno = fakemonService.readerCSV(file);
+        if (retorno == null) return new ResponseEntity<String>("Ocorreu um erro, tente novamente mais tarde", HttpStatus.CONFLICT);
+
+        return new ResponseEntity<String>(retorno, HttpStatus.OK);
+
+    }
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     @ExceptionHandler(MethodArgumentNotValidException.class)
@@ -92,16 +100,7 @@ public class FakemonController {
         return errors;
     }
 
-    @RequestMapping(value = "/fakemon/import", method = RequestMethod.POST)
-    public ResponseEntity<String> ProcessarCSV(@RequestParam("file") @Valid MultipartFile file) {
-        String retorno = fakemonService.readerCSV(file);
 
-        if (retorno == null) {
-            return new ResponseEntity<String>("Ocorreu um erro, tente novamente mais tarde", HttpStatus.CONFLICT);
-        } else {
-            return new ResponseEntity<String>(retorno, HttpStatus.OK);
-        }
-    }
 }
 
 
