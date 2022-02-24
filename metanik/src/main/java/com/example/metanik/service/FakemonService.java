@@ -42,6 +42,23 @@ public class FakemonService {
 
         return fkm;
     }
+    public FakemonModel atualizarFakemon(FakemonModel fakemonModel){
+        Optional<FakemonModel> fakemonRetornado = fakemonDao.findById(fakemonModel.getId_general());
+
+        if (!fakemonRetornado.isPresent() == true) return null;
+
+        fakemonModel.setCreatedDate(fakemonRetornado.get().getCreatedDate());
+
+        LocalDateTime now = DateTimeFormatter();
+
+        fakemonModel.setCreatedDate(fakemonRetornado.get().getCreatedDate());
+        fakemonModel.setUpdatedDate(now);
+
+        FakemonModel fkm = fakemonDao.save(fakemonModel);
+
+        return fkm;
+
+    }
 
     public String readerCSV(MultipartFile file) {
         BufferedReader br = null;

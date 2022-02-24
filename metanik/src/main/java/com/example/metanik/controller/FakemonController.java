@@ -47,9 +47,7 @@ public class FakemonController {
 
         FakemonModel fkm = fakemonService.gravarFakemon(fakemonModel);
 
-        if(fkm == null){
-            return new ResponseEntity<>("Fakemon já existente!", HttpStatus.CONFLICT);
-        }
+        if(fkm == null) return new ResponseEntity<>("Fakemon já existente!", HttpStatus.CONFLICT);
 
         return new ResponseEntity<>(fkm, HttpStatus.CREATED);
 
@@ -58,19 +56,11 @@ public class FakemonController {
     @PutMapping("/fakemon/")
     @ResponseBody
     public ResponseEntity<?> atualizar(@RequestBody @Valid FakemonModel fakemonModel) {
-        if (fakemonModel.getId_general() == null)
-            return new ResponseEntity<String>("ID_General precisa ser informado", HttpStatus.OK);
 
-        Optional<FakemonModel> fakemonRetornado = fakemonDao.findById(fakemonModel.getId_general());
-        if (!fakemonRetornado.isPresent()) return new ResponseEntity<FakemonModel>(HttpStatus.CONFLICT);
-        fakemonModel.setCreatedDate(fakemonRetornado.get().getCreatedDate());
+        FakemonModel fkm = fakemonService.atualizarFakemon(fakemonModel);
 
-        LocalDateTime now = fakemonService.DateTimeFormatter();
+        if (fkm == null) return new ResponseEntity<String>("Fakemon solicitado não existe", HttpStatus.CONFLICT);
 
-        fakemonModel.setCreatedDate(fakemonRetornado.get().getCreatedDate());
-        fakemonModel.setUpdatedDate(now);
-
-        FakemonModel fkm = fakemonDao.save(fakemonModel);
 
         return new ResponseEntity<>(fkm, HttpStatus.OK);
 
