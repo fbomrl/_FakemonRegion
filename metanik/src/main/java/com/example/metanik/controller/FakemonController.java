@@ -41,7 +41,7 @@ public class FakemonController {
         return new ResponseEntity<FakemonModel>(fkm, HttpStatus.OK);
     }
 
-    @PostMapping("/fakemon")
+    @PostMapping("/gravar")
     @ResponseBody
     public ResponseEntity<?> gravar(@RequestBody @Valid FakemonModel fakemonModel) {
 
